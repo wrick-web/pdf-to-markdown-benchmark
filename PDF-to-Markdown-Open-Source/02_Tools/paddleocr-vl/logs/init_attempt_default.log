@@ -1,0 +1,66 @@
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None, None)[0m
+[33mChecking connectivity to the model hosters, this may take a while. To bypass this check, set `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK` to `True`.[0m
+[33mNo model hoster is available! Please check your network connection to one of the following model hoster: HuggingFace (https://huggingface.co), ModelScope (https://modelscope.cn), AIStudio (https://aistudio.baidu.com), or BOS (https://paddle-model-ecology.bj.bcebos.com). Otherwise, only local models can be used.[0m
+[31mNo available model hosting platforms detected. Please check your network connection.[0m
+Traceback (most recent call last):
+  File "<string>", line 3, in <module>
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddleocr/_pipelines/pp_structurev3.py", line 142, in __init__
+    super().__init__(**kwargs)
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddleocr/_pipelines/base.py", line 67, in __init__
+    self.paddlex_pipeline = self._create_paddlex_pipeline()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddleocr/_pipelines/base.py", line 105, in _create_paddlex_pipeline
+    return create_pipeline(config=self._merged_paddlex_config, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/__init__.py", line 169, in create_pipeline
+    pipeline = BasePipeline.get(pipeline_name)(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/utils/deps.py", line 208, in _wrapper
+    return old_init_func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/_parallel.py", line 135, in __init__
+    self._pipeline = self._create_internal_pipeline(config, self.device)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/_parallel.py", line 190, in _create_internal_pipeline
+    pipeline = self._pipeline_cls(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/layout_parsing/pipeline_v2.py", line 94, in __init__
+    self.inintial_predictor(config)
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/layout_parsing/pipeline_v2.py", line 144, in inintial_predictor
+    self.doc_preprocessor_pipeline = self.create_pipeline(
+                                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/base.py", line 181, in create_pipeline
+    return create_pipeline(
+           ^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/__init__.py", line 169, in create_pipeline
+    pipeline = BasePipeline.get(pipeline_name)(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/utils/deps.py", line 208, in _wrapper
+    return old_init_func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/_parallel.py", line 135, in __init__
+    self._pipeline = self._create_internal_pipeline(config, self.device)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/_parallel.py", line 190, in _create_internal_pipeline
+    pipeline = self._pipeline_cls(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/doc_preprocessor/pipeline.py", line 78, in __init__
+    self.doc_ori_classify_model = self.create_model(doc_ori_classify_config)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/pipelines/base.py", line 143, in create_model
+    return create_predictor(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/models/__init__.py", line 432, in create_predictor
+    model_dir_resolved = _resolve_local_model_dir(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/models/__init__.py", line 273, in _resolve_local_model_dir
+    return _resolve_model_dir(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/models/__init__.py", line 100, in _resolve_model_dir
+    official_models.get_model_path(
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/utils/official_models.py", line 985, in get_model_path
+    return self._get_model_local_path(download_model_names)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_paddleocr/lib/python3.11/site-packages/paddlex/inference/utils/official_models.py", line 967, in _get_model_local_path
+    raise Exception(msg)
+Exception: No available model hosting platforms detected. Please check your network connection.

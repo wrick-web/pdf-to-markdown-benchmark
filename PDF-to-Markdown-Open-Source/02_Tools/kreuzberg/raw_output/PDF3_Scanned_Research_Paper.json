@@ -1,0 +1,22 @@
+{
+  "tool": "kreuzberg",
+  "input_file": "PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF3_Scanned_Research_Paper.pdf",
+  "elapsed_seconds": 25.63617968559265,
+  "page_count": 12,
+  "metadata": {
+    "format_type": "pdf",
+    "pdf_version": "1.7",
+    "producer": "iLovePDF",
+    "is_encrypted": false,
+    "width": 581,
+    "height": 767,
+    "page_count": 12
+  },
+  "content_char_count": 27031,
+  "n_images_extracted": 0,
+  "n_tables_detected": 0,
+  "tables": [],
+  "processing_warnings": [],
+  "detected_languages": null,
+  "output_format": "markdown"
+}

@@ -1,0 +1,10 @@
+kreuzberg version: <function version at 0x7ff4a940e7a0>
+input: PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF3_Scanned_Research_Paper.pdf
+config: output_format=markdown, ocr.backend=tesseract, ocr.language=eng, pdf_options.extract_images=True, layout.table_model=tatr, layout.apply_heuristics=True
+started: 2026-08-28 13:28:39
+elapsed_seconds: 25.64
+page_count: 12
+content_char_count: 27031
+n_images_extracted: 0
+n_tables_detected: 0
+processing_warnings: []

@@ -1,0 +1,334 @@
+{
+  "tool": "open-parse",
+  "mode": "base (no [ml] extra)",
+  "input_file": "PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF2_Financial_Report_Sumitomo.pdf",
+  "elapsed_seconds": 1.5638339519500732,
+  "n_nodes": 18,
+  "content_char_count": 37952,
+  "nodes": [
+    {
+      "index": 0,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 0,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 72.36,
+          "y0": 232.68,
+          "x1": 558.12,
+          "y1": 645.17,
+          "area": 200371.14239999998
+        }
+      ],
+      "text_preview": "**Sumitomo Heavy Industries, Ltd.**<br><br>**CONSOLIDATED FINANCIAL REPORT**<br><br>**For the Three-Month Period from January 1 to March 31, 2025**<br><br>\n*All financial information has been prepared",
+      "num_pages": 1
+    },
+    {
+      "index": 1,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 1,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389848.83599999995
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>Summary of Consolidated Financial Results \n**For the Three-Month Period from January 1 to March 31",
+      "num_pages": 1
+    },
+    {
+      "index": 2,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 2,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389848.83599999995
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**(2) Financial Position**<br><br>(Units: millions of yen) <br><br>**End of Previous Full Year**\n*",
+      "num_pages": 1
+    },
+    {
+      "index": 3,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 3,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 42.0,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 401336.4119999999
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**Additional Notes**<br><br>(1) Significant changes in the scope of consolidation during \nNone  th",
+      "num_pages": 1
+    },
+    {
+      "index": 4,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 4,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.42,
+          "y0": 29.83,
+          "x1": 560.03,
+          "y1": 813.43,
+          "area": 394628.7959999999
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**Supplementary Materials \u2013 Table of Contents**<br><br>**I. Summary of Operating Performance .....",
+      "num_pages": 1
+    },
+    {
+      "index": 5,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 5,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 55.1,
+          "y0": 29.83,
+          "x1": 554.66,
+          "y1": 813.43,
+          "area": 391455.2159999999
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**I. Summary of Operating Performance**<br><br>**1. Summary of Operating Performance for the Quart",
+      "num_pages": 1
+    },
+    {
+      "index": 6,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 6,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389848.83599999995
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**(iv) Energy & Lifeline**<br><br>The energy plant business saw an increase in orders due to expan",
+      "num_pages": 1
+    },
+    {
+      "index": 7,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 7,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 560.41,
+          "y1": 813.43,
+          "area": 394738.49999999994
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**2. Summary of Financial Condition for the Quarterly Consolidated Cumulative Period**<br><br>**Un",
+      "num_pages": 1
+    },
+    {
+      "index": 8,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 8,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389848.83599999995
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**II. Quarterly Consolidated Financial Statements and Key**<br><br>**Explanatory Notes**<br><br>**",
+      "num_pages": 1
+    },
+    {
+      "index": 9,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 9,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.7,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389817.4919999999
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**End of Full Year**\n**As of December 31, 2024** **End of First Quarter**\n**As of March 31, 2025**",
+      "num_pages": 1
+    },
+    {
+      "index": 10,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 10,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389848.83599999995
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**2. Quarterly Consolidated Income Statements and Quarterly**<br><br>**Consolidated Statement of C",
+      "num_pages": 1
+    },
+    {
+      "index": 11,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 11,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 563.02,
+          "y1": 813.43,
+          "area": 396783.69599999994
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**Quarterly Consolidated Statement of Comprehensive Income**\n**Three months ended March 31, 2025**",
+      "num_pages": 1
+    },
+    {
+      "index": 12,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 12,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389848.83599999995
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**3. Consolidated Cash Flows Statement**<br><br>(Units: millions of yen) <br><br>**Previous First ",
+      "num_pages": 1
+    },
+    {
+      "index": 13,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 13,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 560.63,
+          "y1": 813.43,
+          "area": 394910.892
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**4. Items of Special Note Concerning the Quarterly Consolidated Financial Statements**\n**(Signifi",
+      "num_pages": 1
+    },
+    {
+      "index": 14,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 14,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 389848.83599999995
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**(Notes on Segment Information, etc.)**<br><br>**(Segment Information)**<br><br>**1. Summary of R",
+      "num_pages": 1
+    },
+    {
+      "index": 15,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 15,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 54.72,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 391369.0199999999
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**2. Matters Related to Changes in Reporting Segments, etc.**<br><br>Starting in the current conso",
+      "num_pages": 1
+    },
+    {
+      "index": 16,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 16,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 54.72,
+          "y0": 29.83,
+          "x1": 554.17,
+          "y1": 813.43,
+          "area": 391369.0199999999
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>Present First Quarter (January 1, 2025 to March 31, 2025) \n(Units: millions of yen) <br><br>Segmen",
+      "num_pages": 1
+    },
+    {
+      "index": 17,
+      "variant": "{'text', 'image'}",
+      "bbox": [
+        {
+          "page": 17,
+          "page_height": 843.0,
+          "page_width": 596.04,
+          "x0": 56.66,
+          "y0": 29.83,
+          "x1": 560.62,
+          "y1": 813.43,
+          "area": 394903.056
+        }
+      ],
+      "text_preview": "***Consolidated Results for the Three-Month Period from January 1 to March 31, 2025***<br><br><br><br>**III. Supplemental Information**\n(Orders Received, Sales, and Balance of Orders Received, by Segm",
+      "num_pages": 1
+    }
+  ]
+}

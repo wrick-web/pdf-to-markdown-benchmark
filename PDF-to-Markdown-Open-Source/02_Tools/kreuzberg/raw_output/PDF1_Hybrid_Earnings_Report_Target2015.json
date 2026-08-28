@@ -1,0 +1,22 @@
+{
+  "tool": "kreuzberg",
+  "input_file": "PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF1_Hybrid_Earnings_Report_Target2015.pdf",
+  "elapsed_seconds": 6.195649862289429,
+  "page_count": 84,
+  "metadata": {
+    "created_at": "2016-04-19T15:08:26Z",
+    "format_type": "pdf",
+    "pdf_version": "1.6",
+    "is_encrypted": false,
+    "width": 612,
+    "height": 774,
+    "page_count": 84
+  },
+  "content_char_count": 247363,
+  "n_images_extracted": 14,
+  "n_tables_detected": 0,
+  "tables": [],
+  "processing_warnings": [],
+  "detected_languages": null,
+  "output_format": "markdown"
+}

@@ -1,0 +1,8 @@
+openparse version: <module 'openparse.version' from '/home/user/pdf-to-markdown-benchmark/.venv_openparse/lib/python3.11/site-packages/openparse/version.py'>
+input: PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF2_Financial_Report_Sumitomo.pdf
+config: base mode (no [ml] extra) - pdfminer.six backbone, no OCR, no ML table model
+workaround applied: tiktoken.get_encoding patched with offline length-based fallback (see module docstring) because openaipublic.blob.core.windows.net is blocked in this sandbox
+started: 2026-08-28 13:28:34
+elapsed_seconds: 1.56
+n_nodes: 18
+content_char_count: 37952

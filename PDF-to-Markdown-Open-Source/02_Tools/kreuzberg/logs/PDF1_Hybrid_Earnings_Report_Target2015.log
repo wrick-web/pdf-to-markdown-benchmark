@@ -1,0 +1,10 @@
+kreuzberg version: <function version at 0x7fa75f9127a0>
+input: PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF1_Hybrid_Earnings_Report_Target2015.pdf
+config: output_format=markdown, ocr.backend=tesseract, ocr.language=eng, pdf_options.extract_images=True, layout.table_model=tatr, layout.apply_heuristics=True
+started: 2026-08-28 13:28:26
+elapsed_seconds: 6.20
+page_count: 84
+content_char_count: 247363
+n_images_extracted: 14
+n_tables_detected: 0
+processing_warnings: []

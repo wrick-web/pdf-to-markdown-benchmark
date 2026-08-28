@@ -1,0 +1,7 @@
+openparse version: <module 'openparse.version' from '/home/user/pdf-to-markdown-benchmark/.venv_openparse/lib/python3.11/site-packages/openparse/version.py'>
+input: PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF1_Hybrid_Earnings_Report_Target2015.pdf
+config: base mode (no [ml] extra) - pdfminer.six backbone, no OCR, no ML table model
+workaround applied: tiktoken.get_encoding patched with offline length-based fallback (see module docstring) because openaipublic.blob.core.windows.net is blocked in this sandbox
+started: 2026-08-28 13:28:28
+elapsed_seconds: 5.26
+ERROR: UnidentifiedImageError('cannot identify image file <_io.BytesIO object at 0x7fe1548234c0>')

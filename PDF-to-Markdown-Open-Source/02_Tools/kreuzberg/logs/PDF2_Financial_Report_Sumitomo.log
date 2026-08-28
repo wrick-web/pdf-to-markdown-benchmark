@@ -1,0 +1,10 @@
+kreuzberg version: <function version at 0x7fe3834ee7a0>
+input: PDF-to-Markdown-Open-Source/01_Benchmark_PDFs/PDF2_Financial_Report_Sumitomo.pdf
+config: output_format=markdown, ocr.backend=tesseract, ocr.language=eng, pdf_options.extract_images=True, layout.table_model=tatr, layout.apply_heuristics=True
+started: 2026-08-28 13:28:32
+elapsed_seconds: 6.89
+page_count: 18
+content_char_count: 33322
+n_images_extracted: 17
+n_tables_detected: 0
+processing_warnings: []
