@@ -1,3 +1,14 @@
+> **Rev 2 note:** this file is the pre-Rev2 tool register (Tier A/B/C
+> against the old 9-criteria/3-PDF design). It is kept as-is. For the
+> current, frozen-capability-based view (C10–C17), see
+> `01_Benchmark_Design/` and `02_Tools/Tool_Capability_Matrix.md` —
+> including one important correction:
+> **PaddleOCR-VL / PP-StructureV3, listed below as a newly-identified
+> Tier A candidate, was in fact already tested in the prior cycle**
+> (under the "Paddlerocr" ClickUp subtask) — see
+> `00_Project_Notes/Decisions_and_Exclusions.md` for the full correction.
+> Treat any further work on it as RE-TEST/RE-MAP, not new.
+
 # Tool Landscape — Master Register
 
 Source of truth for every tool considered across all cycles of this ClickUp

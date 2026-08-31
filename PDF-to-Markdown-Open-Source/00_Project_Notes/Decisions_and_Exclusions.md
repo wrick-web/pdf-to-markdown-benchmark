@@ -1,5 +1,30 @@
 # Decisions & Exclusions Log
 
+## ⚠️ Correction (Rev 2 transition, see `01_Benchmark_Design/`)
+
+While mapping tools to the new frozen capability taxonomy (C10–C17), this
+repository read the actual prior-cycle ClickUp records in full for the
+first time (previously only their names/status had been checked, not
+their content). This surfaced a genuine duplicate that the earlier
+Cycle-II research did not catch:
+
+**"PaddleOCR-VL / PP-StructureV3" was already tested in the prior cycle**
+under the ClickUp subtask named "Paddlerocr" — with real, detailed,
+observed results across text fidelity, reading order, headings, tables,
+and figures/charts (formula and chart recognition were explicitly disabled
+by that tester as out-of-scope for their inputs). This repository's own
+Cycle-II section below describes PP-StructureV3 as a newly-identified Tier
+A candidate that was "installed but blocked at model-download time" — that
+description is **not wrong about this repository's own run**, but it
+should not have been presented as a first test of the tool. It's a
+duplicate. See `02_Tools/Tool_Capability_Matrix.md` section A for the full
+real evidence, and relabel any future work on this tool **RE-TEST/RE-MAP**,
+never "new."
+
+This is left as a visible correction rather than silently edited into the
+original text below, consistent with this project's own rule never to
+overwrite prior research.
+
 A single place to see every "did we test/include this or not, and why"
 decision made this cycle, without digging through `Tool_Landscape.md`'s
 full tables.
