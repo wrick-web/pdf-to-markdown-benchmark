@@ -1,5 +1,25 @@
 # Input Status
 
+## ⚠️ Update — candidate input documents identified, WAITING FOR INPUT APPROVAL
+
+Ajay identified an existing ClickUp task ("pymupdf4llm", `86baza16z`, a
+Cycle-I tool report) carrying 3 attached PDFs that are byte-size-identical
+to the 3 PDFs already in `01_Benchmark_PDFs/`. Full review:
+`Input_Document_Validation.md` in this same folder.
+
+**Status: WAITING FOR INPUT APPROVAL — BENCHMARK EXECUTION NOT STARTED.**
+No explicit approval for using these as the frozen Rev-2 fixtures was
+found in that task or anywhere else checked. Nothing below has changed as
+a result of this finding — fixture authoring is still not started, no
+document has been registered as an official TC27–TC38 fixture, and no
+tool has been run against them under Rev-2. This section is superseded
+only once Ajay explicitly approves; see `Input_Document_Validation.md`
+for exactly what would still need confirming even after approval (the
+S28 multi-column discrepancy on Document 3, and whether Document 2's
+tables genuinely span a page break for S32).
+
+---
+
 ## Fixture authoring: NOT STARTED
 
 Per the frozen spec's "What comes next": *"Fixture authoring — a separate
