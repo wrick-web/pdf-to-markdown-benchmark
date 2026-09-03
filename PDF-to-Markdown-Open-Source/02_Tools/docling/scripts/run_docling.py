@@ -15,11 +15,22 @@ script is left ready to run as-is the moment either (a) HF access is
 available, or (b) an offline artifacts_path (see INSTALL.md) is
 supplied.
 
+Offline layout model (once supplied): set the DOCLING_ARTIFACTS_PATH env
+var to a directory containing, exactly:
+    <DOCLING_ARTIFACTS_PATH>/docling-project--docling-layout-heron/
+        config.json
+        preprocessor_config.json
+        model.safetensors        (or pytorch_model.bin)
+See setup/INSTALL.md "Exact offline model spec" for how this was derived
+and where it comes from.
+
 Usage:
     source .venv_docling/bin/activate
     python run_docling.py <input.pdf> <tool_output_dir>
+    DOCLING_ARTIFACTS_PATH=/path/to/models python run_docling.py <input.pdf> <tool_output_dir>
 """
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -38,6 +49,7 @@ def main() -> None:
     pdf_path = Path(sys.argv[1])
     out_dir = Path(sys.argv[2])
     stem = pdf_path.stem
+    artifacts_path = os.environ.get("DOCLING_ARTIFACTS_PATH")
 
     raw_dir = out_dir / "raw_output"
     md_dir = out_dir / "markdown_output"
@@ -50,8 +62,10 @@ def main() -> None:
         f"docling version: {docling.__version__}",
         f"input: {pdf_path}",
         "config: StandardPdfPipeline, ocr_options=RapidOcrOptions(backend='onnxruntime') "
-        "(bundled ONNX weights, no download); everything else default (layout model "
-        "still requires Hugging Face Hub access - see setup/INSTALL.md)",
+        "(bundled ONNX weights, no download); everything else default"
+        + (f"; artifacts_path={artifacts_path}" if artifacts_path else
+           " (layout model still requires Hugging Face Hub access or "
+           "DOCLING_ARTIFACTS_PATH - see setup/INSTALL.md)"),
         f"started: {time.strftime('%Y-%m-%d %H:%M:%S')}",
     ]
 
@@ -61,6 +75,8 @@ def main() -> None:
     try:
         pipeline_opts = PdfPipelineOptions()
         pipeline_opts.ocr_options = RapidOcrOptions(backend="onnxruntime")
+        if artifacts_path:
+            pipeline_opts.artifacts_path = artifacts_path
         converter = DocumentConverter(
             format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_opts)}
         )

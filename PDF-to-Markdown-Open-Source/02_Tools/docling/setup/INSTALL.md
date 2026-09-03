@@ -80,6 +80,66 @@ fixture, OCR model construction now succeeds and execution proceeds
 past it — the pipeline gets measurably further than before. See
 `../logs/TC27_briefing_note_ocr_fixed_still_blocked_layout.log`.
 
+### Exact offline model spec (2026-09-03, requested by the user)
+
+Derived by reading Docling's own source — `docling/datamodel/
+stage_model_specs.py` (the `OBJECT_DETECTION_LAYOUT_HERON` preset,
+which is `layout_heron_default`, the one `DocumentConverter()` uses by
+default), `docling/models/inference_engines/common/hf_vision_base.py`,
+and `docling/models/inference_engines/vlm/_utils.py`
+(`resolve_model_artifacts_path`) — not guessed, not inferred from docs.
+
+- **Exact model**: Hugging Face repo `docling-project/docling-layout-heron`
+  (an RT-DETR object-detection model, ResNet50 backbone), revision `main`.
+- **Exact files actually read by the code that runs** (confirmed by
+  tracing every call in `transformers_engine.py`'s `initialize()`):
+  - `config.json` — read by `AutoConfig.from_pretrained()` for the
+    model's label mapping (`id2label`) and by
+    `AutoModelForObjectDetection.from_pretrained()` for the model
+    architecture.
+  - `preprocessor_config.json` — read by `AutoImageProcessor.
+    from_pretrained()`; `hf_vision_base.py` raises `FileNotFoundError`
+    immediately if this is missing.
+  - The model weights — `model.safetensors` (transformers' current
+    default format) or `pytorch_model.bin` (older format; either
+    works, `from_pretrained` auto-detects).
+  - Nothing else is read by the code path this pipeline actually
+    exercises (no tokenizer files — this is vision-only; no custom
+    `trust_remote_code` — RT-DETR is natively supported in
+    `transformers`, confirmed by a comment in Docling's own source
+    referencing "RT-DETRv2 in transformers 5.x").
+- **Exact directory structure `artifacts_path` must have** (from
+  `resolve_model_artifacts_path`'s literal logic:
+  `artifacts_path / repo_id.replace("/", "--")`):
+  ```
+  <artifacts_path>/
+  └── docling-project--docling-layout-heron/
+      ├── config.json
+      ├── preprocessor_config.json
+      └── model.safetensors        (or pytorch_model.bin)
+  ```
+- **How to obtain it** (needs a machine with real Hugging Face access —
+  this sandbox does not have one): `huggingface-cli download
+  docling-project/docling-layout-heron --local-dir
+  docling-project--docling-layout-heron`, or simply let Docling run
+  once normally on any unrestricted machine and copy the resulting
+  cache folder. Either way, the folder just needs to end up named
+  exactly `docling-project--docling-layout-heron` inside whatever
+  directory gets passed as `artifacts_path`.
+- **How to use it here**: `scripts/run_docling.py` now reads a
+  `DOCLING_ARTIFACTS_PATH` env var and passes it straight through as
+  `PdfPipelineOptions.artifacts_path` — supply the model directory into
+  this session, set that env var to its parent folder, and the script
+  needs no other change.
+- **Smaller alternative**: an ONNX export also exists at
+  `docling-project/docling-layout-heron-onnx` (`model.onnx` instead of
+  `.safetensors`, same `config.json`/`preprocessor_config.json`
+  requirement, folder name `docling-project--docling-layout-heron-onnx`)
+  — usable via `ObjectDetectionEngineType.ONNXRUNTIME`, which
+  `onnxruntime` (already installed here) can run. Either variant works;
+  the safetensors one is simpler since `DocumentConverter()` uses it
+  with zero extra configuration beyond `artifacts_path`.
+
 ### Layout: confirmed unavailable (2026-09-03)
 
 With the OCR fix in place, the pipeline's next (and last) step —
