@@ -1,0 +1,6 @@
+docling version: 2.124.0
+input: PDF-to-Markdown-Open-Source/02_Tools/docling/input/croyde_1974_braithe_order_offprint.pdf
+config: StandardPdfPipeline, ocr_options=RapidOcrOptions(backend='onnxruntime') (bundled ONNX weights, no download); everything else default (layout model still requires Hugging Face Hub access - see setup/INSTALL.md)
+started: 2026-09-03 13:22:19
+elapsed_seconds: 3.98
+ERROR: ProxyError('403 Forbidden')

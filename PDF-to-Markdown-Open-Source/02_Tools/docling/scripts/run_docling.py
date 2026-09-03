@@ -4,15 +4,16 @@ Run Docling (docling==2.124.0, github.com/docling-project/docling) against
 a benchmark PDF.
 
 STATUS AS WRITTEN (2026-09-03): this script has never completed a
-successful run in this sandbox. Docling's StandardPdfPipeline downloads
-its models on first use — RapidOCR/PyTorch OCR weights from
-modelscope.cn, and the docling-layout-heron layout model from the
-Hugging Face Hub — and both hosts are blocked by this environment's
-network egress policy. See ../logs/pipeline_init_default_ocr.log and
-../logs/pipeline_init_ocr_disabled.log for the two real tracebacks this
-produces. This script is left ready to run as-is the moment either (a)
-model access is available, or (b) a machine with unrestricted egress
-runs it.
+successful run in this sandbox. Docling's StandardPdfPipeline loads two
+models on first use. OCR is fixed here (RapidOCR's bundled ONNX weights
++ onnxruntime, both from PyPI, zero downloads — see setup/INSTALL.md
+"OCR fix"). The layout model (docling-layout-heron) still has to come
+from the Hugging Face Hub with no bundled/PyPI/GitHub-mirrored
+alternative anywhere this sandbox can reach — see setup/INSTALL.md
+"Layout: confirmed unavailable" for the full, exhaustive check. This
+script is left ready to run as-is the moment either (a) HF access is
+available, or (b) an offline artifacts_path (see INSTALL.md) is
+supplied.
 
 Usage:
     source .venv_docling/bin/activate
@@ -24,7 +25,9 @@ import time
 from pathlib import Path
 
 import docling
-from docling.document_converter import DocumentConverter
+from docling.document_converter import DocumentConverter, PdfFormatOption
+from docling.datamodel.pipeline_options import PdfPipelineOptions, RapidOcrOptions
+from docling.datamodel.base_models import InputFormat
 
 
 def main() -> None:
@@ -46,7 +49,9 @@ def main() -> None:
     log_lines = [
         f"docling version: {docling.__version__}",
         f"input: {pdf_path}",
-        "config: default StandardPdfPipeline (no options overridden)",
+        "config: StandardPdfPipeline, ocr_options=RapidOcrOptions(backend='onnxruntime') "
+        "(bundled ONNX weights, no download); everything else default (layout model "
+        "still requires Hugging Face Hub access - see setup/INSTALL.md)",
         f"started: {time.strftime('%Y-%m-%d %H:%M:%S')}",
     ]
 
@@ -54,7 +59,11 @@ def main() -> None:
     error = None
     result = None
     try:
-        converter = DocumentConverter()
+        pipeline_opts = PdfPipelineOptions()
+        pipeline_opts.ocr_options = RapidOcrOptions(backend="onnxruntime")
+        converter = DocumentConverter(
+            format_options={InputFormat.PDF: PdfFormatOption(pipeline_options=pipeline_opts)}
+        )
         result = converter.convert(str(pdf_path))
     except Exception as exc:  # noqa: BLE001
         error = repr(exc)

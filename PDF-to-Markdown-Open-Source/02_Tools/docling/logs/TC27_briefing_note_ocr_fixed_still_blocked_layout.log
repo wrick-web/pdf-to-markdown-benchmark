@@ -1,0 +1,121 @@
+[32m[INFO] 2026-09-03 13:17:40,328 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-03 13:17:41,436 [RapidOCR] download_file.py:60: File exists and is valid: /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_det_small.onnx[0m
+[32m[INFO] 2026-09-03 13:17:41,436 [RapidOCR] main.py:63: Using /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_det_small.onnx[0m
+[32m[INFO] 2026-09-03 13:17:41,664 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-03 13:17:41,741 [RapidOCR] download_file.py:60: File exists and is valid: /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-09-03 13:17:41,741 [RapidOCR] main.py:63: Using /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-09-03 13:17:41,777 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-03 13:17:44,001 [RapidOCR] download_file.py:60: File exists and is valid: /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_rec_small.onnx[0m
+[32m[INFO] 2026-09-03 13:17:44,001 [RapidOCR] main.py:63: Using /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_rec_small.onnx[0m
+Traceback (most recent call last):
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpcore/_sync/http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 403 Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/pydantic/_internal/_validate_call.py", line 40, in wrapper_function
+    return wrapper(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/pydantic/_internal/_validate_call.py", line 137, in __call__
+    res = self.__pydantic_validator__.validate_python(pydantic_core.ArgsKwargs(args, kwargs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/document_converter.py", line 512, in convert
+    return next(all_res)
+           ^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/document_converter.py", line 574, in convert_all
+    for conv_res in conv_res_iter:
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/document_converter.py", line 703, in _convert
+    for item in map(
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/document_converter.py", line 750, in _process_document
+    conv_res = self._execute_pipeline(in_doc, raises_on_error=raises_on_error)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/document_converter.py", line 776, in _execute_pipeline
+    pipeline = self._get_pipeline(in_doc.format)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/document_converter.py", line 733, in _get_pipeline
+    self.initialized_pipelines[cache_key] = pipeline_class(
+                                            ^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/pipeline/standard_pdf_pipeline.py", line 592, in __init__
+    self._init_models()
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/pipeline/standard_pdf_pipeline.py", line 617, in _init_models
+    self.layout_model = layout_factory.create_instance(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/factories/base_factory.py", line 60, in create_instance
+    return _cls(options=options, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/stages/layout/layout_object_detection_model.py", line 52, in __init__
+    self.engine.initialize()
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/inference_engines/object_detection/transformers_engine.py", line 127, in initialize
+    model_folder = self._resolve_model_folder(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/inference_engines/common/hf_vision_base.py", line 71, in _resolve_model_folder
+    return resolve_model_artifacts_path(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/inference_engines/vlm/_utils.py", line 125, in resolve_model_artifacts_path
+    return download_fn(repo_id, revision)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/inference_engines/common/hf_vision_base.py", line 63, in download_wrapper
+    return self.download_models(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/utils/hf_model_download.py", line 42, in download_models
+    return download_hf_model(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/docling/models/utils/hf_model_download.py", line 23, in download_hf_model
+    download_path = snapshot_download(
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 268, in snapshot_download
+    repo_info = api.repo_info(repo_id=repo_id, repo_type=repo_type, revision=revision)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 3653, in repo_info
+    return method(
+           ^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 3332, in model_info
+    r = get_session().get(path, headers=headers, timeout=timeout, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 403 Forbidden

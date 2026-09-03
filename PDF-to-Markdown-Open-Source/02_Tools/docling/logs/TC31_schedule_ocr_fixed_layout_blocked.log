@@ -1,0 +1,6 @@
+docling version: 2.124.0
+input: PDF-to-Markdown-Open-Source/02_Tools/docling/input/schedule_of_analysis_charges_2026.pdf
+config: StandardPdfPipeline, ocr_options=RapidOcrOptions(backend='onnxruntime') (bundled ONNX weights, no download); everything else default (layout model still requires Hugging Face Hub access - see setup/INSTALL.md)
+started: 2026-09-03 13:22:28
+elapsed_seconds: 3.62
+ERROR: ProxyError('403 Forbidden')

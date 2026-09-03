@@ -268,23 +268,72 @@ Observation / Verdict / Notes) for all 12 TCs:
 `claude/pdf-markdown-tools-research-59gyda` so the paths referenced in
 the ClickUp comments resolve to real files.
 
+## 9. Environment built from scratch; OCR solved, layout isolated as the sole blocker (same day, third pass)
+
+The user pushed back on treating "Docling's model downloads are
+blocked" as a stopping point, and asked for the minimum viable
+environment to be built by hand rather than assumed unbuildable. Took
+that seriously rather than re-asserting the prior finding:
+
+- **OCR: solved, genuinely, with zero network calls.** The `rapidocr`
+  PyPI wheel already bundles ONNX copies of its models
+  (`PP-OCRv6_det_small.onnx` etc. under `site-packages/rapidocr/
+  models/`). Docling's own `RapidOcrOptions` already defaults to the
+  `onnxruntime` backend — it just wasn't taking effect because the
+  `onnxruntime` package itself wasn't installed. `uv pip install
+  onnxruntime` (plain PyPI, no model download) plus explicitly passing
+  `RapidOcrOptions(backend="onnxruntime")` fixed it. Re-ran all 5
+  TC27–TC31 fixtures with this config: every one now gets measurably
+  further, past OCR construction entirely (confirmed via the real log
+  line "File exists and is valid" for the bundled `.onnx` file), before
+  hitting the next stage.
+- **Layout: checked exhaustively, not assumed, and confirmed
+  genuinely unavailable.** 7 independent checks — full detail in
+  `../02_Tools/docling/setup/INSTALL.md` — source review (every layout
+  preset Docling ships is Hugging-Face-hosted only), no bundled weights
+  in any installed package, not on PyPI (404), no GitHub mirror (404,
+  a real response — `raw.githubusercontent.com` is otherwise reachable,
+  confirmed by pulling Docling's actual public README), `huggingface.co`
+  itself blocked, and a different mirror domain entirely
+  (`hf-mirror.com`) also blocked — confirming this sandbox enforces an
+  allowlist of approved registries, not a blocklist of named-bad hosts,
+  so no untried alternative host is likely to work either.
+
+**Net effect:** the blocker for all 12 TCs narrows from "two model
+downloads fail" to "exactly one, non-optional, HF-only model fails" —
+a materially more precise and more thoroughly checked finding, not a
+repeat of the prior one. Per instruction not to weaken the benchmark,
+layout was not bypassed or monkey-patched — it underlies reading order,
+headings, tables and figures, i.e. most of what S27–S38 test, so a
+run without it would not be genuine Docling output.
+
+Corrected two ClickUp comments (TC35, TC36) that had claimed OCR
+specifically as their blocker — that claim no longer holds and was
+fixed rather than left standing. Posted a brief progress update to
+TC27–TC31 as well, since the underlying technical picture materially
+changed even though the verdict (BLOCKED) did not.
+
 ## 7. What should happen next
 
-Nothing here can be resolved from inside this sandbox. Fixture access is
-no longer the blocker for TC27–TC31 (the user supplied them directly);
-the remaining blocker for all 12 is Docling itself. Two independent
-things would unblock full execution:
+Fixture access is no longer the blocker for TC27–TC31. OCR is no longer
+a blocker for any of the 12. The single remaining blocker, for all 12,
+is the layout model — confirmed to have exactly one source (Hugging
+Face Hub) with no bundled, PyPI, or GitHub alternative reachable from
+this sandbox. Two things would unblock full execution:
 
-1. For TC32–TC38 (fixtures still not obtained): someone with
-   unrestricted network access supplies the remaining 6 PDF bytes
-   directly into this environment (as was done for TC27–TC31), **and**
-2. For all 12 TCs: Docling itself runs somewhere that can reach
-   `modelscope.cn` and `huggingface.co` — either a different machine, or
-   this same script (`scripts/run_docling.py`) pointed at a pre-cached/
-   offline copy of Docling's OCR and layout models if one can be
-   supplied through an allowed registry.
+1. For TC32–TC38 only: the remaining 6 PDF bytes supplied directly into
+   this environment (as was done for TC27–TC31), **and**
+2. For all 12 TCs: the layout model made reachable — either this
+   environment gets Hugging Face Hub access, or someone with real
+   internet access runs `docling-tools models download` (or lets
+   Docling run once normally) elsewhere and supplies the resulting
+   model directory into this session, so `PdfPipelineOptions.
+   artifacts_path` can point at it with no download at all. (2) alone
+   would already unblock real output for TC27–TC31 — their fixtures are
+   already here.
 
-Until then, this task recommends **not** re-attempting TC27–TC38 (would
-just reproduce the same errors) and **not** starting the other 5
-subjects (no scenario/TC lines exist for them yet — that is Pradip's
-`mint_benchmark_board.py` step, not something to do unprompted).
+Until then, this task recommends **not** re-attempting TC27–TC38 with
+the same configuration again (would just reproduce the same layout
+error) and **not** starting the other 5 subjects (no scenario/TC lines
+exist for them yet — that is Pradip's `mint_benchmark_board.py` step,
+not something to do unprompted).
