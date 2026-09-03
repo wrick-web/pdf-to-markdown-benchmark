@@ -1,18 +1,91 @@
 # Docling — Round 1 execution, Rev-2 (2026-09-03)
 
 Task: `EXEC · Docling · PDF-OSS v1 · R1` (`86bbu4wm7`), 12 scenario/TC
-lines (S27/TC27 … S38/TC38). **Result: 0/12 completed a run.** TC27–TC31
-were actually executed against real, user-supplied fixtures and are
-BLOCKED at the tool level. TC32–TC38 additionally have no fixture
-available this round. **Update (same day, second pass):** built the OCR
-path from scratch to genuinely work with zero network calls (see
-"Environment build, second pass" below) — this narrows the blocker from
-"two model downloads fail" to "exactly one, the layout model, fails,"
-confirmed with fresh per-file evidence for all 5 real fixtures. Still
-0/12 completed, because layout is not optional in Docling's real
-pipeline and has no non-HF source anywhere this sandbox can reach — but
-this is now a precisely isolated, exhaustively checked finding, not an
-assumption.
+lines (S27/TC27 … S38/TC38). **Final result: 0/12 completed a run.
+BLOCKED, conclusively, for all 12.** TC27–TC31 were actually executed
+against real, user-supplied fixtures. TC32–TC38 additionally have no
+fixture available. **Update (second pass):** built the OCR path from
+scratch to genuinely work with zero network calls — this narrowed the
+blocker from "two model downloads fail" to exactly one: the layout
+model. **Update (third/final pass):** the user independently obtained
+the real `docling-project/docling-layout-heron` model files on their
+own machine and attempted to transfer them into this environment via
+Git LFS. That transfer could not be completed — see "Layout model
+transfer attempt (final pass)" below for the full account. Docling
+itself was never proven broken; the blocker end-to-end was getting
+model bytes into this sandbox at all, first over the network (blocked
+by policy) and then, once a local copy existed, over a file transfer
+that repeatedly truncated at an identical byte offset across four
+independent methods.
+
+## Layout model transfer attempt (final pass) — real files obtained, transfer failed
+
+The user downloaded `config.json`, `preprocessor_config.json`, and
+`model.safetensors` (expected 312,243,345 bytes) for
+`docling-project/docling-layout-heron` directly onto their own Windows
+machine, which has normal, unrestricted internet access (unlike this
+sandbox). The plan: transfer the 3 files into this repository via Git
+LFS on a dedicated branch (`docling-layout-heron-model`), then pull them
+into this Linux environment and point `DOCLING_ARTIFACTS_PATH` at them.
+
+**What worked:** `config.json` and `preprocessor_config.json` transferred
+correctly — confirmed byte-identical on both ends, and structurally
+valid (a real RT-DETRv2 object-detection config, 17 document-layout
+labels, paired with a matching `RTDetrImageProcessor` preprocessor
+config). Git LFS itself, the branch, and the push/pull mechanics all
+worked exactly as intended — this is not a git or LFS defect.
+
+**What did not work:** `model.safetensors` itself. The first copy that
+reached this session (via that same Git LFS pipeline) was provably
+corrupted — inspected the raw bytes directly rather than trusting the
+matching file size, and found 71.4 million occurrences of the UTF-8
+"replacement character" byte sequence (`EF BF BD`) scattered through the
+312MB file, the unmistakable signature of a binary file having been
+round-tripped through a lossy text/UTF-8 decode somewhere *before* it
+ever reached Git (the SHA256 already matched between the Windows commit
+and the Linux pull, proving Git/LFS transferred whatever bytes existed
+faithfully — the corruption predated that step).
+
+The user then re-downloaded the file fresh. That attempt, and every
+subsequent one, stalled at exactly **171,658,996 bytes** out of the
+expected 312,243,345 — not a random number, the *same* number, every
+time, across four genuinely different transport mechanisms tried in
+sequence:
+1. A single continuous binary-safe download (`.NET HttpWebRequest`,
+   streamed directly to disk, no text conversion).
+2. A resumable version of the same, explicitly requesting an HTTP
+   `Range` continuation from the exact byte where the prior attempt
+   stopped.
+3. The download broken into many small (15MB) sequential range
+   requests, specifically to rule out a single-long-request timeout —
+   this one showed its work: chunks 1–10 each completed in full, chunk
+   11 landed partially, and the 12th chunk (starting at byte
+   171,658,996) failed outright on all 5 retries.
+4. `git clone` of the actual `docling-project/docling-layout-heron`
+   Hugging Face repository (a real git repo with Git LFS, using git's
+   own transfer protocol rather than a single HTTP GET) — landed at the
+   identical 171,658,996 bytes again.
+
+Four independent client-side implementations converging on the exact
+same stopping point rules out an implementation bug or ordinary network
+flakiness. The most likely explanations are network-path-specific and
+outside what any client-side code change can fix: a corrupted/truncated
+CDN cache entry consistently served to whatever edge node the user's
+ISP/region resolves to, or a security appliance (antivirus/corporate
+proxy performing SSL content inspection) enforcing a per-file byte cap
+that it tracks by content identity regardless of transport. Neither is
+something this session, or further scripting, can diagnose or work
+around from here — the one untested variable (a different network path
+entirely, e.g. mobile data) was offered to the user but not required,
+per their explicit instruction to stop pursuing this.
+
+**Per the user's explicit instruction: no further download attempts,
+no alternative transports, no Hugging Face/network debugging.** The
+corrupted 312MB blob already in the `docling-layout-heron-model` git
+history was not force-fixed or fabricated around; the branch is left
+as-is, unmerged, for the record. This repository's main branch never
+depended on that branch, so nothing here needed to change to close this
+out.
 
 ## Environment (first pass — superseded by the OCR fix below, kept for the record)
 
@@ -573,7 +646,13 @@ Kept for the record; TC27–TC38 above supersede it.
 ## What would unblock the remaining 7 (TC32–TC38), and the other 5's real output
 
 OCR is solved — it no longer needs anything external. The single
-remaining blocker for all 12 TCs is the layout model. To fully unblock:
+remaining blocker for all 12 TCs is getting a genuinely complete,
+uncorrupted copy of the layout model's weight file into this
+environment. This was actually attempted (see "Layout model transfer
+attempt (final pass)" above) and did not succeed — not for lack of
+trying, but because the transfer itself failed at a consistent byte
+offset across 4 independent methods, pointing to a network-path issue
+outside what more scripting can fix. To fully unblock, still needed:
 
 1. The 6 remaining PDFs (`monitoring_station_schedule_2026.pdf`,
    `intertidal_survey_BEP-SR-2026-11.pdf`,
@@ -582,15 +661,12 @@ remaining blocker for all 12 TCs is the layout model. To fully unblock:
    `operations_note_DS-OP-07.pdf`) supplied directly into this session,
    the same way TC27–31's fixtures were — needed for TC32–38 only,
    **and**
-2. The layout model (`docling-project/docling-layout-heron` or any
-   sibling preset) made reachable — either this environment gets
-   Hugging Face Hub access, or someone with real internet access runs
-   `docling-tools models download --output-dir /models` (or lets
-   Docling run once normally) elsewhere and supplies the resulting
-   model directory into this session, so `PdfPipelineOptions.
-   artifacts_path` can point at it directly with no download at all.
-   Needed for all 12 TCs, including the 5 whose fixtures are already in
-   hand.
+2. A genuinely complete `model.safetensors` (312,243,345 bytes,
+   structurally valid) reaching this session by any means — a
+   successful transfer from a different network path, a machine that
+   can run Docling directly with real Hugging Face access, or this
+   sandbox itself gaining that access. Needed for all 12 TCs, including
+   the 5 whose fixtures are already in hand.
 
 (2) alone would already unblock real output for TC27–31 — their
 fixtures are already here.

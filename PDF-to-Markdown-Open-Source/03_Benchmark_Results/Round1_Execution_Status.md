@@ -337,23 +337,63 @@ the model.** No ClickUp writes this pass, no new TC executions attempted
 — nothing changed materially enough to justify running TC27/28/29/31
 again (would just reproduce the same layout failure already on record).
 
+## 11. Layout model transfer attempted end-to-end; conclusively failed (final pass)
+
+The user independently obtained the real `docling-project/docling-layout-heron`
+model files on their own Windows machine (which has normal internet
+access) and attempted to transfer `config.json`, `preprocessor_config.json`,
+and `model.safetensors` into this session via a dedicated Git LFS branch,
+`docling-layout-heron-model`.
+
+**Result: `config.json` and `preprocessor_config.json` transferred
+correctly** (confirmed byte-identical, structurally valid — a real
+RT-DETRv2/17-label document-layout config with its matching
+`RTDetrImageProcessor` preprocessor). **`model.safetensors` did not.**
+First attempt arrived corrupted (71.4 million UTF-8 replacement-character
+byte substitutions through the 312MB file — a lossy text-decode
+artifact from before the file ever reached Git, not a Git/LFS defect).
+Every re-download attempt after that — across 4 independently
+implemented transport methods (a direct streamed binary download, a
+resumable Range-based version, a chunked small-Range-request version,
+and a `git clone` of the actual Hugging Face repo using Git's own LFS
+protocol) — stalled at the identical byte offset, 171,658,996 of
+312,243,345, every single time. That consistency across fundamentally
+different client implementations rules out an implementation bug; it
+points to something specific to the user's network path (a corrupted
+CDN cache entry, or a security appliance capping downloads by content
+identity) that no further scripting from either side of this session
+can diagnose or route around.
+
+**Per explicit instruction, this line of work is now closed.** No
+further download attempts, alternative transports, or network debugging
+were pursued. The corrupted blob already in the `docling-layout-heron-model`
+branch's git history was left as-is (not force-fixed, not fabricated
+around) — that branch was never merged into this one and this branch's
+own history needed no changes to close this out. Full account:
+`../02_Tools/docling/observations.md` → "Layout model transfer attempt
+(final pass)".
+
+Docling's own correctness was never in question here — every failure in
+this entire investigation traced to getting model bytes into this
+sandbox, first over a blocked network path, then over a file transfer
+that a real, obtained-in-good-faith local copy still couldn't complete.
+
 ## 7. What should happen next
 
 Fixture access is no longer the blocker for TC27–TC31. OCR is no longer
 a blocker for any of the 12. The single remaining blocker, for all 12,
-is the layout model — confirmed to have exactly one source (Hugging
-Face Hub) with no bundled, PyPI, or GitHub alternative reachable from
-this sandbox. Two things would unblock full execution:
+is a complete, uncorrupted layout model reaching this session — genuinely
+attempted this session via a local, user-obtained copy, and the transfer
+itself failed for reasons outside this session's control (§11). Two
+things would still be needed for full execution:
 
 1. For TC32–TC38 only: the remaining 6 PDF bytes supplied directly into
    this environment (as was done for TC27–TC31), **and**
-2. For all 12 TCs: the layout model made reachable — either this
-   environment gets Hugging Face Hub access, or someone with real
-   internet access runs `docling-tools models download` (or lets
-   Docling run once normally) elsewhere and supplies the resulting
-   model directory into this session, so `PdfPipelineOptions.
-   artifacts_path` can point at it with no download at all. (2) alone
-   would already unblock real output for TC27–TC31 — their fixtures are
+2. For all 12 TCs: a genuinely complete `model.safetensors` reaching
+   this session by any means — a transfer from a different network
+   path, a machine that can run Docling directly with real Hugging Face
+   access, or this sandbox gaining that access itself. (2) alone would
+   already unblock real output for TC27–TC31 — their fixtures are
    already here.
 
 Until then, this task recommends **not** re-attempting TC27–TC38 with
