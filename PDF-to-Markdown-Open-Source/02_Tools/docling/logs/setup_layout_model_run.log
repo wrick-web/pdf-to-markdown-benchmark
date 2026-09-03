@@ -1,0 +1,16 @@
+[14:09:55] STEP 1: checking local/cache locations for an existing copy
+[14:09:55]   checking /root/.cache/huggingface/hub/models--docling-project--docling-layout-heron ... absent
+[14:09:55]   checking /home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/docling/models/docling-project--docling-layout-heron ... EXISTS
+[14:09:55]   no existing local copy found anywhere checked
+[14:09:55] STEP 2: attempting to obtain the model - one real attempt per route, no retry loops
+[14:09:55]   route A: huggingface_hub.snapshot_download (huggingface.co) - single attempt
+[14:09:56]     FAILED: ProxyError('403 Forbidden')
+[14:09:56]   route B: hf.co (HF's short-alias domain) - single plain HTTPS attempt
+[14:09:56]     FAILED: ProxyError('403 Forbidden')
+[14:09:56]   route C: cdn-lfs.huggingface.co (HF's LFS CDN, a different host) - DNS/connect check only
+[14:09:56]     DNS resolution itself failed - not reachable
+
+RESULT: BLOCKED - no route obtained the model
+No legitimate route from this environment reached the model.
+Required externally: docling-project/docling-layout-heron (revision main) - config.json, preprocessor_config.json + one of ['model.safetensors', 'pytorch_model.bin'], placed under /home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/docling/models/docling-project--docling-layout-heron
+EXIT: 1

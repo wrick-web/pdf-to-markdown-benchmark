@@ -313,6 +313,30 @@ fixed rather than left standing. Posted a brief progress update to
 TC27–TC31 as well, since the underlying technical picture materially
 changed even though the verdict (BLOCKED) did not.
 
+## 10. Setup script written and run; no legitimate route found (same day, fourth pass)
+
+Per instruction to write and actually run a setup/download script rather
+than describe manual steps, created
+`../02_Tools/docling/scripts/setup_layout_model.py`. It: (1) checks every
+local/HF-cache location for an existing copy before attempting anything
+— none found, confirmed not assumed; (2) attempts exactly one real
+download per route, no retry loops — the real `huggingface_hub` path
+Docling uses, `hf.co` (a genuinely different HF-owned hostname, not the
+same URL retried), and `cdn-lfs.huggingface.co` (HF's separate large-file
+CDN host). Ran it for real: routes 1–2 both `ProxyError('403
+Forbidden')`; route 3's hostname doesn't even resolve via DNS from this
+sandbox — a harder block than a proxy rejection. Real output:
+`../02_Tools/docling/logs/setup_layout_model_run.log`. Left an empty,
+correctly-named drop folder at `../02_Tools/docling/models/
+docling-project--docling-layout-heron/` (with its own README) ready for
+the 3 required files, but created nothing fabricated in it.
+
+**Conclusion unchanged, now backed by a real, re-runnable script rather
+than restated reasoning: no legitimate route from this sandbox reaches
+the model.** No ClickUp writes this pass, no new TC executions attempted
+— nothing changed materially enough to justify running TC27/28/29/31
+again (would just reproduce the same layout failure already on record).
+
 ## 7. What should happen next
 
 Fixture access is no longer the blocker for TC27–TC31. OCR is no longer

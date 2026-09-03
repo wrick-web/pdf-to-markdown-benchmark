@@ -131,6 +131,31 @@ and `docling/models/inference_engines/vlm/_utils.py`
   `PdfPipelineOptions.artifacts_path` — supply the model directory into
   this session, set that env var to its parent folder, and the script
   needs no other change.
+
+### Setup script actually run (2026-09-03)
+
+Wrote and ran `scripts/setup_layout_model.py`: checks every local/HF-cache
+location first (none had the model — confirmed, not assumed), then
+attempts exactly one real download per route, no retries:
+
+1. `huggingface_hub.snapshot_download` (the real path Docling itself
+   uses) — `ProxyError('403 Forbidden')`.
+2. `hf.co` (Hugging Face's own short-alias domain — a genuinely
+   different hostname, not the same URL retried) — `ProxyError('403
+   Forbidden')`.
+3. `cdn-lfs.huggingface.co` (the separate CDN host HF serves large model
+   files from) — DNS resolution itself failed; this host isn't even
+   resolvable from here, a harder block than a proxy rejection.
+
+Real output: `../logs/setup_layout_model_run.log`. Created (but left
+empty — no fabricated files) the target drop folder at
+`../models/docling-project--docling-layout-heron/`, ready for the 3
+required files the moment they're supplied.
+
+**Conclusion: no legitimate route from this sandbox reaches the model.**
+Not one blocked URL retried repeatedly — three genuinely different hosts,
+each tried exactly once, all blocked (two by proxy policy, one at the
+DNS level).
 - **Smaller alternative**: an ONNX export also exists at
   `docling-project/docling-layout-heron-onnx` (`model.onnx` instead of
   `.safetensors`, same `config.json`/`preprocessor_config.json`
