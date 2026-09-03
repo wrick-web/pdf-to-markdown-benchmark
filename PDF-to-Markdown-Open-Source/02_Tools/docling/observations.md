@@ -71,6 +71,33 @@ config choice on Docling's side — layout is not optional in
 - `scripts/run_docling.py` — ready to run once a fixture and model
   access exist; not yet executed successfully against a real fixture.
 
+## Re-verification pass (same day, this session)
+
+Before any further execution attempt, re-checked live rather than
+reusing this file's own prior conclusions:
+
+- `86bbu4wjn` (subject board) re-fetched with subtasks: still only
+  Docling has scenario/TC lines (12); no new subject minted.
+- `86bbr4dmu` (input task) re-fetched with attachments: this time
+  returned full records for all 11 PDFs (id, title, exact byte size),
+  confirming the files genuinely exist as attachments.
+- Requested a fresh signed URL for `briefing_note_BEP-BN-2026-04.pdf`
+  and `curl`'d it immediately (not reused/stale). Result:
+  `connect_rejected`, 403 to CONNECT — confirmed via the egress proxy's
+  own status log as an organization policy denial on the attachment
+  CDN host, not an expired-URL problem.
+- Searched Gmail directly for the 11 filenames as real attachments, and
+  for any message from Pruthviraj or Haresh with an attachment. Zero
+  results either way — Gmail carries no path to the bytes.
+- Re-tested `modelscope.cn` and `huggingface.co` directly by `curl`
+  (not just through Docling) — both still `connect_rejected` / 403.
+  Docling's own two model dependencies are still blocked, independent
+  of the fixture question.
+
+Full detail: `../../03_Benchmark_Results/Round1_Execution_Status.md`
+§6b. Conclusion unchanged: still blocked, on both fronts, freshly
+reconfirmed rather than assumed.
+
 ## Not done, and why
 
 - TC28–TC38 were not separately attempted: both blockers (fixture

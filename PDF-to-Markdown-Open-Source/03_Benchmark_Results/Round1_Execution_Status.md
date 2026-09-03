@@ -120,6 +120,65 @@ renderings of both failures are saved under
 └── observations.md
 ```
 
+## 6b. Second verification pass (same day, this session — re-checked before further execution)
+
+Ajay relayed that approval had moved from planning to execution, with an
+explicit instruction to re-verify the live ClickUp state before running
+anything further (not assume last pass's findings still hold) and to
+retrieve the 11 PDFs via ClickUp/Gmail rather than ask for manual
+uploads. Re-checked everything live rather than reusing the prior
+pass's conclusions:
+
+1. **Subject board re-fetched (`86bbu4wjn` + its 6 children).** Unchanged
+   from §1: still 6 subjects, still only Docling (`86bbu4wm7`) has
+   scenario/TC lines (12). No new subject has execution work minted.
+2. **Input task re-fetched with attachments (`86bbr4dmu`).** This time
+   the fetch returned full attachment records for all 11 PDFs (id,
+   title, exact byte size) — confirming the files genuinely exist on
+   the task, not just referenced in comments. This is new information
+   since the last pass (which had not pulled attachment metadata this
+   directly).
+3. **Attempted a real download of the TC27 fixture** using a freshly
+   issued signed URL (`clickup_download_task_attachment` on
+   `86bbr4dmu` / `briefing_note_BEP-BN-2026-04.pdf`, 105,012 bytes) and
+   `curl`'d it immediately. Result: `connect_rejected`, gateway answered
+   403 to CONNECT — confirmed via the egress proxy's own status endpoint
+   as an organization policy denial on
+   `t9014651757.p.clickup-attachments.com`, not an expired/malformed
+   URL. No partial or empty file was left behind.
+4. **Searched Gmail directly for the PDFs as real attachments** (not
+   ClickUp notification templates) — by filename
+   (`briefing_note_BEP-BN-2026-04`, `bulletin_no_212`, etc.) and by
+   sender (Pruthviraj, Haresh). Zero results both ways. Confirms Gmail
+   carries no path to the actual bytes, not just that one sampled
+   notification email lacked one.
+5. **Re-tested Docling's own two model dependencies directly** (not
+   through Docling — a plain `curl` to the exact URLs from last pass's
+   tracebacks): `www.modelscope.cn` (RapidOCR weights) and
+   `huggingface.co` (docling-layout-heron) both still `connect_rejected`
+   / 403. Even given the real fixture, Docling's standard pipeline still
+   cannot initialize in this sandbox.
+6. **Checked whether the formal validation gate or the 3 flagged
+   clarifications had moved.** `86bbk6p7k` (VALIDATION GATE) is still
+   status "to do" with 2 open dependencies. The 3 comments this project
+   flagged on TC28/TC31/TC38 (`86bbu4wqv`, `86bbu4wwq`, `86bbu4xbx`)
+   each still show 0 replies. Noted as a real discrepancy, not resolved
+   quietly: Ajay's relayed approval to move into execution is being
+   treated as authoritative for this phase per the user's explicit
+   instruction, even though the ClickUp gate task itself has not been
+   formally closed.
+
+**Conclusion: nothing changed materially.** Both blockers from §5 are
+reproduced fresh, with concrete new evidence (a live attachment listing,
+a freshly issued and immediately attempted signed URL, a live proxy
+status log, a live Gmail attachment search, and live re-checks of both
+of Docling's model-download hosts). No execution completed this pass.
+No new screenshots were generated this pass, since nothing new actually
+ran — this phase's instructions explicitly prohibit text-to-image
+renderings as a screenshot substitute, so rather than reuse that
+workaround again, this is simply documented as: no genuine execution
+evidence exists yet to screenshot.
+
 ## 7. What should happen next
 
 Nothing here can be resolved from inside this sandbox. Two independent
