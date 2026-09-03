@@ -220,27 +220,71 @@ length non-table" — confirmed yes, the table is wholly on page 1 of
 `schedule_of_analysis_charges_2026.pdf`. TC38's clarification remains
 open (no TC38 fixture supplied this round).
 
-**Nothing was pushed to git and nothing was written to ClickUp this
-round, per instruction** — awaiting the user's review of this evidence
-before either happens.
+Nothing was written to ClickUp in that same-day pass — per instruction
+at the time, pending the user's review. Both the git push and the
+ClickUp updates happened in the next pass, once the user reviewed this
+evidence and authorized both (§8).
+
+## 8. ClickUp updated; TC32–TC38 attempted and also blocked (same day, next pass)
+
+The user reviewed the TC27–TC31 evidence above and explicitly authorized
+executing and updating ClickUp for the Docling task only. Before posting
+anything, re-read all 12 scenario lines and TC leaf tasks directly from
+ClickUp (not from memory) to confirm IDs, frozen spec text, and capability
+mappings — all matched this repo's `Test_Case_Registry.md` verbatim, no
+drift found. No existing ClickUp comments had been added by anyone else
+since the last check.
+
+**TC32–TC38 (the remaining 7):** attempted to retrieve their fixtures.
+Re-fetched the input task's attachments (all 11 PDFs still listed with
+real IDs/sizes — one, `intertidal_survey_BEP-SR-2026-11.pdf`, now shows
+308,601 bytes, up from the 165,324 bytes recorded in the original
+Fixture_Validation_R1.md pass — flagged, not investigated further, since
+this TC wasn't reachable anyway). Requested a fresh signed URL for
+`monitoring_station_schedule_2026.pdf` (TC32) and attempted the download
+immediately: `connect_rejected`/403, identical to every prior attempt.
+Per the user's own instruction not to waste time repeating a proven
+common blocker, did not repeat the download attempt for the other 5 —
+the same CDN block applies uniformly. **TC32–TC38 marked BLOCKED**: no
+fixture obtained, and — independently — the same Docling model-download
+blocker proven on TC27–TC31 would block them regardless.
+
+**ClickUp updated:** posted one comment each on all 12 TC leaf tasks
+(the "retest anchor" tasks — matching the pattern already established
+for the 3 fixture-validation clarification comments earlier in this
+project), in the Execution / Observation / Result / Evidence format
+requested: TC27 (`86bbu4wnw`), TC28 (`86bbu4wqv`), TC29 (`86bbu4wtf`),
+TC30 (`86bbu4wv1`), TC31 (`86bbu4wwq`), TC32 (`86bbu4wyp`), TC33
+(`86bbu4x0n`), TC34 (`86bbu4x24`), TC35 (`86bbu4x3c`), TC36
+(`86bbu4x8d`), TC37 (`86bbu4xah`), TC38 (`86bbu4xbx`). All 12 posted
+successfully. Nothing else was touched: no status changes, no
+descriptions edited, no other tool's tasks, no parent/input task, no
+benchmark design.
+
+Local evidence restructured to match the exact per-TC template the user
+specified (Input / Execution / Expected / Observed / Output / Evidence /
+Observation / Verdict / Notes) for all 12 TCs:
+`../02_Tools/docling/observations.md`. Git pushed to
+`claude/pdf-markdown-tools-research-59gyda` so the paths referenced in
+the ClickUp comments resolve to real files.
 
 ## 7. What should happen next
 
 Nothing here can be resolved from inside this sandbox. Fixture access is
 no longer the blocker for TC27–TC31 (the user supplied them directly);
-the remaining blocker is Docling itself. Two independent things would
-unblock Docling's 12 TCs:
+the remaining blocker for all 12 is Docling itself. Two independent
+things would unblock full execution:
 
-1. For TC32–TC38 (fixtures not yet supplied): someone with unrestricted
-   network access supplies the remaining PDF bytes directly into this
-   environment (as was done for TC27–TC31 this round), **and**
+1. For TC32–TC38 (fixtures still not obtained): someone with
+   unrestricted network access supplies the remaining 6 PDF bytes
+   directly into this environment (as was done for TC27–TC31), **and**
 2. For all 12 TCs: Docling itself runs somewhere that can reach
    `modelscope.cn` and `huggingface.co` — either a different machine, or
    this same script (`scripts/run_docling.py`) pointed at a pre-cached/
    offline copy of Docling's OCR and layout models if one can be
    supplied through an allowed registry.
 
-Until then, this task recommends **not** re-attempting TC27–TC31 (would
-just reproduce the same two errors) and **not** starting the other 5
+Until then, this task recommends **not** re-attempting TC27–TC38 (would
+just reproduce the same errors) and **not** starting the other 5
 subjects (no scenario/TC lines exist for them yet — that is Pradip's
 `mint_benchmark_board.py` step, not something to do unprompted).
