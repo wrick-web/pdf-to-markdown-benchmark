@@ -179,22 +179,68 @@ renderings as a screenshot substitute, so rather than reuse that
 workaround again, this is simply documented as: no genuine execution
 evidence exists yet to screenshot.
 
+## 6c. Real-fixture execution, TC27–TC31 (same day, this session)
+
+The user manually supplied the 5 real assigned fixtures for TC27–TC31
+(`briefing_note_BEP-BN-2026-04.pdf`, `bulletin_no_212.pdf`,
+`procedure_KAL-SP-06_sample_reception.pdf`,
+`croyde_1974_braithe_order_offprint.pdf`,
+`schedule_of_analysis_charges_2026.pdf`) directly into this session,
+since §6b's attempt to retrieve them via ClickUp/Gmail was still
+blocked. Byte sizes matched the ClickUp attachment records for 4 of the
+5; `procedure_KAL-SP-06_sample_reception.pdf` did not (128,546 bytes
+here vs. 43,662 bytes reported earlier), though page count and content
+matched — flagged, not resolved, in
+`../02_Tools/docling/observations.md`.
+
+**This removed the fixture-retrieval blocker for these 5 TCs, but not
+the tool-level one.** Ran Docling's real default pipeline against each
+real file. All 5 failed identically and reproducibly: RapidOCR's weight
+download from `modelscope.cn` is blocked, confirmed per-file with a
+fresh traceback for each
+(`../02_Tools/docling/logs/TC2{7,8,9}_*_default.log`,
+`TC3{0,1}_*_default.log`). Also confirmed via direct source review
+(`docling/datamodel/layout_model_specs.py`) that every layout-model
+preset Docling ships is Hugging-Face-hosted only, with no bundled/
+offline alternative — so the second-stage failure already proven for
+TC27 (`TC27_briefing_note_do_ocr_false.log`) applies to all 5 by
+construction, not by assumption.
+
+Produced genuine (non-fabricated, non-text-to-image) evidence for all
+5: real `pymupdf` rasterizations of the actual source pages
+(`../02_Tools/docling/screenshots/TC2{7,8,9}*.png`,
+`TC3{0,1}*.png`) plus the real per-file tracebacks. Full 13-point
+evidence record per TC: `../02_Tools/docling/observations.md`.
+
+Two of the fixture-validation clarifications flagged earlier in this
+project were resolved by actually looking at the rendered pages this
+time (not by assumption): TC28's "which page(s) are graded" — all 3
+pages of `bulletin_no_212.pdf` are two-column; and TC31's "is the extra
+length non-table" — confirmed yes, the table is wholly on page 1 of
+`schedule_of_analysis_charges_2026.pdf`. TC38's clarification remains
+open (no TC38 fixture supplied this round).
+
+**Nothing was pushed to git and nothing was written to ClickUp this
+round, per instruction** — awaiting the user's review of this evidence
+before either happens.
+
 ## 7. What should happen next
 
-Nothing here can be resolved from inside this sandbox. Two independent
-things would need to happen, either of which unblocks Docling's 12 TCs:
+Nothing here can be resolved from inside this sandbox. Fixture access is
+no longer the blocker for TC27–TC31 (the user supplied them directly);
+the remaining blocker is Docling itself. Two independent things would
+unblock Docling's 12 TCs:
 
-1. Someone with unrestricted network access supplies the 11 PDF fixture
-   bytes directly into this environment (the same way the original
-   3-PDF set was supplied earlier in this project), **and**
-2. Docling itself runs somewhere that can reach `modelscope.cn` and
-   `huggingface.co` — either a different machine, or this same script
-   (`scripts/run_docling.py`) pointed at a pre-cached/offline copy of
-   Docling's OCR and layout models if one can be supplied through an
-   allowed registry.
+1. For TC32–TC38 (fixtures not yet supplied): someone with unrestricted
+   network access supplies the remaining PDF bytes directly into this
+   environment (as was done for TC27–TC31 this round), **and**
+2. For all 12 TCs: Docling itself runs somewhere that can reach
+   `modelscope.cn` and `huggingface.co` — either a different machine, or
+   this same script (`scripts/run_docling.py`) pointed at a pre-cached/
+   offline copy of Docling's OCR and layout models if one can be
+   supplied through an allowed registry.
 
-Until then, this task recommends **not** re-attempting Docling TC28–38
-(would just reproduce the same two errors) and **not** starting the
-other 5 subjects (no scenario/TC lines exist for them yet — that is
-Pradip's `mint_benchmark_board.py` step, not something to do
-unprompted).
+Until then, this task recommends **not** re-attempting TC27–TC31 (would
+just reproduce the same two errors) and **not** starting the other 5
+subjects (no scenario/TC lines exist for them yet — that is Pradip's
+`mint_benchmark_board.py` step, not something to do unprompted).
