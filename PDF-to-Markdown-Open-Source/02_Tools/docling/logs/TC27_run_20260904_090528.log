@@ -1,0 +1,7 @@
+[32m[INFO] 2026-09-04 09:06:06,311 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-04 09:06:08,806 [RapidOCR] main.py:63: Using /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/RapidOcr/PP-OCRv6_det_small.onnx[0m
+[32m[INFO] 2026-09-04 09:06:09,024 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-04 09:06:09,025 [RapidOCR] main.py:63: Using /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/RapidOcr/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-09-04 09:06:09,067 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-04 09:06:09,067 [RapidOCR] main.py:63: Using /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/RapidOcr/PP-OCRv6_rec_small.onnx[0m
+[docling] FAILED on briefing_note_BEP-BN-2026-04.pdf: RuntimeError('Failed to load model from /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/docling-project--docling-layout-heron: Error while deserializing header: header too large')
