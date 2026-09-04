@@ -210,6 +210,55 @@ this environment can reach. This is not a missing-dependency or
 missing-configuration problem — it's a genuine, structural requirement
 of Docling's real pipeline that this specific sandbox cannot satisfy.
 
+### Local/config bypass routes checked (2026-09-04)
+
+Before closing out TC27–TC29 for the day, checked every locally-available
+route that could avoid needing the downloaded layout model, without
+starting another download/transfer effort:
+
+- **`PdfPipelineOptions(force_backend_text=True, do_ocr=False)`.**
+  Exists on `PdfPipelineOptions` in `docling==2.124.0`. Checked the
+  installed source: `standard_pdf_pipeline.py` builds `self.layout_model`
+  unconditionally (`standard_pdf_pipeline.py:617`) and never reads
+  `force_backend_text` anywhere in that file — it's only consumed by the
+  separate `vlm_pipeline.py` (`VlmPipeline`, a different, VLM-based
+  pipeline that doesn't use the RT-DETR layout model at all). Ran it for
+  real against `briefing_note_BEP-BN-2026-04.pdf` anyway rather than
+  trusting the static read alone: identical failure, identical error, at
+  the same model-load point. Confirmed no-op for `StandardPdfPipeline`.
+  Log: `../logs/TC27_backendtext_20260904_091057.log`.
+- **Registered layout engines (`docling.models.plugins.defaults.layout_engines()`).**
+  Three are registered: `LayoutObjectDetectionModel` and `LayoutModel`
+  (a deprecated shim over the same class, per its own module docstring)
+  both require one of the HF-hosted presets in
+  `datamodel/layout_model_specs.py` (Heron, Heron-101, Egret
+  Medium/Large/XLarge — all `docling-project/docling-layout-*` on HF, no
+  bundled/local alternative). The third, `TableCropsLayoutModel`
+  (`experimental/models/table_crops_layout_model.py`), needs no
+  downloaded model — but by its own docstring it's an internal,
+  not-part-of-the-stable-interface engine that marks the *entire page*
+  as one table cluster, for use only when the input is already a
+  cropped table image. Using it on ordinary text/column/heading fixtures
+  would not exercise Docling's real layout analysis at all — it would
+  produce a degenerate result unrelated to what TC27–TC29 test. Not
+  used, since that would misrepresent the tool's actual behavior rather
+  than test it.
+- **Re-ran the plain pipeline against TC27/TC28/TC29 fixtures directly**
+  (not just TC27 as before) to confirm the same OCR-works /
+  layout-model-fails split holds for each: OCR initialized correctly all
+  three times (bundled ONNX weights, zero network calls); layout model
+  load failed identically all three times
+  (`Error while deserializing header: header too large`, same corrupted
+  `model.safetensors` as documented above). Logs:
+  `../logs/TC27_run_20260904_090528.log`,
+  `../logs/TC29_run_20260904_090643.log`,
+  `../logs/TC30_run_20260904_090654.log`.
+
+**Conclusion:** no local/config/input-level route exists in this
+environment that produces genuine Docling output for a normal
+text/column/heading document without the layout model. The one no-download
+engine that exists is purpose-built for a different input type entirely.
+
 ## What would fully unblock this
 
 `docling`'s own CLI supports exactly this situation:
