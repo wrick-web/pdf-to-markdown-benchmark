@@ -1,0 +1,1 @@
+[docling-backend-text] FAILED on intertidal_survey_BEP-SR-2026-11.pdf: RuntimeError('Failed to load model from /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/docling-project--docling-layout-heron: Error while deserializing header: header too large')

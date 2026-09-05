@@ -1,0 +1,4 @@
+[kreuzberg] OK intertidal_survey_BEP-SR-2026-11.pdf: 6.9s, 5961 chars, 2 images, 0 tables
+ObjectCache(0x7f9a89d6e0a0)::~ObjectCache(): WARNING! LEAK! object 0x7f9a50c7a8c0 still has count 2 (id /usr/share/tesseract-ocr/5/tessdata/eng.traineddatalstm-punc-dawg)
+ObjectCache(0x7f9a89d6e0a0)::~ObjectCache(): WARNING! LEAK! object 0x7f9a50c7aa30 still has count 2 (id /usr/share/tesseract-ocr/5/tessdata/eng.traineddatalstm-word-dawg)
+ObjectCache(0x7f9a89d6e0a0)::~ObjectCache(): WARNING! LEAK! object 0x7f9a50c7a970 still has count 2 (id /usr/share/tesseract-ocr/5/tessdata/eng.traineddatalstm-number-dawg)

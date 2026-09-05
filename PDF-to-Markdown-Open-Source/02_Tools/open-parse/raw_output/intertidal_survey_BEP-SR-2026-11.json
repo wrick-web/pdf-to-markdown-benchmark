@@ -1,0 +1,114 @@
+{
+  "tool": "open-parse",
+  "mode": "base (no [ml] extra)",
+  "input_file": "input/intertidal_survey_BEP-SR-2026-11.pdf",
+  "elapsed_seconds": 0.5256106853485107,
+  "n_nodes": 6,
+  "content_char_count": 5735,
+  "nodes": [
+    {
+      "index": 0,
+      "variant": "{'text'}",
+      "bbox": [
+        {
+          "page": 0,
+          "page_height": 841.8898,
+          "page_width": 595.2756,
+          "x0": 60.0,
+          "y0": 556.22,
+          "x1": 535.28,
+          "y1": 711.81
+        }
+      ],
+      "text_preview": "**Summary**<br><br>The four fixed transects at Kellow Sands and Thrimby Point were resurveyed in January, in the third winter \nsince sediment recharge began. This report sets out the method, the profi",
+      "num_pages": 1
+    },
+    {
+      "index": 1,
+      "variant": "{'text'}",
+      "bbox": [
+        {
+          "page": 0,
+          "page_height": 841.8898,
+          "page_width": 595.2756,
+          "x0": 60.0,
+          "y0": 373.42,
+          "x1": 535.28,
+          "y1": 519.01
+        }
+      ],
+      "text_preview": "**Background**<br><br>The Partnership has surveyed the intertidal at Kellow Sands since 2019, when the four transects were \nestablished to provide a baseline for the sediment recharge then being plann",
+      "num_pages": 1
+    },
+    {
+      "index": 2,
+      "variant": "{'text'}",
+      "bbox": [
+        {
+          "page": 0,
+          "page_height": 841.8898,
+          "page_width": 595.2756,
+          "x0": 60.0,
+          "y0": 124.62,
+          "x1": 535.28,
+          "y1": 336.21
+        }
+      ],
+      "text_preview": "**Method**<br><br>Levels were taken with a total station from the two survey marks used since 2019, at five-metre intervals \nalong each transect and at every break of slope between them. Each line was",
+      "num_pages": 1
+    },
+    {
+      "index": 3,
+      "variant": "{'image', 'text'}",
+      "bbox": [
+        {
+          "page": 1,
+          "page_height": 841.8898,
+          "page_width": 595.2756,
+          "x0": 60.0,
+          "y0": 216.22,
+          "x1": 535.28,
+          "y1": 790.21,
+          "area": 272805.9672
+        }
+      ],
+      "text_preview": "**The transects**<br><br>Transect one runs from the seawall opposite the boatyard to the low water mark, crossing the widest part of \nthe sand. It is the longest of the four lines and the only one on ",
+      "num_pages": 1
+    },
+    {
+      "index": 4,
+      "variant": "{'image', 'text'}",
+      "bbox": [
+        {
+          "page": 2,
+          "page_height": 841.8898,
+          "page_width": 595.2756,
+          "x0": 60.0,
+          "y0": 269.42,
+          "x1": 535.28,
+          "y1": 790.21,
+          "area": 247521.07119999998
+        }
+      ],
+      "text_preview": "**Change since the first survey**<br><br>Change is reported as a mean annual rate over each winter, taken across the whole intertidal part of the \nline. Accretion varied markedly between transects, an",
+      "num_pages": 1
+    },
+    {
+      "index": 5,
+      "variant": "{'text'}",
+      "bbox": [
+        {
+          "page": 3,
+          "page_height": 841.8898,
+          "page_width": 595.2756,
+          "x0": 60.0,
+          "y0": 700.62,
+          "x1": 535.28,
+          "y1": 790.21
+        }
+      ],
+      "text_preview": "**The next survey**<br><br>The profiles themselves, the level books and the mark check sheets are held by the secretariat and are \navailable to Partnership members on request. <br><br>The next survey ",
+      "num_pages": 1
+    }
+  ]
+}

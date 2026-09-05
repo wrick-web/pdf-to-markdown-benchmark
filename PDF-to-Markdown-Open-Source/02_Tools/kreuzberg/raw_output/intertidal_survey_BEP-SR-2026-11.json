@@ -1,0 +1,29 @@
+{
+  "tool": "kreuzberg",
+  "input_file": "input/intertidal_survey_BEP-SR-2026-11.pdf",
+  "elapsed_seconds": 6.9364118576049805,
+  "page_count": 4,
+  "metadata": {
+    "title": "(anonymous)",
+    "subject": "(unspecified)",
+    "authors": [
+      "(anonymous)"
+    ],
+    "created_at": "2026-09-03T12:15:15Z",
+    "created_by": "(unspecified)",
+    "format_type": "pdf",
+    "pdf_version": "1.4",
+    "producer": "ReportLab PDF Library - (opensource)",
+    "is_encrypted": false,
+    "width": 595,
+    "height": 842,
+    "page_count": 4
+  },
+  "content_char_count": 5961,
+  "n_images_extracted": 2,
+  "n_tables_detected": 0,
+  "tables": [],
+  "processing_warnings": [],
+  "detected_languages": null,
+  "output_format": "markdown"
+}

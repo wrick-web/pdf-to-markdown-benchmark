@@ -1,0 +1,10 @@
+kreuzberg version: <function version at 0x7f9a89eee7a0>
+input: input/intertidal_survey_BEP-SR-2026-11.pdf
+config: output_format=markdown, ocr.backend=tesseract, ocr.language=eng, pdf_options.extract_images=True, layout.table_model=tatr, layout.apply_heuristics=True
+started: 2026-09-05 16:10:08
+elapsed_seconds: 6.94
+page_count: 4
+content_char_count: 5961
+n_images_extracted: 2
+n_tables_detected: 0
+processing_warnings: []

@@ -1,0 +1,8 @@
+openparse version: <module 'openparse.version' from '/home/user/pdf-to-markdown-benchmark/.venv_openparse/lib/python3.11/site-packages/openparse/version.py'>
+input: input/intertidal_survey_BEP-SR-2026-11.pdf
+config: base mode (no [ml] extra) - pdfminer.six backbone, no OCR, no ML table model
+workaround applied: tiktoken.get_encoding patched with offline length-based fallback (see module docstring) because openaipublic.blob.core.windows.net is blocked in this sandbox
+started: 2026-09-05 16:09:44
+elapsed_seconds: 0.53
+n_nodes: 6
+content_char_count: 5735
