@@ -1,0 +1,7 @@
+[32m[INFO] 2026-09-05 11:06:20,032 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-05 11:06:20,107 [RapidOCR] main.py:63: Using /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/RapidOcr/PP-OCRv6_det_small.onnx[0m
+[32m[INFO] 2026-09-05 11:06:20,356 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-05 11:06:20,356 [RapidOCR] main.py:63: Using /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/RapidOcr/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-09-05 11:06:20,416 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-05 11:06:20,416 [RapidOCR] main.py:63: Using /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/RapidOcr/PP-OCRv6_rec_small.onnx[0m
+[docling] FAILED on schedule_of_analysis_charges_2026.pdf: RuntimeError('Failed to load model from /tmp/claude-0/-home-user-pdf-to-markdown-benchmark/7b651cba-4646-5e43-b89d-721a8e3b5338/scratchpad/docling_artifacts_staging/docling-project--docling-layout-heron: Error while deserializing header: header too large')
