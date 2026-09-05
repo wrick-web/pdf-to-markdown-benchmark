@@ -259,6 +259,64 @@ environment that produces genuine Docling output for a normal
 text/column/heading document without the layout model. The one no-download
 engine that exists is purpose-built for a different input type entirely.
 
+### Per-scenario component investigation, TC28-TC32 (2026-09-05)
+
+Rather than treating TC28-TC32 as five repeats of "the layout model is
+broken," traced which internal Docling component actually performs each
+scenario's specific capability, and whether that component could be
+exercised independently of the broken layout model. Docling's real PDF
+pipeline stage order (`standard_pdf_pipeline.py`): preprocess (backend
+text/cell parsing - real, working, no ML) -> **layout** (RT-DETR region
+classification - broken here) -> ocr (working) -> layout_postprocess ->
+**reading_order** -> **heading_hierarchy** -> **table** -> assemble.
+
+- **TC28 (reading order).** The actual component is
+  `docling.models.postprocessing.reading_order_rb` - genuinely rule-based
+  (pure geometry + an `rtree` spatial index), not ML. But its
+  `PageElement` input requires a `label: DocItemLabel` already assigned
+  per region - that assignment is the layout stage's output. No
+  labels exist without layout succeeding, so this component has nothing
+  to run on. Hand-building fake labels ourselves would mean testing our
+  own classification, not Docling's, so this was not done.
+- **TC29 (heading hierarchy).** The actual component is
+  `docling.models.stages.heading_hierarchy.heading_hierarchy_model.HeadingHierarchyModel`
+  - also genuinely rule-based (PDF bookmark matching, then legal/outline
+  numbering, then font-size/weight/slant style, in that precedence),
+  explicitly designed to be "reusable outside the pipeline" per its own
+  docstring. It assigns *levels* to headings that already exist as
+  `SectionHeaderItem`s in a `DoclingDocument` - that classification
+  (which text is a heading at all) is, again, the layout stage's output.
+  Same structural blocker as TC28: a real non-ML capability exists, but
+  its input never gets created without layout completing first.
+- **TC30 (footnotes).** Handled by the same `reading_order_rb` module
+  (`DocItemLabel.FOOTNOTE` is checked directly in its ordering logic) -
+  same non-ML component, same blocker as TC28: no `FOOTNOTE`-labeled
+  regions exist without layout.
+- **TC31 (single-page table).** Checked whether table structure could
+  run independently of layout. It cannot, for a *second*, independent
+  reason beyond needing a layout-identified table region: table
+  structure itself (`TableStructureModel`/`TableStructureModelV2` -
+  TableFormer) requires its own separate downloaded model
+  (`docling-project/docling-models` or `docling-project/TableFormerV2`
+  on Hugging Face) via `from_pretrained`/`AutoTokenizer.from_pretrained`
+  - no heuristic/rule-based fallback exists in the installed source.
+  This scenario is doubly blocked: layout (to find the table) and
+  TableFormer (to structure it), neither available locally.
+- **TC32 (cross-page table).** Re-confirmed today: `monitoring_station_schedule_2026.pdf`
+  is not present anywhere in this environment (filesystem-wide search).
+  Not substituted with a different fixture. Even if it were supplied,
+  the same TC31 finding (TableFormer unavailable) would apply on top of
+  layout.
+
+**Conclusion:** Docling genuinely does have non-ML, rule-based
+components for reading order, heading levels, and footnote placement -
+a real architectural fact, not something assumed away. But every one of
+them consumes the layout stage's classified output as its input, and
+none can be independently fed a real `DoclingDocument` without the
+layout model completing first. No fabricated/hand-built input was
+substituted for any of them. TC27-TC32 remain BLOCKED on that basis;
+TC32 additionally on fixture access.
+
 ## What would fully unblock this
 
 `docling`'s own CLI supports exactly this situation:
