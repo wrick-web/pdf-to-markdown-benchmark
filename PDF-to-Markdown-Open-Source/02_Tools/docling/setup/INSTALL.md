@@ -317,6 +317,37 @@ layout model completing first. No fabricated/hand-built input was
 substituted for any of them. TC27-TC32 remain BLOCKED on that basis;
 TC32 additionally on fixture access.
 
+### S32-S38 retry pass (2026-09-07)
+
+Re-checked fixture availability and re-ran real Docling attempts for
+every remaining scenario as part of today's retry:
+
+- **S32** (`monitoring_station_schedule_2026.pdf`), **S35**
+  (`certificate_of_analysis_KAL-11938.pdf`), **S36**
+  (`service_report_KAL-ESR-4471.pdf`), **S37**
+  (`technical_note_TIH-TN-18.pdf`), **S38**
+  (`operations_note_DS-OP-07.pdf`) - all confirmed still absent from
+  this environment (filesystem-wide search). Not substituted with a
+  different fixture.
+- **S33/S34** (`intertidal_survey_BEP-SR-2026-11.pdf`, now available) -
+  re-ran the real pipeline fresh for this pass:
+  `logs/S33_S34_run_20260907_161523.log`. Identical failure to every
+  earlier attempt against this file: layout model load fails
+  (`Error while deserializing header: header too large`).
+- **New finding for S37/S38 specifically**: code/formula enrichment
+  (`do_code_enrichment`/`do_formula_enrichment`, relevant to S37
+  equations and S38 code blocks) is implemented by
+  `docling/models/stages/code_formula/code_formula_model.py`, which -
+  like TableFormer - requires its own separate Hugging Face model
+  (`docling-project/CodeFormulaV2`, via `AutoModelForImageTextToText.from_pretrained`).
+  No heuristic/rule-based fallback exists. So even with a fixture and a
+  working layout model, S37/S38 would hit a second, independent,
+  equally-unavailable model - the same doubled-blocker pattern already
+  found for S31/S32's TableFormer dependency.
+
+No hand-built input was substituted for any missing fixture or
+downstream component in this pass, consistent with every earlier round.
+
 ## What would fully unblock this
 
 `docling`'s own CLI supports exactly this situation:
