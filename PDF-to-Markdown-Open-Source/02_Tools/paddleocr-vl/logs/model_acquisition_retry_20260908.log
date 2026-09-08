@@ -1,0 +1,25 @@
+=== PaddleOCRVL() construction (correct, minimal 2-model tool) ===
+Exception: No available model hosting platforms detected. Please check your network connection.
+(fails at PP-DocLayoutV2 resolution, before PaddleOCR-VL-0.9B is even reached)
+
+=== PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True bypass ===
+Exception: Encounter exception when download model from bos. No model source is available! Please check network or use local model files!
+
+=== Direct huggingface_hub.snapshot_download(repo_id="PaddlePaddle/PP-DocLayoutV2") ===
+HF FAILED: ProxyError 403 Forbidden
+
+=== Direct modelscope.snapshot_download(repo_id="PaddlePaddle/PP-DocLayoutV2") ===
+MODELSCOPE FAILED: NetworkError [E1020] Connection failed: HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with url: /api/v1/models/PaddlePaddle/PP-DocLayoutV2/repo/files?Revision=master&Recursive=True (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+
+=== Direct aistudio_sdk.snapshot_download(repo_id="PaddleX/PP-DocLayoutV2") ===
+AISTUDIO FAILED: ProxyError HTTPSConnectionPool(host='git.aistudio.baidu.com', port=443): Max retries exceeded with url: /api/v1/repos/PaddleX/PP-DocLayoutV2/tags/master (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+
+=== Direct BOS tar download (requests.get) ===
+BOS FAILED: ProxyError HTTPSConnectionPool(host='paddle-model-ecology.bj.bcebos.com', port=443): Max retries exceeded with url: /paddlex/official_inference_model/paddle3.0.0/PP-DocLayoutV2_infer.tar (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden')))
+
+=== Local cache / bundled weights check ===
+No .onnx/.pdmodel/.pdiparams/.safetensors files inside installed paddleocr/paddlex packages.
+~/.paddlex contains only empty lock files, no model weights.
+
+CONCLUSION: all 4 documented model-hosting platforms blocked at network/proxy layer.
+Not a paddlex bug; same organization-wide egress policy seen elsewhere in this project.
