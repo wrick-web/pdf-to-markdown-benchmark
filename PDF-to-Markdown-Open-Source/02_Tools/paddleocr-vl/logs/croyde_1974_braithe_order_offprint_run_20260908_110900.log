@@ -1,0 +1,5 @@
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None, None)[0m
+[33mChecking connectivity to the model hosters, this may take a while. To bypass this check, set `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK` to `True`.[0m
+[33mNo model hoster is available! Please check your network connection to one of the following model hoster: HuggingFace (https://huggingface.co), ModelScope (https://modelscope.cn), AIStudio (https://aistudio.baidu.com), or BOS (https://paddle-model-ecology.bj.bcebos.com). Otherwise, only local models can be used.[0m
+[31mNo available model hosting platforms detected. Please check your network connection.[0m
+[paddleocr-vl] FAILED on croyde_1974_braithe_order_offprint.pdf: Exception('No available model hosting platforms detected. Please check your network connection.')
