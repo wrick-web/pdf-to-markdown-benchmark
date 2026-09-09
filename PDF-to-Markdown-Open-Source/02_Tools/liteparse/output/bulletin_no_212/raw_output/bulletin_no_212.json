@@ -1,0 +1,8 @@
+{
+  "tool": "liteparse",
+  "liteparse_version": "2.14.4",
+  "input_file": "input/bulletin_no_212.pdf",
+  "elapsed_seconds": 0.07900238037109375,
+  "total_pages": 3,
+  "content_char_count": 11921
+}

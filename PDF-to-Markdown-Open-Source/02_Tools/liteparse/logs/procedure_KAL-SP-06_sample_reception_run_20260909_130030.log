@@ -1,0 +1,6 @@
+[liteparse] extract: 12.4ms (4 pages)
+[liteparse] ocr: 741.5ms
+[liteparse] project: 1.4ms
+[liteparse] markdown: 1.6ms
+[liteparse] total: 757.0ms
+[liteparse] OK procedure_KAL-SP-06_sample_reception.pdf: 0.8s, 4 pages, 7840 chars

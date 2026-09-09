@@ -1,0 +1,6 @@
+[liteparse] extract: 24.6ms (7 pages)
+[liteparse] ocr: 8.1ms
+[liteparse] project: 2.0ms
+[liteparse] markdown: 3.6ms
+[liteparse] total: 38.6ms
+[liteparse] OK briefing_note_BEP-BN-2026-04.pdf: 0.1s, 7 pages, 18539 chars

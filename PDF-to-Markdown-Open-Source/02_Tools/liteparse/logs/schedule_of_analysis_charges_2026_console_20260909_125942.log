@@ -1,0 +1,6 @@
+[liteparse] extract: 13.5ms (3 pages)
+[liteparse] ocr: 4.3ms
+[liteparse] project: 1.1ms
+[liteparse] markdown: 1.5ms
+[liteparse] total: 20.6ms
+[liteparse] OK schedule_of_analysis_charges_2026.pdf: 0.1s, 3 pages, 8458 chars

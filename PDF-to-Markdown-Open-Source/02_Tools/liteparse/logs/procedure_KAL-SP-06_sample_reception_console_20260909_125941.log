@@ -1,0 +1,3 @@
+[liteparse] extract: 12.9ms (4 pages)
+[ocr] failed for page 4: failed to download tessdata for language "eng" from https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata: HTTP 403 Forbidden
+[liteparse] FAILED on procedure_KAL-SP-06_sample_reception.pdf: ParseError('OCR failed: OCR failed for all 1 page(s): failed to download tessdata for language "eng" from https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata: HTTP 403 Forbidden')

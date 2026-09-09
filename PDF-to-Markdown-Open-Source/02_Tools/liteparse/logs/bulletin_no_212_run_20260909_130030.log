@@ -1,0 +1,6 @@
+[liteparse] extract: 17.2ms (3 pages)
+[liteparse] ocr: 6.2ms
+[liteparse] project: 1.9ms
+[liteparse] markdown: 3.2ms
+[liteparse] total: 28.8ms
+[liteparse] OK bulletin_no_212.pdf: 0.1s, 3 pages, 11921 chars

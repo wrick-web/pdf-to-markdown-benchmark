@@ -1,0 +1,6 @@
+[liteparse] extract: 15.5ms (4 pages)
+[liteparse] ocr: 687.0ms
+[liteparse] project: 1.3ms
+[liteparse] markdown: 2.2ms
+[liteparse] total: 706.3ms
+[liteparse] OK croyde_1974_braithe_order_offprint.pdf: 0.8s, 4 pages, 10569 chars
