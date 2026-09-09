@@ -2,7 +2,7 @@
   "tool": "liteparse",
   "liteparse_version": "2.14.4",
   "input_file": "input/croyde_1974_braithe_order_offprint.pdf",
-  "elapsed_seconds": 0.7553853988647461,
+  "elapsed_seconds": 0.9618289470672607,
   "total_pages": 4,
   "content_char_count": 10569
 }

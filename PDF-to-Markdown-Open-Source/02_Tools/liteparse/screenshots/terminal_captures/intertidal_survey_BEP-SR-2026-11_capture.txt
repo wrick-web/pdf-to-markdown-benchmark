@@ -1,0 +1,8 @@
+$ source .venv_liteparse/bin/activate
+$ python scripts/run_liteparse.py input/intertidal_survey_BEP-SR-2026-11.pdf output/intertidal_survey_BEP-SR-2026-11
+[liteparse] extract: 49.3ms (4 pages)
+[liteparse] ocr: 811.6ms
+[liteparse] project: 1.1ms
+[liteparse] markdown: 0.9ms
+[liteparse] total: 863.1ms
+[liteparse] OK intertidal_survey_BEP-SR-2026-11.pdf: 0.9s, 4 pages, 5927 chars

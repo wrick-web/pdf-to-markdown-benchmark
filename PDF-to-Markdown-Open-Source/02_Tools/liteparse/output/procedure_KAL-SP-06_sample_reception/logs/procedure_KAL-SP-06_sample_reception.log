@@ -1,7 +1,7 @@
 liteparse version: 2.14.4
 input: input/procedure_KAL-SP-06_sample_reception.pdf
 config: LiteParse(output_format='markdown'), everything else default
-started: 2026-09-09 13:00:30
-elapsed_seconds: 0.81
+started: 2026-09-09 13:28:24
+elapsed_seconds: 0.76
 total_pages: 4
 content_char_count: 7840

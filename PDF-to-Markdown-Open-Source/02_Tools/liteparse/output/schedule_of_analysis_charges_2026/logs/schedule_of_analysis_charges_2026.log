@@ -1,7 +1,7 @@
 liteparse version: 2.14.4
 input: input/schedule_of_analysis_charges_2026.pdf
 config: LiteParse(output_format='markdown'), everything else default
-started: 2026-09-09 13:00:32
-elapsed_seconds: 0.07
+started: 2026-09-09 13:28:26
+elapsed_seconds: 0.08
 total_pages: 3
 content_char_count: 8458

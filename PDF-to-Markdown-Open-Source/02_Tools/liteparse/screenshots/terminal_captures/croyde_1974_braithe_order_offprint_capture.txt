@@ -1,0 +1,8 @@
+$ source .venv_liteparse/bin/activate
+$ python scripts/run_liteparse.py input/croyde_1974_braithe_order_offprint.pdf output/croyde_1974_braithe_order_offprint
+[liteparse] extract: 19.6ms (4 pages)
+[liteparse] ocr: 820.3ms
+[liteparse] project: 1.3ms
+[liteparse] markdown: 2.2ms
+[liteparse] total: 843.6ms
+[liteparse] OK croyde_1974_braithe_order_offprint.pdf: 1.0s, 4 pages, 10569 chars

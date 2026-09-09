@@ -2,7 +2,7 @@
   "tool": "liteparse",
   "liteparse_version": "2.14.4",
   "input_file": "input/procedure_KAL-SP-06_sample_reception.pdf",
-  "elapsed_seconds": 0.8104543685913086,
+  "elapsed_seconds": 0.758934497833252,
   "total_pages": 4,
   "content_char_count": 7840
 }

@@ -1,0 +1,8 @@
+$ source .venv_liteparse/bin/activate
+$ python scripts/run_liteparse.py input/bulletin_no_212.pdf output/bulletin_no_212
+[liteparse] extract: 18.7ms (3 pages)
+[liteparse] ocr: 5.8ms
+[liteparse] project: 2.2ms
+[liteparse] markdown: 3.1ms
+[liteparse] total: 30.1ms
+[liteparse] OK bulletin_no_212.pdf: 0.1s, 3 pages, 11921 chars

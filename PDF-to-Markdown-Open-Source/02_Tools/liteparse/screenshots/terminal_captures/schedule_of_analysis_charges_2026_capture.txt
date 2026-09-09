@@ -1,0 +1,8 @@
+$ source .venv_liteparse/bin/activate
+$ python scripts/run_liteparse.py input/schedule_of_analysis_charges_2026.pdf output/schedule_of_analysis_charges_2026
+[liteparse] extract: 13.8ms (3 pages)
+[liteparse] ocr: 4.0ms
+[liteparse] project: 1.1ms
+[liteparse] markdown: 1.7ms
+[liteparse] total: 21.0ms
+[liteparse] OK schedule_of_analysis_charges_2026.pdf: 0.1s, 3 pages, 8458 chars

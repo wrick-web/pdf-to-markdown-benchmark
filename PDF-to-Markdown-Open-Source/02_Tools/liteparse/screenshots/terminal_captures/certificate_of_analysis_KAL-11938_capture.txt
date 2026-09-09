@@ -1,0 +1,6 @@
+$ curl -sS -o input/certificate_of_analysis_KAL-11938.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" \
+    "https://t9014651757.p.clickup-attachments.com/t9014651757/d05b09e6-bc8e-49c8-ac41-48e8b53f67e3/certificate_of_analysis_KAL-11938.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] connect_rejected: t9014651757.p.clickup-attachments.com:443
+  (the egress proxy denied the CONNECT - organization policy)

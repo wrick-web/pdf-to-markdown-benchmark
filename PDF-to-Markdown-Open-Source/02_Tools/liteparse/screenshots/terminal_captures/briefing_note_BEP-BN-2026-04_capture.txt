@@ -1,0 +1,8 @@
+$ source .venv_liteparse/bin/activate
+$ python scripts/run_liteparse.py input/briefing_note_BEP-BN-2026-04.pdf output/briefing_note_BEP-BN-2026-04
+[liteparse] extract: 472.0ms (7 pages)
+[liteparse] ocr: 7.7ms
+[liteparse] project: 3.6ms
+[liteparse] markdown: 6.9ms
+[liteparse] total: 490.5ms
+[liteparse] OK briefing_note_BEP-BN-2026-04.pdf: 2.0s, 7 pages, 18539 chars

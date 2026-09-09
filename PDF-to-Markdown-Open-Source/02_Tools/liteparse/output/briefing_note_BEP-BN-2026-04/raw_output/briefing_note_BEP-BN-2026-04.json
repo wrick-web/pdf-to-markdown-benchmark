@@ -2,7 +2,7 @@
   "tool": "liteparse",
   "liteparse_version": "2.14.4",
   "input_file": "input/briefing_note_BEP-BN-2026-04.pdf",
-  "elapsed_seconds": 0.09411382675170898,
+  "elapsed_seconds": 1.9534003734588623,
   "total_pages": 7,
   "content_char_count": 18539
 }
