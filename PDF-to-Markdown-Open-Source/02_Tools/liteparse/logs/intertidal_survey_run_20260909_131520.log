@@ -1,0 +1,6 @@
+[liteparse] extract: 47.7ms (4 pages)
+[liteparse] ocr: 805.9ms
+[liteparse] project: 1.0ms
+[liteparse] markdown: 1.1ms
+[liteparse] total: 855.8ms
+[liteparse] OK intertidal_survey_BEP-SR-2026-11.pdf: 0.9s, 4 pages, 5927 chars

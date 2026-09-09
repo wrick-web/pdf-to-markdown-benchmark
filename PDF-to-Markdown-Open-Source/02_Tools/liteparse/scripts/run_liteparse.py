@@ -26,7 +26,8 @@ def main() -> None:
     md_dir = out_dir / "markdown_output"
     raw_dir = out_dir / "raw_output"
     log_dir = out_dir / "logs"
-    for d in (md_dir, raw_dir, log_dir):
+    img_dir = out_dir / "extracted_images"
+    for d in (md_dir, raw_dir, log_dir, img_dir):
         d.mkdir(parents=True, exist_ok=True)
 
     log_lines = [
@@ -53,6 +54,9 @@ def main() -> None:
         parser = LiteParse(
             output_format="markdown",
             tessdata_path=tessdata_path if os.path.isdir(tessdata_path) else None,
+            extract_images=True,
+            image_output_dir=str(img_dir),
+            image_mode="embed",
         )
         result = parser.parse(str(pdf_path))
     except Exception as exc:  # noqa: BLE001
