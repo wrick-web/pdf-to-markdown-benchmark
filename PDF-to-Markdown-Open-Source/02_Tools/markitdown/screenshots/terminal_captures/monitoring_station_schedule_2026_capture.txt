@@ -1,0 +1,4 @@
+$ curl -sS -o input/monitoring_station_schedule_2026.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" \
+    "https://t9014651757.p.clickup-attachments.com/t9014651757/771ea173-552c-4453-b2a4-00333ebce62c/monitoring_station_schedule_2026.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes

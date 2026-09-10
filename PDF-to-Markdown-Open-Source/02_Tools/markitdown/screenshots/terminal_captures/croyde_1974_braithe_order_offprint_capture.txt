@@ -1,0 +1,3 @@
+$ source .venv_markitdown/bin/activate
+$ python scripts/run_markitdown.py input/croyde_1974_braithe_order_offprint.pdf output/croyde_1974_braithe_order_offprint
+[markitdown] OK croyde_1974_braithe_order_offprint.pdf: 1.14s, 11181 chars

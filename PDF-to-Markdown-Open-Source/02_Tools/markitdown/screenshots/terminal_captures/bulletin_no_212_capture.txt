@@ -1,0 +1,3 @@
+$ source .venv_markitdown/bin/activate
+$ python scripts/run_markitdown.py input/bulletin_no_212.pdf output/bulletin_no_212
+[markitdown] OK bulletin_no_212.pdf: 1.16s, 13176 chars

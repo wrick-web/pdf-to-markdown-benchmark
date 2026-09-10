@@ -1,0 +1,3 @@
+$ source .venv_markitdown/bin/activate
+$ python scripts/run_markitdown.py input/intertidal_survey_BEP-SR-2026-11.pdf output/intertidal_survey_BEP-SR-2026-11
+[markitdown] OK intertidal_survey_BEP-SR-2026-11.pdf: 0.55s, 5830 chars

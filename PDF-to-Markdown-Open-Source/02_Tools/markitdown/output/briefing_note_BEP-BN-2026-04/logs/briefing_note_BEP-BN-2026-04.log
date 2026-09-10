@@ -1,0 +1,6 @@
+markitdown version: 0.1.7
+input: input/briefing_note_BEP-BN-2026-04.pdf
+config: MarkItDown(), default convert() call, everything else default
+started: 2026-09-10 13:41:38
+elapsed_seconds: 1.67
+content_char_count: 18948

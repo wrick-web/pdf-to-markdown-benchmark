@@ -1,0 +1,3 @@
+$ source .venv_markitdown/bin/activate
+$ python scripts/run_markitdown.py input/procedure_KAL-SP-06_sample_reception.pdf output/procedure_KAL-SP-06_sample_reception
+[markitdown] OK procedure_KAL-SP-06_sample_reception.pdf: 0.89s, 8224 chars
