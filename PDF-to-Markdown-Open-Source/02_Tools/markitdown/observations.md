@@ -74,3 +74,33 @@ Evidence for every TC (input PDF where obtained, terminal-capture screenshot,
 generated Markdown) is attached directly to its ClickUp subtask and also
 committed under `input/`, `output/`, and `screenshots/terminal_captures/`
 in this directory.
+
+## Re-audit (2026-09-11)
+
+Per explicit instruction, re-examined every TC's existing evidence a second
+time looking specifically for legitimate PASS upgrades and for
+CAN NOT BE GRADED cases that could now genuinely be executed — not to
+inflate the count, but to check the first pass didn't grade anything
+unfairly harshly.
+
+**Result: no verdict changed.** For the 6 executed TCs, each output file was
+re-read directly against its objective a second time:
+- TC27 was the closest call — re-reading the raw output at the page-break
+  boundaries found two concrete, verbatim fusions where the running header
+  is directly adjacent (no blank line) to unrelated body text, e.g.
+  "Braithe Estuary Partnership have shown so far." This is genuine
+  text-level corruption, not merely cosmetic extra lines, so FAIL is
+  confirmed with sharper evidence than the first pass had.
+- TC28/29/31/33/34 were re-checked against their original quoted evidence
+  (column displacement, absent heading markup, misaligned table, absent
+  image) and every one reproduced identically — no reason found to reverse
+  any of them.
+- TC30 was re-checked specifically looking for a reason to *downgrade* the
+  existing PASS (all 13 footnotes individually re-verified) — none found.
+
+For the 6 CAN NOT BE GRADED TCs, fresh signed URLs were requested again
+today and the direct download was re-attempted for all 5 underlying
+fixtures — identical `curl: (56) CONNECT tunnel failed, response 403` each
+time. No new route into this sandbox has opened up since the first pass.
+
+**PASS: 1 · FAIL: 6 · CAN NOT BE GRADED: 6 — unchanged from the first pass.**
