@@ -1,0 +1,6 @@
+markitdown version: 0.1.7
+input: input/operations_note_DS-OP-07.pdf
+config: MarkItDown(), default convert() call, everything else default
+started: 2026-09-11 13:03:48
+elapsed_seconds: 1.46
+content_char_count: 6616

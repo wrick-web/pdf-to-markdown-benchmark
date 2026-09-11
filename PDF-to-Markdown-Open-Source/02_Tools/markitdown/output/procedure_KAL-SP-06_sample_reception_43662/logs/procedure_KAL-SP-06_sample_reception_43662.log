@@ -1,0 +1,6 @@
+markitdown version: 0.1.7
+input: input/procedure_KAL-SP-06_sample_reception_43662.pdf
+config: MarkItDown(), default convert() call, everything else default
+started: 2026-09-11 13:03:49
+elapsed_seconds: 0.66
+content_char_count: 7520
