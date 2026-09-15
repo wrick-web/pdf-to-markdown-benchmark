@@ -1,0 +1,8 @@
+doc2mark version: 0.6.1
+input: input/croyde_1974_braithe_order_offprint.pdf
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False), everything else default
+started: 2026-09-15 07:44:32
+elapsed_seconds: 0.88
+content_char_count: 10441
+tables_detected: 0
+images_detected: 0

@@ -1,0 +1,7 @@
+$ source .venv_doc2mark/bin/activate
+$ python3 scripts/run_doc2mark.py input/croyde_1974_braithe_order_offprint.pdf output/croyde_1974_braithe_order_offprint
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+[doc2mark] OK croyde_1974_braithe_order_offprint.pdf: 0.88s, 10441 chars
+
+$ ls output/croyde_1974_braithe_order_offprint/markdown_output/
+croyde_1974_braithe_order_offprint.md

@@ -1,0 +1,10 @@
+{
+  "tool": "doc2mark",
+  "doc2mark_version": "0.6.1",
+  "input_file": "input/bulletin_no_212.pdf",
+  "elapsed_seconds": 0.9569599628448486,
+  "content_char_count": 12345,
+  "metadata": "DocumentMetadata(filename='bulletin_no_212.pdf', format=<DocumentFormat.PDF: 'pdf'>, size_bytes=146389, page_count=3, word_count=2198, language=None, creation_date=None, modification_date=None, author=None, title=None, sheet_names=None, slide_count=None, line_count=None, header_count=None, link_count=None, image_count=None, total_cells=None, encoding=None, delimiter=None, record_count=None, row_count=None, column_count=None, element_count=None, root_tag=None, frontmatter=None, data_type=None, item_count=None, extra={})",
+  "tables_detected": 0,
+  "images_detected": 0
+}
