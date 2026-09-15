@@ -5,26 +5,34 @@ benchmark PDF.
 
 Usage:
     source .venv_doc2mark/bin/activate
-    python run_doc2mark.py <input.pdf> <tool_output_dir>
+    python run_doc2mark.py <input.pdf> <tool_output_dir> [--patched]
 
 No OCR provider is configured (ocr_provider=None) since none of the TCs run
 in this pass require OCR/image interpretation and doc2mark's default OCR
 path requires an external OpenAI API key, which is out of scope for this
 open-source benchmark.
+
+--patched applies the monkeypatches in scripts/doc2mark_fixes.py (reading
+order, heading-level consistency, all-caps byline heuristic, multi-footnote
+splitting) before running. Without it, this runs stock, unmodified doc2mark
+0.6.1 exactly as in the original TC27-TC32 execution pass.
 """
 import json
 import sys
 import time
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 
 def main() -> None:
-    if len(sys.argv) != 3:
-        print("Usage: run_doc2mark.py <input.pdf> <tool_output_dir>")
+    if len(sys.argv) not in (3, 4):
+        print("Usage: run_doc2mark.py <input.pdf> <tool_output_dir> [--patched]")
         sys.exit(1)
 
     pdf_path = Path(sys.argv[1])
     out_dir = Path(sys.argv[2])
+    patched = len(sys.argv) == 4 and sys.argv[3] == "--patched"
     stem = pdf_path.stem
 
     md_dir = out_dir / "markdown_output"
@@ -37,6 +45,7 @@ def main() -> None:
         f"input: {pdf_path}",
         "config: UnifiedDocumentLoader(ocr_provider=None), "
         "load(extract_images=False, ocr_images=False), everything else default",
+        f"patches applied: {'yes (scripts/doc2mark_fixes.py)' if patched else 'no (stock doc2mark 0.6.1)'}",
         f"started: {time.strftime('%Y-%m-%d %H:%M:%S')}",
     ]
 
@@ -47,6 +56,10 @@ def main() -> None:
         import doc2mark
         log_lines.insert(0, f"doc2mark version: {doc2mark.__version__}")
         from doc2mark import UnifiedDocumentLoader
+
+        if patched:
+            import doc2mark_fixes
+            doc2mark_fixes.apply()
 
         loader = UnifiedDocumentLoader(ocr_provider=None)
         result = loader.load(

@@ -1,0 +1,10 @@
+{
+  "tool": "doc2mark",
+  "doc2mark_version": "0.6.1",
+  "input_file": "input/schedule_of_analysis_charges_2026.pdf",
+  "elapsed_seconds": 0.7739477157592773,
+  "content_char_count": 8770,
+  "metadata": "DocumentMetadata(filename='schedule_of_analysis_charges_2026.pdf', format=<DocumentFormat.PDF: 'pdf'>, size_bytes=93825, page_count=3, word_count=1415, language=None, creation_date=None, modification_date=None, author=None, title=None, sheet_names=None, slide_count=None, line_count=None, header_count=None, link_count=None, image_count=None, total_cells=None, encoding=None, delimiter=None, record_count=None, row_count=None, column_count=None, element_count=None, root_tag=None, frontmatter=None, data_type=None, item_count=None, extra={})",
+  "tables_detected": 0,
+  "images_detected": 0
+}

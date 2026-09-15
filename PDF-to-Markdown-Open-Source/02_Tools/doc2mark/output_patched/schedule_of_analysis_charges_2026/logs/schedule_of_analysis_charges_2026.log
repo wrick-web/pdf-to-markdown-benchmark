@@ -1,0 +1,9 @@
+doc2mark version: 0.6.1
+input: input/schedule_of_analysis_charges_2026.pdf
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False), everything else default
+patches applied: yes (scripts/doc2mark_fixes.py)
+started: 2026-09-15 09:33:21
+elapsed_seconds: 0.77
+content_char_count: 8770
+tables_detected: 0
+images_detected: 0

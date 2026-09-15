@@ -1,0 +1,19 @@
+$ source .venv_doc2mark/bin/activate
+$ python3 scripts/run_doc2mark.py input/briefing_note_BEP-BN-2026-04.pdf output_patched/briefing_note_BEP-BN-2026-04 --patched
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+[doc2mark] OK briefing_note_BEP-BN-2026-04.pdf: 0.95s, 18728 chars
+
+$ diff output/briefing_note_BEP-BN-2026-04/markdown_output/briefing_note_BEP-BN-2026-04.md \
+       output_patched/briefing_note_BEP-BN-2026-04/markdown_output/briefing_note_BEP-BN-2026-04.md
+$ echo "exit code: $?"
+exit code: 0
+(byte-identical -- the shared code changes (reading-order, heading-level
+consistency, all-caps signal, footnote splitting) do not alter this
+fixture's output at all; TC27's PASS is unaffected)
+
+$ diff output/schedule_of_analysis_charges_2026/markdown_output/schedule_of_analysis_charges_2026.md \
+       output_patched/schedule_of_analysis_charges_2026/markdown_output/schedule_of_analysis_charges_2026.md
+$ echo "exit code: $?"
+exit code: 0
+(byte-identical -- TC31 also unaffected by the shared code changes, as
+expected since no table-extraction fix was adopted)

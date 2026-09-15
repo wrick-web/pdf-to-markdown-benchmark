@@ -1,0 +1,9 @@
+doc2mark version: 0.6.1
+input: input/procedure_KAL-SP-06_sample_reception_43662.pdf
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False), everything else default
+patches applied: yes (scripts/doc2mark_fixes.py)
+started: 2026-09-15 09:33:19
+elapsed_seconds: 0.72
+content_char_count: 7591
+tables_detected: 0
+images_detected: 0

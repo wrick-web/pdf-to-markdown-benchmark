@@ -138,3 +138,63 @@ Per explicit instruction, **only TC27–TC32/TC115 were executed or touched in
 this pass.** TC33–TC38 and their scenario tasks (S33–S38) were not inspected,
 not modified, and not executed. No recommendation is made here about
 TC33–TC38; that is deferred to a future round.
+
+## Fix/improvement pass (2026-09-15, second pass)
+
+Per explicit instruction, investigated whether any of the FAILs above could
+be genuinely improved through small, legitimate, reproducible code-level
+fixes — not by hand-editing generated Markdown. Read doc2mark 0.6.1's own
+source directly
+(`.venv_doc2mark/lib/python3.11/site-packages/doc2mark/pipelines/pymupdf_advanced_pipeline.py`)
+to find the actual root cause of each FAIL, then wrote
+`scripts/doc2mark_fixes.py`: a set of monkeypatches applied at runtime (via
+`run_doc2mark.py ... --patched`) on top of the unmodified installed package —
+no files inside doc2mark itself are edited, and every patch wraps and
+delegates to doc2mark's own original method first, so all of its existing
+extraction/classification/table logic is reused unchanged. The full
+reasoning, the exact doc2mark bug each patch targets (with source line
+references), and the regression-check failures caught and fixed along the
+way are documented in that file's module docstring.
+
+**Every fixture was re-run through the patch, including TC27 and TC31, purely
+as a regression check** (`output_patched/<stem>/`, distinct from the original
+`output/<stem>/` evidence, which is preserved unchanged).
+
+### Audit table
+
+| TC | Previous Verdict | New Verdict | What Changed |
+|---|---|---|---|
+| TC27 | PASS | **PASS (unchanged)** | Regression-checked only: patched output is byte-identical to the original (`diff` exit 0). No new evidence needed beyond the regression-check capture. |
+| TC28 | FAIL | **PASS** | Root cause found: `_process_page` sorted all page content purely by `position_y`, with no column/x-awareness at all (confirmed: `doc2mark.core.types.SimpleContent` never stores an x-coordinate). Patched with a column-aware sort that only activates when a page's blocks show real two-cluster x0 evidence (avoiding false positives on single-column pages — caught and fixed twice during regression-checking, see below). Re-run against `bulletin_no_212.pdf`: all 3 previously-quoted displaced fragments now appear in the correct position, and a full manual read-through of the patched output top-to-bottom confirms genuinely correct column-major reading order on all 3 pages, verified line-by-line against the source PDF's own block coordinates. |
+| TC29 | FAIL | **FAIL (unchanged, but improved)** | Root cause found: `_convert_block_to_markdown_with_type` only assigns the H1-equivalent `text:title` type when `page_num == self._get_first_text_page_num()` — a page-position gate, not a font-size one. Patched so a block classified `text:section` (H2) is promoted to `text:title` (H1) whenever its font size matches the single largest heading-candidate size anywhere in the document (computed once, memoized), regardless of page. Re-run: all 15 identically-16pt section headers ("Scope" through "Revision history") now render consistently as `#` instead of 4 as `#` and 11 as `##`. **Verdict stays FAIL** because the scenario objective is the full heading/section structure, and the document's real second- and third-level subsection headers (13pt/12pt: "Chain of custody", "Temperature", etc.) still receive zero Markdown heading markup after the fix — confirmed by grep against the patched output. The fix resolves a genuine, confirmed inconsistency bug but does not make the output satisfy the TC objective. |
+| TC30 | FAIL | **PASS** | Two root causes found and fixed. (1) `_has_heading_layout_signal` treats any all-caps text as a heading signal regardless of font size; patched to require all-caps text be at least body-sized (`size_ratio >= 1.0`) — the byline "HELENA M. CROYDE" (9.6pt vs. a ~10.15pt page-1 average) is no longer misclassified as a heading. (2) When PyMuPDF merges several tightly-spaced footnotes into one block (confirmed: footnotes 8, 9, 10 are one block on page 3), `pdf_to_markdown()`'s footnote-regex only converts the block's first line, silently discarding the rest; patched `_extract_text_as_markdown` to split a merged footnote block into one item per footnote before it ever reaches the unmodified `pdf_to_markdown()`. Re-run: footnotes 9 and 10 are recovered (`[^9]:`, `[^10]:`), and footnotes 12 and 13 — genuinely present on page 4 of the source PDF but also silently dropped in the original run, not previously flagged — are recovered too. All 13 footnotes' content is now present somewhere in the output (footnotes 1–7 remain as plain unbracketed lines, a pre-existing, separate classification path this pass did not touch, but their full text was never lost either way) and the byline is no longer a spurious heading. |
+| TC31 | FAIL | **FAIL (unchanged)** | Investigated: doc2mark already calls `page.find_tables()` (default `strategy="lines"`), which finds 0 tables here because the pricing table is borderless (no ruling lines for PyMuPDF's default detector to see). Tested falling back to `strategy="text"` on the whole page: it does detect *something*, but a 74-row/11-col false positive spanning the entire page — ordinary body paragraphs (e.g. "The charges below apply to samples...") get split into the same number of populated pseudo-columns (10) as the real table's own data rows, so density-based filtering cannot tell them apart on this fixture. A hand-picked clip rectangle around just the table's own coordinates does produce a clean, correct 4-column table via `strategy="text"` — but that requires already knowing where the table is, which is not a legitimate general Doc2Mark workflow change, only a per-file hack. No safe, general, non-regressive fix was found within scope, so **no table-extraction patch was applied** and TC31 remains FAIL, unchanged. |
+| TC32 / TC115 | CAN NOT BE GRADED | **CAN NOT BE GRADED (unchanged)** | One permitted retry: fresh `clickup_download_task_attachment` + immediate `curl`, identical `curl: (56) CONNECT tunnel failed, response 403`. No local copy of this fixture exists anywhere in the repository. Left as CAN NOT BE GRADED per instruction, without further attempts. |
+
+**Updated totals: PASS: 3 · FAIL: 2 · CAN NOT BE GRADED: 1** (previously PASS: 1 · FAIL: 4 · CAN NOT BE GRADED: 1)
+
+### Regression check detail (why this matters)
+
+The reading-order patch (TC28) went through two real, caught-and-fixed
+regressions before being adopted, both found only because *every* fixture —
+not just TC28's own — was re-run through the patch:
+
+1. An initial version classified column membership by block width alone
+   ("narrow" vs. "full-width"), which mis-split `schedule_of_analysis_charges_2026.pdf`
+   (TC31, genuinely single-column): its short heading lines ("How to submit
+   samples", "Containers and preservation") are narrower than its body
+   paragraphs at the *same* x0, and got wrongly treated as a second column,
+   corrupting TC31's (already-FAIL, but differently-shaped) output. Fixed by
+   requiring two-cluster x0 evidence (a large, centrally-located gap) before
+   committing to column-aware reordering at all.
+2. A second version added that clustering check but still mis-fired on
+   `briefing_note_BEP-BN-2026-04.pdf` (TC27, genuinely single-column and
+   already PASSing): a single narrow, isolated "Page N of 7" footer sitting
+   to the right of the body text was enough to manufacture a spurious
+   "two-cluster" gap. Fixed by additionally requiring at least 2 blocks on
+   *each* side of the gap, which a lone footer can never satisfy.
+
+Both were only caught because TC27 and TC31 were re-run as part of this
+pass's regression check, not because they were the TCs being fixed — exactly
+why the instruction to re-run every fixture, not just the one under repair,
+mattered here.

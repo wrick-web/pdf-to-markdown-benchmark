@@ -1,0 +1,66 @@
+$ source .venv_doc2mark/bin/activate
+$ python3 scripts/run_doc2mark.py input/procedure_KAL-SP-06_sample_reception_43662.pdf output_patched/procedure_KAL-SP-06_sample_reception_43662 --patched
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+[doc2mark] OK procedure_KAL-SP-06_sample_reception_43662.pdf: 0.72s, 7591 chars
+
+$ diff output/procedure_KAL-SP-06_sample_reception_43662/markdown_output/procedure_KAL-SP-06_sample_reception_43662.md \
+       output_patched/procedure_KAL-SP-06_sample_reception_43662/markdown_output/procedure_KAL-SP-06_sample_reception_43662.md
+63c63
+< ## Records
+---
+> # Records
+68c68
+< ## Responsibilities
+---
+> # Responsibilities
+85c85
+< ## Identification and booking in
+---
+> # Identification and booking in
+104c104
+< ## Storage capacity
+---
+> # Storage capacity
+110c110
+< ## Weekly clearance
+---
+> # Weekly clearance
+117c117
+< ## Transport boxes and returns
+---
+> # Transport boxes and returns
+124c124
+< ## Out-of-hours deliveries
+---
+> # Out-of-hours deliveries
+131c131
+< ## Deviations
+---
+> # Deviations
+138c138
+< ## Complaints
+---
+> # Complaints
+145c145
+< ## Training
+---
+> # Training
+151c151
+< ## Revision history
+---
+> # Revision history
+
+$ cat output_patched/procedure_KAL-SP-06_sample_reception_43662/logs/procedure_KAL-SP-06_sample_reception_43662.log
+doc2mark version: 0.6.1
+input: input/procedure_KAL-SP-06_sample_reception_43662.pdf
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False)
+patches applied: yes (scripts/doc2mark_fixes.py)
+elapsed_seconds: 0.72
+content_char_count: 7591
+
+$ grep -n "Chain of custody\|Temperature$" output_patched/procedure_KAL-SP-06_sample_reception_43662/markdown_output/procedure_KAL-SP-06_sample_reception_43662.md
+19:Chain of custody
+31:Temperature
+(confirms sub-section headers, 13pt/12pt in the source, still get no markup --
+the fix resolves the H1/H2 inconsistency but not the missing 2nd/3rd heading
+level; verdict stays FAIL, see observation)
