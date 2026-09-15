@@ -1,0 +1,6 @@
+liteparse version: 2.14.4
+input: input/intertidal_survey_BEP-SR-2026-11.pdf
+config: LiteParse(output_format='markdown', tessdata_path='/usr/share/tesseract-ocr/5/tessdata'), extract_images NOT set (default) -- reproduces the first/default-config run described in the TC33/TC34 observations, prior to the explicit extract_images=True re-run
+elapsed_seconds: 1.19
+total_pages: 4
+content_char_count: 5927
