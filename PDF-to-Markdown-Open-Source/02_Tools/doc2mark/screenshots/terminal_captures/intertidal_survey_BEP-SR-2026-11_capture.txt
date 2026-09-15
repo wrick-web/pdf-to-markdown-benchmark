@@ -1,0 +1,38 @@
+$ source .venv_doc2mark/bin/activate
+$ python3 scripts/run_doc2mark.py input/intertidal_survey_BEP-SR-2026-11.pdf output/intertidal_survey_BEP-SR-2026-11 --extract-images
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+[doc2mark] OK intertidal_survey_BEP-SR-2026-11.pdf: 1.02s, 339783 chars, 2 image(s) saved
+
+$ ls output/intertidal_survey_BEP-SR-2026-11/images/
+intertidal_survey_BEP-SR-2026-11_image_0.png
+intertidal_survey_BEP-SR-2026-11_image_1.png
+
+$ file output/intertidal_survey_BEP-SR-2026-11/images/*.png
+intertidal_survey_BEP-SR-2026-11_image_0.png: PNG image data, 1886 x 877, 8-bit/color RGB, non-interlaced
+intertidal_survey_BEP-SR-2026-11_image_1.png: PNG image data, 2970 x 1765, 8-bit/color RGB, non-interlaced
+
+$ python3 -c "
+import fitz
+doc = fitz.open('input/intertidal_survey_BEP-SR-2026-11.pdf')
+for pno, page in enumerate(doc):
+    imgs = page.get_images(full=True)
+    if imgs: print(f'page {pno+1}: {len(imgs)} image(s)')
+"
+page 2: 1 image(s)
+page 3: 1 image(s)
+
+$ python3 -c "
+import re
+md = open('output/intertidal_survey_BEP-SR-2026-11/markdown_output/intertidal_survey_BEP-SR-2026-11.md').read()
+for m in re.finditer(r'<!-- page \d+ -->', md): print(m.start(), m.group())
+for m in re.finditer(r'!\[Image\]', md): print('IMAGE at', m.start())
+"
+2748 <!-- page 2 -->
+189655 <!-- page 3 -->
+339395 <!-- page 4 -->
+IMAGE at 3725
+IMAGE at 189936
+(image 1 lands right after the page-2 marker, image 2 right after the
+page-3 marker -- both images are on their correct source pages and in the
+correct position relative to surrounding text; images visually inspected
+separately -- see TC33/TC34 observations)

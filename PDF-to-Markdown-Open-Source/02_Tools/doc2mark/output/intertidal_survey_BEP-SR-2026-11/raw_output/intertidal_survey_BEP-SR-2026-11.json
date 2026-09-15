@@ -1,0 +1,14 @@
+{
+  "tool": "doc2mark",
+  "doc2mark_version": "0.6.1",
+  "input_file": "input/intertidal_survey_BEP-SR-2026-11.pdf",
+  "elapsed_seconds": 1.023590087890625,
+  "content_char_count": 339783,
+  "metadata": "DocumentMetadata(filename='intertidal_survey_BEP-SR-2026-11.pdf', format=<DocumentFormat.PDF: 'pdf'>, size_bytes=308601, page_count=4, word_count=980, language=None, creation_date=None, modification_date=None, author=None, title=None, sheet_names=None, slide_count=None, line_count=None, header_count=None, link_count=None, image_count=None, total_cells=None, encoding=None, delimiter=None, record_count=None, row_count=None, column_count=None, element_count=None, root_tag=None, frontmatter=None, data_type=None, item_count=None, extra={})",
+  "tables_detected": 0,
+  "images_detected": 2,
+  "images_saved": [
+    "output/intertidal_survey_BEP-SR-2026-11/images/intertidal_survey_BEP-SR-2026-11_image_0.png",
+    "output/intertidal_survey_BEP-SR-2026-11/images/intertidal_survey_BEP-SR-2026-11_image_1.png"
+  ]
+}

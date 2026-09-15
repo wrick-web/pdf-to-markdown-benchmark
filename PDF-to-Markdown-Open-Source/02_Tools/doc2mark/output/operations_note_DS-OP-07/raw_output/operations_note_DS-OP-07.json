@@ -1,0 +1,11 @@
+{
+  "tool": "doc2mark",
+  "doc2mark_version": "0.6.1",
+  "input_file": "input/operations_note_DS-OP-07.pdf",
+  "elapsed_seconds": 0.6920902729034424,
+  "content_char_count": 6642,
+  "metadata": "DocumentMetadata(filename='operations_note_DS-OP-07.pdf', format=<DocumentFormat.PDF: 'pdf'>, size_bytes=80041, page_count=3, word_count=1142, language=None, creation_date=None, modification_date=None, author=None, title=None, sheet_names=None, slide_count=None, line_count=None, header_count=None, link_count=None, image_count=None, total_cells=None, encoding=None, delimiter=None, record_count=None, row_count=None, column_count=None, element_count=None, root_tag=None, frontmatter=None, data_type=None, item_count=None, extra={})",
+  "tables_detected": 0,
+  "images_detected": 0,
+  "images_saved": []
+}

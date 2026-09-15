@@ -1,0 +1,52 @@
+$ source .venv_doc2mark/bin/activate
+$ python3 -c "from doc2mark.ocr.base import OCRProvider; print(list(OCRProvider))"
+[<OCRProvider.OPENAI: 'openai'>, <OCRProvider.VERTEX_AI: 'vertex_ai'>, <OCRProvider.GEMINI: 'gemini'>, <OCRProvider.TESSERACT: 'tesseract'>]
+
+$ python3 -c "import pytesseract"
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'pytesseract'
+
+$ which tesseract && tesseract --version | head -1
+/usr/bin/tesseract
+tesseract 5.3.4
+
+$ pip install pytesseract
+Collecting pytesseract
+  Downloading pytesseract-0.3.13-py3-none-any.whl (14 kB)
+Successfully installed packaging-26.3 pytesseract-0.3.13
+
+$ python3 -c "import pytesseract; print('tesseract binary version seen by pytesseract:', pytesseract.get_tesseract_version())"
+tesseract binary version seen by pytesseract: 5.3.4
+
+$ python3 -c "
+from PIL import Image, ImageDraw
+import pymupdf
+img = Image.new('RGB', (800, 200), 'white')
+draw = ImageDraw.Draw(img)
+draw.text((20, 80), 'Tesseract OCR smoke test 12345', fill='black')
+img.save('/tmp/ocr_smoke.png')
+doc = pymupdf.open()
+page = doc.new_page(width=800, height=200)
+page.insert_image(pymupdf.Rect(0,0,800,200), filename='/tmp/ocr_smoke.png')
+doc.save('/tmp/ocr_smoke_scan.pdf')
+print('text layer on synthetic page:', repr(page.get_text()))
+"
+text layer on synthetic page: ''
+
+$ python3 -c "
+from doc2mark import UnifiedDocumentLoader
+loader = UnifiedDocumentLoader(ocr_provider='tesseract')
+result = loader.load('/tmp/ocr_smoke_scan.pdf', extract_images=True, ocr_images=True, show_progress=False)
+print(repr(result.markdown))
+"
+'Tesseract OG Remoke test 12345'
+
+(this is an ENVIRONMENT CAPABILITY CHECK only, against a locally-synthesized
+image-only test page with no real benchmark content -- NOT a TC35/TC36
+execution and not used as evidence for any TC verdict. It confirms
+doc2mark's local/offline ocr_provider="tesseract" path is genuinely
+installed and functional in this environment, needing no API key. The
+actual TC35/TC36/TC37 fixtures remain unreachable -- see their own capture
+files -- so the blocker for those TCs is fixture access, not an OCR/model
+dependency.)

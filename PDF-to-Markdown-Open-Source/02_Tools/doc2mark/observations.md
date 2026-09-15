@@ -198,3 +198,98 @@ Both were only caught because TC27 and TC31 were re-run as part of this
 pass's regression check, not because they were the TCs being fixed — exactly
 why the instruction to re-run every fixture, not just the one under repair,
 mattered here.
+
+## Second batch: TC33–TC38 (2026-09-15)
+
+Scope strictly limited to S33–S38 / TC33–TC38 per instruction. TC27–TC32/TC115
+were not touched (no execution, no ClickUp changes) except where noted above.
+No later TCs exist beyond TC38 for this tool.
+
+### Fixture mapping (verified against `86bbxat2g`–`86bbxatb3` in ClickUp and
+against `01_Benchmark_Design/Fixture_Validation_R1.md`, not assumed)
+
+| Scenario | TC | Capability | Fixture |
+|---|---|---|---|
+| S33 (`86bbxat2g`) | TC33 (`86bbxat3r`) | C14 Figures & Charts | intertidal_survey_BEP-SR-2026-11.pdf, page 2 (figure + caption) |
+| S34 (`86bbxat4j`) | TC34 (`86bbxat57`) | C14 Figures & Charts | intertidal_survey_BEP-SR-2026-11.pdf, page 3 (data chart) — same file as TC33 |
+| S35 (`86bbxat62`) | TC35 (`86bbxat6z`) | C15 Scanned Document OCR | certificate_of_analysis_KAL-11938.pdf |
+| S36 (`86bbxat7x`) | TC36 (`86bbxat8k`) | C15 Scanned Document OCR | service_report_KAL-ESR-4471.pdf |
+| S37 (`86bbxat9e`) | TC37 (`86bbxatad`) | C16 Equations & Mathematical Notation | technical_note_TIH-TN-18.pdf |
+| S38 (`86bbxatb3`) | TC38 (`86bbxatc8`) | C17 Code Extraction | operations_note_DS-OP-07.pdf |
+
+Per `Fixture_Validation_R1.md`, TC38's fixture carries 3 monospace blocks
+(a Python function, a shell invocation, a block-header example); only the
+indented Python function under "The fix" is the graded region — the shell
+command and header example are explicitly not graded.
+
+### Summary
+
+| TC | Capability | Fixture | Verdict |
+|---|---|---|---|
+| TC33 | C14 Figures & Charts | intertidal_survey_BEP-SR-2026-11.pdf (p.2) | PASS |
+| TC34 | C14 Figures & Charts | intertidal_survey_BEP-SR-2026-11.pdf (p.3) | PASS |
+| TC35 | C15 Scanned Document OCR | certificate_of_analysis_KAL-11938.pdf | CAN NOT BE GRADED (fixture unreachable) |
+| TC36 | C15 Scanned Document OCR | service_report_KAL-ESR-4471.pdf | CAN NOT BE GRADED (fixture unreachable) |
+| TC37 | C16 Equations & Mathematical Notation | technical_note_TIH-TN-18.pdf | CAN NOT BE GRADED (fixture unreachable) |
+| TC38 | C17 Code Extraction | operations_note_DS-OP-07.pdf | FAIL |
+
+**PASS: 2 · FAIL: 1 · CAN NOT BE GRADED: 3** (of 6 TCs this batch)
+
+### Key findings
+
+- **TC33/TC34 (both PASS):** ran with `extract_images=True` (stock, unpatched
+  doc2mark — the reading-order/heading fixes from the first fix pass are
+  unrelated to image handling and were not applied here). Both images
+  extract as real, undamaged, correctly-positioned base64 PNGs (1886×877 and
+  2970×1765, decoded and visually inspected directly, not assumed from a
+  placeholder): the transect-map figure lands immediately after the
+  `<!-- page 2 -->` marker, right after its lead-in sentence ("The plan
+  below shows the four lines..."), followed immediately by its actual
+  caption ("*Figure 1. Survey transects at Kellow Sands and Thrimby
+  Point...*"). The chart lands immediately after the `<!-- page 3 -->`
+  marker and its own section intro, followed by real explanatory text about
+  the plotted rates. Visual inspection of the chart image itself confirms
+  its title ("Mean sediment accretion by transect, winters 2023/24 to
+  2025/26"), both axis labels ("Accretion (mm/yr)", "Transect"), and its
+  3-entry legend are all intact within the image — consistent with this
+  fixture's design intent per `Fixture_Validation_R1.md` ("the chart's
+  twelve values appear nowhere in the text", i.e. a genuine image-only chart
+  that a tool cannot pass by copying visible text).
+- **TC38 (FAIL):** the graded code block — the indented Python function
+  under "The fix" — is rendered with **zero Markdown code-fence markup and
+  zero indentation preserved**. Every line of the function body (`export =
+  Export.open(station)`, `for block in export.blocks(window):`, `if
+  block.checksum_ok():`, etc.) starts at column 0, indistinguishable from
+  surrounding prose; as plain text this is not valid, readable Python. The
+  2 non-graded monospace blocks (shell invocation, block-header example)
+  show the identical pattern (flattened, no fence), for reference.
+- **TC35/TC36/TC37 (CAN NOT BE GRADED):** all 3 required fixtures
+  (`certificate_of_analysis_KAL-11938.pdf`, `service_report_KAL-ESR-4471.pdf`,
+  `technical_note_TIH-TN-18.pdf`) were attempted fresh via
+  `clickup_download_task_attachment` + immediate `curl` — identical
+  `curl: (56) CONNECT tunnel failed, response 403` for all 3, the same
+  organization-policy block confirmed in every prior round of this project.
+  **Separately investigated whether OCR itself would even be usable if the
+  fixtures were reachable:** doc2mark supports 4 OCR providers (`openai`,
+  `vertex_ai`, `gemini`, `tesseract`). The system `tesseract` binary (5.3.4)
+  was already present in this environment; only the `pytesseract` Python
+  wrapper was missing, and was installed (`pip install pytesseract`) as a
+  legitimate, small, reproducible dependency fix. A synthetic, locally-made,
+  image-only test page (no real benchmark content, never used as TC
+  evidence) confirmed `UnifiedDocumentLoader(ocr_provider="tesseract")`
+  genuinely performs local, offline OCR end-to-end with no API key. **This
+  means the TC35/TC36/TC37 blocker is fixture access specifically, not an
+  OCR/model/dependency limitation** — if any of the 3 fixtures becomes
+  reachable in a future round, real OCR grading against it is possible in
+  this same environment.
+
+Evidence for every TC this batch (input PDF where obtained, terminal-capture
+screenshots, generated Markdown, extracted images, execution logs) is
+attached directly to its ClickUp subtask and committed under `input/`,
+`output/`, and `screenshots/terminal_captures/` in this directory.
+
+### Scope note
+
+Per explicit instruction, only TC33–TC38 were executed or touched in this
+batch. TC27–TC32/TC115 were not re-executed or modified. There are no TCs
+beyond TC38 for this tool/round.

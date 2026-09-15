@@ -1,0 +1,29 @@
+$ source .venv_doc2mark/bin/activate
+$ python3 scripts/run_doc2mark.py input/operations_note_DS-OP-07.pdf output/operations_note_DS-OP-07
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+[doc2mark] OK operations_note_DS-OP-07.pdf: 0.69s, 6642 chars, 0 image(s) saved
+
+$ grep -n "^\`\`\`\|def reload_after_reset\|    export = Export" output/operations_note_DS-OP-07/markdown_output/operations_note_DS-OP-07.md
+51:def reload_after_reset(station, reset_at):
+52:export = Export.open(station)
+(zero matches for a code fence "```" anywhere in the file; the graded
+Python function's body lines all start at column 0 -- every level of
+indentation that the source PDF has is gone)
+
+$ sed -n '49,60p' output/operations_note_DS-OP-07/markdown_output/operations_note_DS-OP-07.md
+from tarnbeck.stations import Export, reload_window
+
+def reload_after_reset(station, reset_at):
+export = Export.open(station)
+window = reload_window(reset_at, margin_minutes=45)
+
+for block in export.blocks(window):
+if block.checksum_ok():
+continue
+export.requeue(block, reason="gauge reset")
+
+return export.commit(dry_run=False)
+
+(this is the graded block per this benchmark's ground-truth key -- "the
+indented Python under 'The fix'" -- rendered here with no code fence and
+no indentation at all; as plain text this is not valid, readable Python)
