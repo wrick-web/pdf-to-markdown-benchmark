@@ -1,0 +1,8 @@
+doc2mark version: 0.6.1
+input: input/bulletin_no_212.pdf
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False), everything else default
+started: 2026-09-15 07:44:30
+elapsed_seconds: 0.96
+content_char_count: 12345
+tables_detected: 0
+images_detected: 0
