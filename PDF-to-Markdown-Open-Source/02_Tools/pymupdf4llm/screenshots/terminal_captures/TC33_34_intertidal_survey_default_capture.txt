@@ -1,0 +1,8 @@
+$ source .venv_pymupdf4llm/bin/activate
+$ python3 scripts/run_pymupdf4llm.py input/intertidal_survey_BEP-SR-2026-11.pdf output/intertidal_survey_default
+
+=== Document parser messages ===
+Using Tesseract for OCR processing.
+OCR on page.number=1/2.
+OCR on page.number=2/3.
+[pymupdf4llm] OK intertidal_survey_BEP-SR-2026-11.pdf: 2.63s, 6120 chars -> output/intertidal_survey_default/markdown_output/intertidal_survey_BEP-SR-2026-11.md

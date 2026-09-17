@@ -1,0 +1,5 @@
+$ python3 scripts/run_pymupdf4llm.py input/operations_note_DS-OP-07.pdf output/operations_note_DS-OP-07
+
+=== Document parser messages ===
+Using Tesseract for OCR processing.
+[pymupdf4llm] OK operations_note_DS-OP-07.pdf: 0.63s, 6758 chars -> output/operations_note_DS-OP-07/markdown_output/operations_note_DS-OP-07.md
