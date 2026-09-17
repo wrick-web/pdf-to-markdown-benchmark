@@ -1,0 +1,11 @@
+pymupdf4llm version: 1.28.2
+pymupdf (fitz) version: 1.28.2
+python version: 3.11.15
+input: input/briefing_note_BEP-BN-2026-04.pdf
+input_page_count: 7
+config: pymupdf4llm.to_markdown(input_pdf) -- default, no extra options
+started: 2026-09-17T04:25:43
+elapsed_seconds: 2.13
+result: OK
+output_markdown_path: output/briefing_note_BEP-BN-2026-04/markdown_output/briefing_note_BEP-BN-2026-04.md
+content_char_count: 19238

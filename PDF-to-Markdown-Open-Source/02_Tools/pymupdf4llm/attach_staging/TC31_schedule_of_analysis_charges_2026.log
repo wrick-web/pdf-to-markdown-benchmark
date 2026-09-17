@@ -1,0 +1,11 @@
+pymupdf4llm version: 1.28.2
+pymupdf (fitz) version: 1.28.2
+python version: 3.11.15
+input: input/schedule_of_analysis_charges_2026.pdf
+input_page_count: 3
+config: pymupdf4llm.to_markdown(input_pdf) -- default, no extra options
+started: 2026-09-17T04:26:01
+elapsed_seconds: 0.85
+result: OK
+output_markdown_path: output/schedule_of_analysis_charges_2026/markdown_output/schedule_of_analysis_charges_2026.md
+content_char_count: 8858

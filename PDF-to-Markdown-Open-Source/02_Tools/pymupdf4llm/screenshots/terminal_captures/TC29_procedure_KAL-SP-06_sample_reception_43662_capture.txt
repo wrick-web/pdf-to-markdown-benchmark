@@ -1,0 +1,6 @@
+$ source .venv_pymupdf4llm/bin/activate
+$ python3 scripts/run_pymupdf4llm.py input/procedure_KAL-SP-06_sample_reception_43662.pdf output/procedure_KAL-SP-06_sample_reception_43662
+
+=== Document parser messages ===
+Using Tesseract for OCR processing.
+[pymupdf4llm] OK procedure_KAL-SP-06_sample_reception_43662.pdf: 0.60s, 7664 chars -> output/procedure_KAL-SP-06_sample_reception_43662/markdown_output/procedure_KAL-SP-06_sample_reception_43662.md

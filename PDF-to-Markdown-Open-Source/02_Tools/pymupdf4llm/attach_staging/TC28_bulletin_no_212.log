@@ -1,0 +1,11 @@
+pymupdf4llm version: 1.28.2
+pymupdf (fitz) version: 1.28.2
+python version: 3.11.15
+input: input/bulletin_no_212.pdf
+input_page_count: 3
+config: pymupdf4llm.to_markdown(input_pdf) -- default, no extra options
+started: 2026-09-17T04:25:52
+elapsed_seconds: 1.02
+result: OK
+output_markdown_path: output/bulletin_no_212/markdown_output/bulletin_no_212.md
+content_char_count: 12445

@@ -1,0 +1,6 @@
+$ source .venv_pymupdf4llm/bin/activate
+$ python3 scripts/run_pymupdf4llm.py input/bulletin_no_212.pdf output/bulletin_no_212
+
+=== Document parser messages ===
+Using Tesseract for OCR processing.
+[pymupdf4llm] OK bulletin_no_212.pdf: 1.02s, 12445 chars -> output/bulletin_no_212/markdown_output/bulletin_no_212.md

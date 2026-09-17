@@ -1,0 +1,6 @@
+$ source .venv_pymupdf4llm/bin/activate
+$ python3 scripts/run_pymupdf4llm.py input/schedule_of_analysis_charges_2026.pdf output/schedule_of_analysis_charges_2026
+
+=== Document parser messages ===
+Using Tesseract for OCR processing.
+[pymupdf4llm] OK schedule_of_analysis_charges_2026.pdf: 0.85s, 8858 chars -> output/schedule_of_analysis_charges_2026/markdown_output/schedule_of_analysis_charges_2026.md

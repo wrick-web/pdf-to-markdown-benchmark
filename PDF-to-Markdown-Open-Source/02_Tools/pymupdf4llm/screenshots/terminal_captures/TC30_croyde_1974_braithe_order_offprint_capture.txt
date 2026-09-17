@@ -1,0 +1,6 @@
+$ source .venv_pymupdf4llm/bin/activate
+$ python3 scripts/run_pymupdf4llm.py input/croyde_1974_braithe_order_offprint.pdf output/croyde_1974_braithe_order_offprint
+
+=== Document parser messages ===
+Using Tesseract for OCR processing.
+[pymupdf4llm] OK croyde_1974_braithe_order_offprint.pdf: 0.91s, 10954 chars -> output/croyde_1974_braithe_order_offprint/markdown_output/croyde_1974_braithe_order_offprint.md
