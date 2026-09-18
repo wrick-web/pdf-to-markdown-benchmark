@@ -1,0 +1,7 @@
+paddleocr version: 3.7.0
+paddlex version: 3.7.2
+input: input/intertidal_survey_BEP-SR-2026-11.pdf
+config: PaddleOCRVL(), default construction (pipeline_version='v1.6' == PaddleOCR-VL-1.6), no overrides
+started: 2026-09-18 04:52:36
+elapsed_seconds: 2.55
+ERROR: Exception('No available model hosting platforms detected. Please check your network connection.')

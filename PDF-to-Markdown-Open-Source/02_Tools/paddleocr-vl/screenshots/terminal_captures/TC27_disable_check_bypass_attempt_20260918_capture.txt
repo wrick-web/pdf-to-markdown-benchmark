@@ -1,0 +1,16 @@
+$ PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK=True python scripts/run_paddleocr_vl.py input/briefing_note_BEP-BN-2026-04.pdf /tmp/bypass_test_out
+[32mCreating model: ('PP-DocLayoutV3', None, None)[0m
+[33mConnectivity check to the model hoster has been skipped because `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK` is enabled.[0m
+[32mUsing official model (PP-DocLayoutV3), the model files will be automatically downloaded and saved in `/root/.paddlex/official_models/PP-DocLayoutV3`.[0m
+[33mEncountering exception when download model `PP-DocLayoutV3` from huggingface: 
+403 Forbidden, will try to download from other model sources: `aistudio`.[0m
+[32mUsing official model (PP-DocLayoutV3), the model files will be automatically downloaded and saved in `/root/.paddlex/official_models/PP-DocLayoutV3`.[0m
+[33mEncountering exception when download model `PP-DocLayoutV3` from aistudio: 
+HTTPSConnectionPool(host='git.aistudio.baidu.com', port=443): Max retries exceeded with url: /api/v1/repos/PaddleX/PP-DocLayoutV3/tags/master (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))), will try to download from other model sources: `modelscope`.[0m
+[32mUsing official model (PP-DocLayoutV3), the model files will be automatically downloaded and saved in `/root/.paddlex/official_models/PP-DocLayoutV3`.[0m
+[33mEncountering exception when download model `PP-DocLayoutV3` from modelscope: 
+[E1020] Connection failed: HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with url: /api/v1/models/PaddlePaddle/PP-DocLayoutV3/repo/files?Revision=master&Recursive=True (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 403 Forbidden'))), will try to download from other model sources: `bos`.[0m
+[32mUsing official model (PP-DocLayoutV3), the model files will be automatically downloaded and saved in `/root/.paddlex/official_models/PP-DocLayoutV3`.[0m
+Connecting to https://paddle-model-ecology.bj.bcebos.com/paddlex/official_inference_model/paddle3.0.0/PP-DocLayoutV3_infer.tar ...
+[paddleocr-vl] FAILED on briefing_note_BEP-BN-2026-04.pdf: Exception('Encounter exception when download model from bos. No model source is available! Please check network or use local model files!')
+exit_code: 2

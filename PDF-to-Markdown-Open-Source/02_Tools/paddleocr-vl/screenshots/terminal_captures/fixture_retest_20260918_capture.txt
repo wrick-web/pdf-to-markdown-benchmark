@@ -1,0 +1,44 @@
+=== Fresh retest (2026-09-18) of the 4 fixtures previously found unreachable ===
+=== via ClickUp's attachment CDN, in every tool's round to date ===
+
+$ clickup_download_task_attachment(task_id=86bbr4dmu, attachment_id=771ea173-...monitoring_station_schedule_2026.pdf)
+-> fresh signed URL issued: https://t9014651757.p.clickup-attachments.com/t9014651757/771ea173-.../monitoring_station_schedule_2026.pdf
+$ curl -sS --max-time 30 -o input/monitoring_station_schedule_2026.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] connect_rejected (the egress proxy denied the CONNECT (organization policy) or could not reach the destination)
+
+$ clickup_download_task_attachment(task_id=86bbr4dmu, attachment_id=d05b09e6-...certificate_of_analysis_KAL-11938.pdf)
+-> fresh signed URL issued
+$ curl -sS --max-time 30 -o input/certificate_of_analysis_KAL-11938.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] connect_rejected (the egress proxy denied the CONNECT (organization policy) or could not reach the destination)
+
+$ clickup_download_task_attachment(task_id=86bbr4dmu, attachment_id=c17179a9-...service_report_KAL-ESR-4471.pdf)
+-> fresh signed URL issued
+$ curl -sS --max-time 30 -o input/service_report_KAL-ESR-4471.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] connect_rejected (the egress proxy denied the CONNECT (organization policy) or could not reach the destination)
+
+$ clickup_download_task_attachment(task_id=86bbr4dmu, attachment_id=b558a2d7-...technical_note_TIH-TN-18.pdf)
+-> fresh signed URL issued
+$ curl -sS --max-time 30 -o input/technical_note_TIH-TN-18.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] connect_rejected (the egress proxy denied the CONNECT (organization policy) or could not reach the destination)
+
+CONCLUSION: all 4 fixtures remain unreachable from this sandbox today
+(2026-09-18), same organization-policy egress block seen for every other
+tool's round in this project (Docling, LiteParse, MarkItDown, doc2mark,
+PyMuPDF4LLM). Freshly re-confirmed, not assumed from history.
+
+NOTE: even if these fixtures were reachable, PaddleOCR-VL itself cannot
+process ANY fixture in this sandbox today because model acquisition
+(PP-DocLayoutV3 / PaddleOCR-VL-1.6-0.9B, from all 4 documented hosting
+platforms: HuggingFace, ModelScope, AIStudio, BOS) is also blocked -- see
+TC27_default_hf_attempt_20260918_capture.txt and
+TC27_disable_check_bypass_attempt_20260918_capture.txt. TC32/TC115, TC35,
+TC36 and TC37 are CAN NOT BE GRADED on the model-acquisition blocker alone,
+independent of this fixture-retrieval blocker.

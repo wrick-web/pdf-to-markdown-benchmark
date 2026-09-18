@@ -1,11 +1,12 @@
-# PaddleOCR-VL / PP-StructureV3
+# PaddleOCR-VL
 
 Apache-2.0 · Python · https://github.com/PaddlePaddle/PaddleOCR
 
-**Status: attempted-blocked.** Installed cleanly (`paddleocr[doc-parser]==3.7.0`),
-but both its default (Hugging Face) and documented fallback (Baidu Object
-Storage, `PADDLE_PDX_MODEL_SOURCE=BOS`) model sources are blocked by this
-sandbox's network policy. 0 of 3 benchmark PDFs could be tested. See
-`observations.md` for the exact evidence (`logs/init_attempt_*.log`) and
-`setup/` for full install/reproduce instructions on an unrestricted
-machine.
+**Status: attempted-blocked, reconfirmed fresh 2026-09-18.** Installed cleanly
+(`paddleocr[doc-parser]==3.7.0`, current latest on PyPI; current `PaddleOCRVL`
+pipeline defaults to `pipeline_version="v1.6"` = PaddleOCR-VL-1.6). All 4
+documented model-hosting platforms (Hugging Face, ModelScope, AIStudio, BOS)
+are blocked by this sandbox's egress policy (`connect_rejected`,
+organization policy). 0 of 7 canonical benchmark PDFs could be tested this
+round. See `observations.md` for the full current-vs-historical evidence and
+`setup/` for install/reproduce instructions on an unrestricted machine.

@@ -1,22 +1,20 @@
 #!/usr/bin/env python3
 """
-Run PaddleOCR-VL (PP-StructureV3, PyPI `paddleocr[doc-parser]==3.7.0`)
-against a benchmark PDF.
+Run PaddleOCR-VL against a benchmark PDF using the CURRENT (2026-09-18)
+top-level `PaddleOCRVL` class from `paddleocr==3.7.0` (paddlex==3.7.2),
+default `pipeline_version="v1.6"` (model name "PaddleOCR-VL-1.6", VL
+recognition model "PaddleOCR-VL-1.6-0.9B", layout model "PP-DocLayoutV2" --
+confirmed by reading paddlex/inference/utils/official_models.py directly,
+not assumed).
 
-STATUS AS WRITTEN (2026-09-07): PP-StructureV3 downloads its layout/OCR/
-table/VL models on first use from one of 4 hoster platforms (Hugging Face,
-ModelScope, AIStudio, Baidu Object Storage) - see setup/INSTALL.md for the
-full network-probe evidence. All 4 are blocked by this sandbox's egress
-policy; this script fails inside PPStructureV3() construction, before any
-PDF is touched, for every fixture. Left ready to run as-is the moment
-network access to any of those 4 hosts is available.
+This is the current, correct, minimal 2-model PaddleOCR-VL pipeline
+(distinct from the older 6+-model PPStructureV3 classical pipeline used in
+this project's first attempt on 2026-08-28/2026-09-08).
 
 Usage:
     source .venv_paddleocr/bin/activate
     python run_paddleocr_vl.py <input.pdf> <tool_output_dir>
 """
-import json
-import os
 import sys
 import time
 from pathlib import Path
@@ -39,7 +37,7 @@ def main() -> None:
 
     log_lines = [
         f"input: {pdf_path}",
-        "config: PPStructureV3(), default construction, no overrides",
+        "config: PaddleOCRVL(), default construction (pipeline_version='v1.6' == PaddleOCR-VL-1.6), no overrides",
         f"started: {time.strftime('%Y-%m-%d %H:%M:%S')}",
     ]
 
@@ -48,9 +46,11 @@ def main() -> None:
     try:
         import paddleocr
         log_lines.insert(0, f"paddleocr version: {paddleocr.__version__}")
-        from paddleocr import PPStructureV3
+        import paddlex
+        log_lines.insert(1, f"paddlex version: {paddlex.__version__}")
+        from paddleocr import PaddleOCRVL
 
-        p = PPStructureV3()
+        p = PaddleOCRVL()
         result = list(p.predict(str(pdf_path)))
         for i, res in enumerate(result):
             res.save_to_markdown(str(md_dir))
