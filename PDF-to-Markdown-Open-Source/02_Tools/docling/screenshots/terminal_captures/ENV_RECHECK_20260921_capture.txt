@@ -1,0 +1,32 @@
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://huggingface.co/docling-project/docling-layout-heron/resolve/main/config.json --max-time 15
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://hf.co --max-time 15
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" https://cdn-lfs.huggingface.co --max-time 15
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000
+
+$ uv pip install docling onnxruntime safetensors --python .venv_docling_recheck/bin/python
+ ... (23+ packages installed, including safetensors==0.8.0, docling==2.129.0, onnxruntime==1.30.0)
+
+$ .venv_docling_recheck/bin/pip show safetensors
+Name: safetensors
+Version: 0.8.0
+# safetensors IS installed - disproves the "local package missing" hypothesis
+
+$ .venv_docling_recheck/bin/python scripts/run_docling.py input/bulletin_no_212.pdf /tmp/docling_recheck_20260921
+[INFO] [RapidOCR] Using engine_name: onnxruntime
+[INFO] [RapidOCR] File exists and is valid: .../rapidocr/models/PP-OCRv6_det_small.onnx
+[INFO] [RapidOCR] File exists and is valid: .../rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx
+[INFO] [RapidOCR] File exists and is valid: .../rapidocr/models/PP-OCRv6_rec_small.onnx
+[docling] FAILED on bulletin_no_212.pdf: ProxyError('403 Forbidden')
+
+# NOTE: bulletin_no_212.pdf is NOT the fixture for TC35/36/37 - it is used here ONLY to
+# reconfirm, fresh and for real today (2026-09-21), that the structural blocker (Hugging
+# Face Hub unreachable from this sandbox) still applies, now with safetensors genuinely
+# installed. This run is NOT attached as TC35/36/37 evidence and must not be treated as such.
+# docling version in this recheck: 2.129.0 (repo's earlier documented runs used 2.124.0)

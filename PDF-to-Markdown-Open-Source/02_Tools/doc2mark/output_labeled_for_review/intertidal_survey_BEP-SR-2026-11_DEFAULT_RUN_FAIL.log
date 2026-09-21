@@ -1,0 +1,9 @@
+doc2mark version: 0.6.1
+input: input/intertidal_survey_BEP-SR-2026-11.pdf
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False), everything else default
+patches applied: no (stock doc2mark 0.6.1)
+started: 2026-09-21 05:52:04
+elapsed_seconds: 2.95
+content_char_count: 5755
+tables_detected: 0
+images_detected: 0

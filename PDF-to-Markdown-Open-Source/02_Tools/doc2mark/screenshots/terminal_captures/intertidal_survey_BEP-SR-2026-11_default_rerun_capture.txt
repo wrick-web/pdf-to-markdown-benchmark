@@ -1,0 +1,18 @@
+$ source .venv_doc2mark_recheck/bin/activate
+$ python scripts/run_doc2mark.py input/intertidal_survey_BEP-SR-2026-11.pdf /tmp/tc33_default_rerun
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+[doc2mark] OK intertidal_survey_BEP-SR-2026-11.pdf: 2.95s, 5755 chars, 0 image(s) saved
+
+$ grep -c "Figure 1" markdown_output/intertidal_survey_BEP-SR-2026-11.md
+1
+$ grep -c '!\[' markdown_output/intertidal_survey_BEP-SR-2026-11.md
+0
+# The caption text survived (1 match) but the image markdown tag did not (0 matches) -
+# doc2mark 0.6.1's DEFAULT pipeline (extract_images=False, the actual default) silently
+# drops the figure itself while keeping its caption text as plain prose.
+#
+# doc2mark version: 0.6.1
+# config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False)
+# content_char_count: 5755 (vs 339,785 when extract_images=True was set on the earlier, non-default run)
+# images_detected: 0 (vs 2 when extract_images=True was set)
+# re-run date: 2026-09-21
