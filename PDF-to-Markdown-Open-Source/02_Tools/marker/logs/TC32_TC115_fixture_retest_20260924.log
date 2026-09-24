@@ -1,0 +1,29 @@
+=== Fresh retest (2026-09-24, Marker round) of monitoring_station_schedule_2026.pdf (TC32/TC115 fixture) ===
+
+$ clickup_get_task(task_id=86bbr4dmu, include=["attachments"])
+-> confirms attachment 771ea173-552c-4453-b2a4-00333ebce62c.pdf "monitoring_station_schedule_2026.pdf", 84817 bytes
+
+$ clickup_download_task_attachment(task_id=86bbr4dmu, attachment_id=771ea173-552c-4453-b2a4-00333ebce62c.pdf)
+-> fresh signed URL issued: https://t9014651757.p.clickup-attachments.com/t9014651757/771ea173-.../monitoring_station_schedule_2026.pdf
+
+$ curl -sS --max-time 30 -o input/monitoring_station_schedule_2026.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+
+[agent-proxy] While this command ran, 1 connection through the agent proxy failed:
+- t9014757.p.clickup-attachments.com:443 - connect_rejected (the egress proxy denied the CONNECT (organization policy) or could not reach the destination)
+
+CONCLUSION: fixture remains unreachable from this sandbox today (2026-09-24, Marker round),
+same organization-policy egress block confirmed fresh for every other tool's round in this
+project to date (Docling, LiteParse, MarkItDown, doc2mark, PyMuPDF4LLM, PaddleOCR-VL,
+GPT-5.6 terra, and now Marker). Freshly re-confirmed per project protocol, not assumed
+from history.
+
+This blocker is INDEPENDENT of, and additional to, the separate Marker-specific model-
+acquisition blocker documented in logs/TC27_run.log / TC28_run.log / TC29_run.log /
+TC30_run.log / TC31_run.log (Surya's fast_layout model cannot be downloaded from
+huggingface.co in this sandbox - see /root/.ccr/ __agentproxy/status recentRelayFailures,
+both hosts denied with "policy denial" 403s). Even if the fixture were reachable, Marker's
+default pipeline could not process it in this sandbox for the same reason it cannot
+process any of TC27-31's fixtures. TC32 and TC115 are CAN NOT BE GRADED on two independent
+grounds: fixture unavailability, and (same as TC27-31) model unavailability.
