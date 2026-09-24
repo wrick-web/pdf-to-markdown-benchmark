@@ -1,0 +1,20 @@
+$ curl -sS "$HTTPS_PROXY/__agentproxy/status" | jq .recentRelayFailures
+
+[
+  {"ts":"2026-09-24T13:50:43.484Z","kind":"connect_rejected",
+   "detail":"gateway answered 403 to CONNECT (policy denial or upstream failure)",
+   "host":"models.datalab.to:443"},
+  {"ts":"2026-09-24T13:52:19.115Z","kind":"connect_rejected",
+   "detail":"gateway answered 403 to CONNECT (policy denial or upstream failure)",
+   "host":"models.datalab.to:443"},
+  {"ts":"2026-09-24T13:52:48.545Z","kind":"connect_rejected",
+   "detail":"gateway answered 403 to CONNECT (policy denial or upstream failure)",
+   "host":"huggingface.co:443"},
+  {"ts":"2026-09-24T13:52:48.803Z","kind":"connect_rejected",
+   "detail":"gateway answered 403 to CONNECT (policy denial or upstream failure)",
+   "host":"huggingface.co:443"}
+]
+
+# Authoritative confirmation: this sandbox's egress policy denies both
+# models.datalab.to (cosmetic font asset - worked around locally) and
+# huggingface.co (Surya's real layout model - genuine, unavoidable blocker).
