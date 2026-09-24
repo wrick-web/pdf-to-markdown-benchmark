@@ -1,0 +1,18 @@
+=== Fresh retest (2026-09-24) of monitoring_station_schedule_2026.pdf (TC32/TC115 fixture) ===
+
+$ clickup_download_task_attachment(task_id=86bbr4dmu, attachment_id=771ea173-552c-4453-b2a4-00333ebce62c.pdf)
+-> fresh signed URL issued: https://t9014651757.p.clickup-attachments.com/t9014651757/771ea173-.../monitoring_station_schedule_2026.pdf
+
+$ curl -sS --max-time 30 -o input/monitoring_station_schedule_2026.pdf -w "HTTP %{http_code}, %{size_download} bytes\n" "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+
+CONCLUSION: fixture remains unreachable from this sandbox today (2026-09-24), same
+organization-policy egress block confirmed for every other tool's round in this project
+to date (Docling, LiteParse, MarkItDown, doc2mark, PyMuPDF4LLM, PaddleOCR-VL, and this
+GPT-5.6 terra round). Freshly re-confirmed per project protocol, not assumed from history.
+
+This blocker is independent of the execution-mechanism question (Claude's own direct
+multimodal PDF reading, used for TC27-31 in this round): no execution mechanism can
+process a fixture that was never obtained. TC32 and TC115 are CAN NOT BE GRADED on
+fixture unavailability alone.
