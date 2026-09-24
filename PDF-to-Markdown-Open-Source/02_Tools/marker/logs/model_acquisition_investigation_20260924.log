@@ -1,0 +1,91 @@
+=== Marker/Surya model-acquisition investigation (2026-09-24) ===
+Requested explicitly: confirm rather than assume no legitimate route exists
+before accepting CAN NOT BE GRADED. No bypass/mock/manual-Markdown attempted.
+
+$ env | grep -iE "hf_|hugging|transformers_cache|torch_home|datalab|surya"
+(no output)
+
+$ find / -xdev -maxdepth 8 -iname "models--*"
+(no output - no HF-cache-convention directory exists anywhere)
+
+$ ls -la ~/.cache/huggingface
+ls: cannot access '/root/.cache/huggingface': No such file or directory
+
+$ find / -xdev -ipath "*datalab*"
+/root/.cache/datalab/surya/fast_layout_server.lock
+/root/.cache/datalab/surya/fast_layout_server.log
+(only this round's own lock/log files - no model weights)
+
+$ find .venv_marker/lib/python3.11/site-packages/surya .venv_marker/lib/python3.11/site-packages/marker \
+    -type f \( -iname "*.onnx" -o -iname "*.safetensors" -o -iname "*.bin" -o -iname "*.pt" \
+               -o -iname "*.pth" -o -iname "*.ckpt" -o -iname "*.gguf" \)
+(no output - neither package bundles any model weight file)
+
+$ du -sh .venv_marker/lib/python3.11/site-packages/surya .venv_marker/lib/python3.11/site-packages/marker
+1.2M    surya
+2.6M    marker
+
+--- Network routes, one real attempt each, no retries ---
+
+Route A: huggingface.co (the real path Marker/Surya uses)
+  httpx.get('https://huggingface.co/datalab-to/surya_layout2/resolve/main/config.json')
+  -> FAILED: ProxyError('403 Forbidden')
+
+Route B: hf.co (HF's own short-alias domain)
+  httpx.get('https://hf.co/datalab-to/surya_layout2/resolve/main/config.json')
+  -> FAILED: ProxyError('403 Forbidden')
+
+Route C: cdn-lfs.huggingface.co (HF's separate large-file CDN host)
+  socket.gethostbyname('cdn-lfs.huggingface.co')
+  -> DNS FAILED: [Errno -5] No address associated with hostname
+
+Route D: hf-mirror.com (third-party HF mirror, different domain)
+  httpx.get('https://hf-mirror.com/datalab-to/surya_layout2/resolve/main/config.json')
+  -> FAILED: ProxyError('403 Forbidden')
+
+Route E: datalab.to / www.datalab.to (publisher's own root site)
+  httpx.get('https://www.datalab.to/') -> FAILED: ProxyError('403 Forbidden')
+  httpx.get('https://datalab.to/')     -> FAILED: ProxyError('403 Forbidden')
+
+Route F: api.github.com (checking for a GitHub Releases-hosted weight mirror)
+  httpx.get('https://api.github.com/repos/datalab-to/surya/releases')      -> 403
+  httpx.get('https://api.github.com/repos/VikParuchuri/surya/releases')    -> 403
+  httpx.get('https://api.github.com/repos/VikParuchuri/marker/releases')   -> 403
+
+Route G (control check): raw.githubusercontent.com
+  httpx.get('https://raw.githubusercontent.com/VikParuchuri/marker/master/README.md')
+  -> HTTP 200, 35428 bytes (real content fetched successfully)
+  Confirms this sandbox is not universally offline - the blocks above are a
+  genuine egress allowlist policy, not a blanket network failure.
+
+Route H: PyPI, guessed mirror-package names
+  https://pypi.org/pypi/surya-layout2-weights/json    -> 404
+  https://pypi.org/pypi/surya-layout-weights/json     -> 404
+  https://pypi.org/pypi/surya-models/json             -> 404
+  https://pypi.org/pypi/datalab-surya-weights/json    -> 404
+  (no such packages exist)
+
+--- Authoritative proxy-status corroboration ---
+$ curl -sS "$HTTPS_PROXY/__agentproxy/status"
+recentRelayFailures includes multiple connect_rejected / "policy denial" 403s
+against huggingface.co and models.datalab.to (see TC27's earlier evidence for
+the full JSON). This is an allowlist policy (noProxy explicitly lists only
+registry.npmjs.org, jsr.io, pypi.org, files.pythonhosted.org, index.crates.io,
+proxy.golang.org, and Anthropic's own API hosts) - not a blocklist, so no
+as-yet-untried mirror domain is likely to work either.
+
+--- Fresh TC32/TC115 fixture re-check (repeated as explicitly requested) ---
+$ clickup_download_task_attachment(task_id=86bbr4dmu, attachment_id=771ea173-552c-4453-b2a4-00333ebce62c.pdf)
+-> fresh signed URL issued
+$ curl -sS --max-time 30 -o /tmp/monitoring_recheck.pdf "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] t9014651757.p.clickup-attachments.com:443 - connect_rejected (organization policy)
+CONCLUSION: fixture still unreachable, confirmed fresh again today.
+
+=== FINAL CONCLUSION ===
+No legitimate route from this sandbox reaches Surya's fast_layout model.
+No local cache, no bundled weights, no PyPI/GitHub mirror, all direct/alias/
+third-party-mirror hosts policy-blocked. The original verdict - CAN NOT BE
+GRADED for TC27-31, TC32, TC115 - is CONFIRMED, not changed. Execution halted
+per instruction rather than forcing any workaround.
