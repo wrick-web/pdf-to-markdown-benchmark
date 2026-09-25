@@ -1,0 +1,21 @@
+$ mineru server start
+Server started (PID 768).
+SERVER_START_EXIT:0
+
+$ mineru-models-download --tier basic --source huggingface
+Error: Failed to download MinerU-4_models_onnx: 403 Forbidden
+DOWNLOAD_EXIT:1
+
+$ mineru-models-download --tier basic --source modelscope
+Error: Failed to download MinerU-4_models_onnx: [E1020] Connection failed: 
+HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with 
+url: 
+/api/v1/models/OpenDataLab/MinerU-4_models_onnx/repo/files?Revision=master&Recur
+sive=True (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel 
+connection failed: 403 Forbidden')))
+DOWNLOAD_EXIT:1
+
+$ mineru parse input/briefing_note_BEP-BN-2026-04.pdf --pages all --tier flash --output output/TC27_flash.md -v
+Cache hit — returning cached result.
+Written to /home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/mineru/output/TC27_flash.md
+MINERU_EXIT_CODE:0
