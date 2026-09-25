@@ -1,0 +1,3 @@
+Error: No basic, standard, or advanced engine available. You can start a local 
+parse-server or explicitly pass --tier flash for text-only preview.
+MINERU_EXIT_CODE:1
