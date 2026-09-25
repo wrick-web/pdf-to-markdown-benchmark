@@ -1,0 +1,7 @@
+Error: Failed to download MinerU-4_models_onnx: [E1020] Connection failed: 
+HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with 
+url: 
+/api/v1/models/OpenDataLab/MinerU-4_models_onnx/repo/files?Revision=master&Recur
+sive=True (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel 
+connection failed: 403 Forbidden')))
+DOWNLOAD_EXIT:1
