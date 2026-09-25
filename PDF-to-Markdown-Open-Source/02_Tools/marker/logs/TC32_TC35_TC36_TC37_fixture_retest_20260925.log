@@ -1,0 +1,36 @@
+=== Fresh fixture-access retest (2026-09-25) for TC32/TC115, TC35, TC36, TC37 ===
+Each fixture: fresh clickup_download_task_attachment call -> new signed URL -> immediate single curl.
+
+TC32/TC115 fixture: monitoring_station_schedule_2026.pdf (86bbr4dmu attachment 771ea173-...)
+$ curl --max-time 30 -o input/monitoring_station_schedule_2026.pdf "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+
+TC35 fixture: certificate_of_analysis_KAL-11938.pdf (86bbr4dmu attachment d05b09e6-...)
+$ curl --max-time 30 -o input/certificate_of_analysis_KAL-11938.pdf "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] t9014651757.p.clickup-attachments.com:443 - connect_rejected (organization policy)
+
+TC36 fixture: service_report_KAL-ESR-4471.pdf (86bbr4dmu attachment c17179a9-...)
+$ curl --max-time 30 -o input/service_report_KAL-ESR-4471.pdf "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+[agent-proxy] t9014651757.p.clickup-attachments.com:443 - connect_rejected (organization policy)
+
+TC37 fixture: technical_note_TIH-TN-18.pdf (86bbr4dmu attachment b558a2d7-...)
+$ curl --max-time 30 -o input/technical_note_TIH-TN-18.pdf "<signed url>"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+
+CONCLUSION: all 4 fixtures remain unreachable from this sandbox today (2026-09-25),
+same organization-policy egress block confirmed fresh for every prior round this
+project (including this same tool's own 2026-09-24 round, and PaddleOCR-VL's
+2026-09-18 round for the identical 4 fixtures). Not assumed from history - each
+retested with its own fresh signed URL today.
+
+This is independent of, and in addition to, Marker's own Surya/huggingface.co
+model-acquisition blocker (re-verified separately, see
+model_acquisition_recheck_20260925.log) - even a reachable fixture could not be
+processed by Marker's default pipeline in this sandbox for the same reason
+already established for TC27-31.
