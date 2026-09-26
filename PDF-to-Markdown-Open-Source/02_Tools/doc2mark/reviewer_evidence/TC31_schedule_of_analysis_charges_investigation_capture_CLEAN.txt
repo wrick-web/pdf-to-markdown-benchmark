@@ -1,0 +1,28 @@
+$ source .venv_doc2mark/bin/activate
+$ python3 -c "
+import fitz
+doc = fitz.open('input/schedule_of_analysis_charges_2026.pdf')
+page = doc[0]
+print('default strategy (lines):', len(page.find_tables().tables), 'tables')
+print('lines_strict strategy:  ', len(page.find_tables(strategy='lines_strict').tables), 'tables')
+t = page.find_tables(strategy='text')
+print('text strategy (whole page):', len(t.tables), 'tables, rows=', t.tables[0].row_count, 'cols=', t.tables[0].col_count)
+rows = t.tables[0].extract()
+for i, row in enumerate(rows[:12]):
+    print(i, sum(1 for c in row if c and c.strip()), row[:2])
+"
+default strategy (lines): 0 tables
+lines_strict strategy:   0 tables
+text strategy (whole page): 1 tables, rows= 74 cols= 11
+0 5 ['Kirkhollow', 'Analytic']
+1 0 ['', '']
+2 3 ['Braithe Road, Var', 'denne BR7 2']
+3 5 ['01632 960118 · r', 'eception@ki']
+4 0 ['', '']
+5 5 ['Schedule', 'of Anal']
+6 0 ['', '']
+7 6 ['Applicable from 1', 'April 2026 ·']
+8 0 ['', '']
+9 10 ['The charges bel', 'ow apply to']
+10 0 ['', '']
+11 10 ['exclude value a', 'dded tax. T']
