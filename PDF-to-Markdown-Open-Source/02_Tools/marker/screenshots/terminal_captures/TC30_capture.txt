@@ -1,0 +1,17 @@
+$ .venv_marker/bin/marker_single input/croyde_1974_braithe_order_offprint.pdf --output_dir output/TC30 --output_format markdown
+(default 'fast' CPU mode, no --use_llm, no other flags - Marker's normal configuration)
+
+1:Force-killed fast_layout (pid 1388)
+...
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 403 Forbidden
+MARKER_EXIT_CODE:1

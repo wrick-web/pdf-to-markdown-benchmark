@@ -1,0 +1,8 @@
+Parse queued (tier=flash). Waiting up to 60s...
+  Parse status: parsing
+  Parse status: parsing
+  Parse status: parsing
+  Parse status: parsing
+  Parse status: done
+Written to /home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/mineru/output/TC31.md
+MINERU_EXIT_CODE:0

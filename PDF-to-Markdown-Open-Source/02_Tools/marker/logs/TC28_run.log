@@ -1,0 +1,150 @@
+Force-killed fast_layout (pid 929)
+Traceback (most recent call last):
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/bin/marker_single", line 10, in <module>
+    sys.exit(convert_single_cli())
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/click/core.py", line 1631, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/click/core.py", line 1552, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/click/core.py", line 1415, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/click/core.py", line 910, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/marker/scripts/convert_single.py", line 38, in convert_single_cli
+    rendered = converter(fpath)
+               ^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/marker/converters/pdf.py", line 213, in __call__
+    document = self.build_document(temp_path)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/marker/converters/pdf.py", line 200, in build_document
+    document = DocumentBuilder(self.config)(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/marker/builders/document.py", line 56, in __call__
+    layout_builder(document, provider)
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/marker/builders/layout.py", line 108, in __call__
+    layout_results = self.surya_layout(document.pages, provider)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/marker/builders/layout.py", line 158, in surya_layout
+    raster, model([images[i] for i in raster], use_order=False)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/fast_layout/__init__.py", line 175, in __call__
+    return self._client(images, threshold=threshold, use_order=use_order)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/fast_layout/client.py", line 46, in __call__
+    return self._client.infer(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/common/batch_service/client.py", line 131, in infer
+    self._ensure_started()
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/common/batch_service/client.py", line 81, in _ensure_started
+    spawned = attach_or_spawn(
+              ^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/inference/backends/spawn.py", line 347, in attach_or_spawn
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: fast_layout server failed to become healthy at http://127.0.0.1:34181 within 300.0s.
+--- last fast_layout server logs ---
+           ^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 403 Forbidden
+Traceback (most recent call last):
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpcore/_sync/http_proxy.py", line 297, in handle_request
+    raise ProxyError(msg)
+httpcore.ProxyError: 403 Forbidden
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/fast_layout/server.py", line 115, in <module>
+    main()
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/fast_layout/server.py", line 110, in main
+    engine = LayoutEngine(checkpoint=args.checkpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/fast_layout/server.py", line 29, in __init__
+    model_dir = resolve_model_dir(self.checkpoint)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/surya/common/rfdetr_torch.py", line 190, in resolve_model_dir
+    local = snapshot_download(
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/huggingface_hub/utils/_http.py", line 266, in _inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/huggingface_hub/_snapshot_download.py", line 277, in snapshot_download
+    repo_info = api.repo_info(repo_id=repo_id, repo_type=repo_type, revision=revision)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 3643, in repo_info
+    return method(
+           ^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/huggingface_hub/utils/_validators.py", line 89, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/huggingface_hub/hf_api.py", line 3322, in model_info
+    r = get_session().get(path, headers=headers, timeout=timeout, params=params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 1053, in get
+    return self.request(
+           ^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.11/contextlib.py", line 158, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/marker/.venv_marker/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ProxyError: 403 Forbidden
+MARKER_EXIT_CODE:1
