@@ -1,0 +1,2 @@
+$ mineru parse input/operations_note_DS-OP-07.pdf --pages all --tier flash --output output/TC38.md
+Written to /home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/mineru/output/TC38.md
