@@ -1,0 +1,10 @@
+[32m[INFO] 2026-09-28 12:15:35,910 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-28 12:15:36,014 [RapidOCR] download_file.py:60: File exists and is valid: /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_det_small.onnx[0m
+[32m[INFO] 2026-09-28 12:15:36,014 [RapidOCR] main.py:63: Using /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_det_small.onnx[0m
+[32m[INFO] 2026-09-28 12:15:36,239 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-28 12:15:36,241 [RapidOCR] download_file.py:60: File exists and is valid: /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-09-28 12:15:36,241 [RapidOCR] main.py:63: Using /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-09-28 12:15:36,277 [RapidOCR] base.py:23: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-09-28 12:15:36,298 [RapidOCR] download_file.py:60: File exists and is valid: /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_rec_small.onnx[0m
+[32m[INFO] 2026-09-28 12:15:36,298 [RapidOCR] main.py:63: Using /home/user/pdf-to-markdown-benchmark/.venv_docling/lib/python3.11/site-packages/rapidocr/models/PP-OCRv6_rec_small.onnx[0m
+[docling] FAILED on schedule_of_analysis_charges_2026.pdf: ProxyError('403 Forbidden')
