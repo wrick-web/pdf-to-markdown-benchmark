@@ -1,0 +1,4 @@
+$ curl -sS -o input/technical_note_TIH-TN-18.pdf -w 'HTTP %{http_code}, %{size_download} bytes\n' \
+    "https://t9014651757.p.clickup-attachments.com/t9014651757/879d94ab-db56-4dcb-8ad4-c21d13c31a6a/technical_note_TIH-TN-18.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes

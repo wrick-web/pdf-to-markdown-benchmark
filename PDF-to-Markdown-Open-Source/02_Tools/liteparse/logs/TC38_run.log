@@ -1,0 +1,8 @@
+$ source .venv_liteparse/bin/activate
+$ python scripts/run_liteparse.py input/operations_note_DS-OP-07.pdf output/operations_note_DS-OP-07
+[liteparse] extract: 40.2ms (3 pages)
+[liteparse] ocr: 3.3ms
+[liteparse] project: 1.1ms
+[liteparse] markdown: 1.5ms
+[liteparse] total: 46.1ms
+[liteparse] OK operations_note_DS-OP-07.pdf: 0.1s, 3 pages, 6413 chars

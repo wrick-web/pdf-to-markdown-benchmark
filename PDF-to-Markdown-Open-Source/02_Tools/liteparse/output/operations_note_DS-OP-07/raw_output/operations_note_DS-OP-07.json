@@ -1,0 +1,8 @@
+{
+  "tool": "liteparse",
+  "liteparse_version": "2.14.7",
+  "input_file": "input/operations_note_DS-OP-07.pdf",
+  "elapsed_seconds": 0.11157560348510742,
+  "total_pages": 3,
+  "content_char_count": 6413
+}
