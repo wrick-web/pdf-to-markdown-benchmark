@@ -1,0 +1,3 @@
+$ source .venv_pymupdf4llm/bin/activate
+$ python3 scripts/run_pymupdf4llm.py input/service_report_KAL-ESR-4471.pdf output/service_report_KAL-ESR-4471
+[pymupdf4llm] OK service_report_KAL-ESR-4471.pdf: 1.00s, 1716 chars -> output/service_report_KAL-ESR-4471/markdown_output/service_report_KAL-ESR-4471.md

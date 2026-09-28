@@ -1,0 +1,2 @@
+$ python3 scripts/run_pymupdf4llm.py input/technical_note_TIH-TN-18.pdf output/technical_note_TIH-TN-18
+[pymupdf4llm] OK technical_note_TIH-TN-18.pdf: 0.61s, 5081 chars -> output/technical_note_TIH-TN-18/markdown_output/technical_note_TIH-TN-18.md
