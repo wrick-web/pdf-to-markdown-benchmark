@@ -1,0 +1,28 @@
+TC35 (86bbxanp5) — third claimed host for certificate_of_analysis_KAL-11938.pdf
+Reviewer comment (2026-09-30T11:23:54Z, Pradip Nichite / AI Reviewer):
+  "The fixture itself is on our public CDN, no login, 765,015 bytes:
+   https://d3epheqghktydj.cloudfront.net/research-artifacts/a459554d58b9480b19bb3a63598c500b961c3ad377492d18ff227bb439e1f68c.pdf"
+
+Independent re-test, run fresh in this container (not reused from any prior log):
+
+$ date -u +"%Y-%m-%d %H:%M:%S UTC"
+2026-09-30 12:12:51 UTC
+
+$ curl -sS -o /tmp/claude-0/tc35_test.pdf -w "HTTP %{http_code}, %{size_download} bytes, content-type: %{content_type}\n" --max-time 20 \
+    "https://d3epheqghktydj.cloudfront.net/research-artifacts/a459554d58b9480b19bb3a63598c500b961c3ad377492d18ff227bb439e1f68c.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes, content-type:
+
+[agent-proxy] connect_rejected: d3epheqghktydj.cloudfront.net:443
+  (the egress proxy denied the CONNECT — organization policy)
+
+Confirmed via proxy status endpoint (recentRelayFailures):
+  { "ts": "2026-09-30T12:12:51.884Z", "kind": "connect_rejected",
+    "detail": "gateway answered 403 to CONNECT (policy denial or upstream failure)",
+    "host": "d3epheqghktydj.cloudfront.net:443" }
+
+CONCLUSION: this is the third distinct host offered for this same fixture
+(ClickUp attachment CDN -> admin.aidemos.com -> this CloudFront URL), and all
+three are blocked identically by the sandbox's egress proxy. No bytes
+retrieved. Verdict remains CAN NOT BE GRADED — unchanged from prior rounds.
+No fabricated output produced.
