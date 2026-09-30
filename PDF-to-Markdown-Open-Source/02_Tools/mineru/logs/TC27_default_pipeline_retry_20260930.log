@@ -1,0 +1,25 @@
+$ date -u
+2026-09-30 01:10:49 UTC
+
+$ mineru-models-download --tier basic --source huggingface
+Error: Failed to download MinerU-4_models_onnx: 403 Forbidden
+DOWNLOAD_EXIT:1
+
+$ mineru-models-download --tier basic --source modelscope
+Error: Failed to download MinerU-4_models_onnx: [E1020] Connection failed: 
+HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with 
+url: 
+/api/v1/models/OpenDataLab/MinerU-4_models_onnx/repo/files?Revision=master&Recur
+sive=True (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel 
+connection failed: 403 Forbidden')))
+DOWNLOAD_EXIT:1
+$ mineru parse input/briefing_note_BEP-BN-2026-04.pdf --pages all --force --output output/TC27_default.md -v
+Error: Local mineru server is not running. Run 'mineru server start'.
+MINERU_EXIT_CODE:1
+$ mineru server start
+Server started (PID 489).
+SERVER_START_EXIT:0
+$ mineru parse input/briefing_note_BEP-BN-2026-04.pdf --pages all --force --output output/TC27_default.md -v
+Error: No basic, standard, or advanced engine available. You can start a local 
+parse-server or explicitly pass --tier flash for text-only preview.
+MINERU_EXIT_CODE:1
