@@ -1,0 +1,22 @@
+$ date -u
+2026-09-30 06:38:07 UTC
+
+$ curl -sS -I --max-time 15 https://admin.aidemos.com/
+curl: (56) CONNECT tunnel failed, response 403
+HTTP/1.1 403 Forbidden
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}, %{size_download} bytes\n" --max-time 15 \
+    "https://t9014651757.p.clickup-attachments.com/t9014651757/b558a2d7-d23d-45fd-9979-6a15a6402917/technical_note_TIH-TN-18.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+
+[agent-proxy] connect_rejected: admin.aidemos.com:443 (organization policy)
+[agent-proxy] connect_rejected: t9014651757.p.clickup-attachments.com:443 (organization policy)
+
+Reviewer comment (2026-09-25) claimed technical_note_TIH-TN-18.pdf is reachable
+via a "research-artifacts CDN" through the "PDF to Markdown fixture corpus -
+round 1" resource in admin (admin.aidemos.com), no credential needed.
+Independently re-tested both admin.aidemos.com and the original ClickUp
+attachment CDN at the timestamp above: both still return connect_rejected/403
+in this sandbox, matching the known egress policy re-confirmed in every prior
+round of this project. TC37 fixture remains unreachable; doc2mark was not run.

@@ -1,0 +1,15 @@
+$ date -u
+2026-09-30 06:38:28 UTC
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}, %{size_download} bytes\n" --max-time 15 \
+    "https://t9014651757.p.clickup-attachments.com/t9014651757/771ea173-552c-4453-b2a4-00333ebce62c/monitoring_station_schedule_2026.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000, 0 bytes
+
+[agent-proxy] connect_rejected: t9014651757.p.clickup-attachments.com:443 (organization policy)
+
+Re-audit for TC115 (shares the monitoring_station_schedule_2026.pdf fixture
+with TC32 under S32). Independently re-tested the ClickUp attachment CDN at
+the timestamp above: still connect_rejected/403, matching the known egress
+policy re-confirmed in every prior round of this project. Fixture remains
+unreachable; LiteParse was not run. Verdict unchanged: CAN NOT BE GRADED.
