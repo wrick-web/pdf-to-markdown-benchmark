@@ -1,0 +1,30 @@
+$ date -u
+2026-09-30 06:41:48 UTC
+
+Reviewer comment claimed the model blocker is gone: "paddleocr 3.7.0 fetched
+PP-DocLayoutV3 and PaddleOCR-VL-1.6 from Hugging Face and PaddleOCRVL() built
+cleanly" in their environment, and asked us to re-run the default pipeline
+and report whether the hosts are still blocked here.
+
+Independently re-tested all 4 documented model-hosting platforms (same list
+as the 2026-09-08 exhaustive bypass evidence) at the timestamp above:
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 12 https://huggingface.co/
+curl: (56) CONNECT tunnel failed, response 403
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 12 https://modelscope.cn/
+curl: (56) CONNECT tunnel failed, response 403
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 12 https://git.aistudio.baidu.com/
+curl: (56) CONNECT tunnel failed, response 403
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 12 https://paddle-model-ecology.bj.bcebos.com/
+curl: (56) CONNECT tunnel failed, response 403
+
+[agent-proxy] connect_rejected on all 4 hosts (organization policy)
+
+CONCLUSION: all 4 documented model-hosting platforms remain blocked in this
+sandbox as of 2026-09-30 06:41 UTC. Same organization-wide egress policy as
+every prior round. PaddleOCRVL() was not re-run since model construction
+would fail before touching the fixture, for the same reason already
+documented on 2026-09-08. Verdict unchanged: CAN NOT BE GRADED.
