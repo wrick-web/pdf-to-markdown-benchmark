@@ -1,0 +1,14 @@
+$ date -u
+2026-09-30 08:54:26 UTC
+
+$ sha256sum input/service_report_KAL-ESR-4471.pdf
+096951b8eaf09740a926620943c7eb9b076e80144d76e7a90fb7f77056b6ef83  input/service_report_KAL-ESR-4471.pdf
+(byte-identical to the file already verified and used in the PyMuPDF4LLM/doc2mark
+TC36 sessions - reused directly, not fetched from any network host)
+
+$ source .venv_markitdown/bin/activate
+$ python scripts/run_markitdown.py input/service_report_KAL-ESR-4471.pdf output/service_report_KAL-ESR-4471
+[markitdown] OK service_report_KAL-ESR-4471.pdf: 0.38s, 1780 chars
+
+markitdown version: 0.1.8 (markitdown[pdf], PyPI, Microsoft, MIT license)
+config: MarkItDown(), default convert() call, everything else default

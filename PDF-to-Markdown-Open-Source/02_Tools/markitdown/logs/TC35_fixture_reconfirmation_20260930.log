@@ -1,0 +1,22 @@
+$ date -u
+2026-09-30 08:54:52 UTC
+
+Reviewer claimed certificate_of_analysis_KAL-11938.pdf is downloadable "without
+a login" from "our registry" (a pinned research fixture record), separate from
+the ClickUp attachment host already known to be blocked.
+
+$ curl -sS -I --max-time 15 https://admin.aidemos.com/
+curl: (56) CONNECT tunnel failed, response 403
+HTTP/1.1 403 Forbidden
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 15 https://t9014651757.p.clickup-attachments.com/
+curl: (56) CONNECT tunnel failed, response 403
+
+[agent-proxy] connect_rejected on both hosts (organization policy)
+
+No exact alternate URL was given in the comment beyond "our registry" /
+research admin, and this file is not present anywhere in this environment
+(checked: not cached from any prior tool session, unlike TC36's fixture).
+Both plausible hosts (admin.aidemos.com, the ClickUp attachment CDN) remain
+blocked. Fixture still unreachable; MarkItDown was not run. Verdict unchanged:
+CAN NOT BE GRADED.

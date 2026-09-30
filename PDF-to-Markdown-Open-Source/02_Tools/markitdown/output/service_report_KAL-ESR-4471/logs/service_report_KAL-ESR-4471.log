@@ -1,0 +1,6 @@
+markitdown version: 0.1.8
+input: input/service_report_KAL-ESR-4471.pdf
+config: MarkItDown(), default convert() call, everything else default
+started: 2026-09-30 08:54:26
+elapsed_seconds: 0.38
+content_char_count: 1780
