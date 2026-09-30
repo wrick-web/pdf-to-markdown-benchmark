@@ -1,0 +1,42 @@
+TC115 (86bbxapb6) — PyMuPDF4LLM × S32 cross-page table continuation
+Fixture: sampling_visits_winter_2026.pdf, supplied directly by the user via chat
+(not fetched from any network host). sha256 17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41.
+Content verified against the TC115 canonical spec: 26 visit rows (V-01..V-26),
+row_v15/row_v22/row_v26 values match exactly, V-14 is the last row on page 1
+and V-15 is the first row on page 2 — this is the correct fixture.
+
+$ sha256sum input/sampling_visits_winter_2026.pdf
+17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41  input/sampling_visits_winter_2026.pdf
+
+$ .venv_pymupdf4llm/bin/python scripts/run_pymupdf4llm.py input/sampling_visits_winter_2026.pdf output/sampling_visits_winter_2026
+[pymupdf4llm] OK sampling_visits_winter_2026.pdf: 1.23s, 4085 chars -> output/sampling_visits_winter_2026/markdown_output/sampling_visits_winter_2026.md
+
+pymupdf4llm version: 1.28.2
+pymupdf (fitz) version: 1.28.2
+config: pymupdf4llm.to_markdown(input_pdf) -- default, no extra options
+
+FINDING: identical page-2 continuation bug to LiteParse's TC115 result on
+this same fixture. The running header/page-number furniture ("Page 2 of 2",
+"Braithe Estuary Partnership · Water quality programme") does land between
+the two table blocks rather than inside either table's body, so that part of
+the spec is satisfied — but the table split itself is malformed:
+
+    |V-14|Training Wall east|2026-02-05|07:45|Suspended solids, chloride, nitrogen|J. Marren|
+
+    Page 2 of 2
+
+    Braithe Estuary Partnership  ·  Water quality programme
+
+    |V-15|Lissamer Point|2026-02-05|08:35|Suspended solids, chloride, nitrogen|J. Marren|
+    |---|---|---|---|---|---|
+    |V-16|Kellow Creek head|2026-02-06|11:20|Suspended solids, chloride, orthophosphate|R. Ashby|
+
+V-15's own row content is used AS the header line of the second markdown
+table. Under standard markdown-table parsing, the second table's columns are
+["V-15","Lissamer Point","2026-02-05","08:35","Suspended solids, chloride,
+nitrogen","J. Marren"], not the real six columns. V-15 is not addressable as
+a data row, and V-16 through V-26 are attributed to the wrong column names.
+
+Verdict: FAIL — continuation_rows_keep_headers does not hold under correct
+markdown-table parsing, even though the running-header furniture itself was
+correctly kept out of the table body.

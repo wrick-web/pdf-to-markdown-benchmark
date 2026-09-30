@@ -1,0 +1,49 @@
+TC115 (86bbxat1f) — doc2mark × S32 cross-page table continuation
+Fixture: sampling_visits_winter_2026.pdf, supplied directly by the user via chat
+(not fetched from any network host). sha256 17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41.
+Content verified against the TC115 canonical spec: 26 visit rows (V-01..V-26),
+row_v15/row_v22/row_v26 values match exactly, V-14 is the last row on page 1
+and V-15 is the first row on page 2 — this is the correct fixture.
+
+$ sha256sum input/sampling_visits_winter_2026.pdf
+17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41  input/sampling_visits_winter_2026.pdf
+
+$ .venv_doc2mark/bin/python scripts/run_doc2mark.py input/sampling_visits_winter_2026.pdf output/sampling_visits_winter_2026
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+[doc2mark] OK sampling_visits_winter_2026.pdf: 0.75s, 3979 chars, 0 image(s) saved
+
+doc2mark version: 0.6.1
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False), everything else default
+patches applied: no (stock doc2mark 0.6.1)
+raw_output tables_detected: 0
+raw_output images_detected: 0
+
+FINDING (1): no markdown table structure recovered at all. The output has
+every cell of the table on its own line, with no `|` pipe delimiters and no
+distinguishable header/body split:
+
+    Visit
+    Station
+    Date
+    Time
+    Determinations taken
+    Sampler
+
+    V-01
+    Vardenne Quay
+    2026-01-06
+    09:40
+    Suspended solids, chloride
+    - Marren
+
+The raw_output JSON's own `tables_detected: 0` field confirms doc2mark itself
+did not recognize this as a table.
+
+FINDING (2): sampler-name data corruption. In every one of the 26 rows, the
+sampler's initial is dropped and replaced with a bare "-": "J. Marren" ->
+"- Marren", "R. Ashby" -> "- Ashby", "P. Sowerby" -> "- Sowerby". This is
+reproducible across all 26 occurrences, not a one-off OCR glitch.
+
+Verdict: FAIL — no table structure at all (worse than a malformed
+continuation), plus a distinct sampler-name corruption bug independent of
+the table-structure failure.

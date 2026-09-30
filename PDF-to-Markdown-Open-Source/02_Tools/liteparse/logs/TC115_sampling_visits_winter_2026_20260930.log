@@ -1,0 +1,64 @@
+TC115 (86bbxamq7) — LiteParse × S32 cross-page table continuation
+Fixture: sampling_visits_winter_2026.pdf, supplied directly by the user via chat
+(not fetched from any network host). sha256 17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41.
+Content verified against the TC115 canonical spec: 26 visit rows (V-01..V-26),
+row_v15/row_v22/row_v26 values match exactly, V-14 is the last row on page 1
+and V-15 is the first row on page 2 — this is the correct fixture.
+
+$ sha256sum input/sampling_visits_winter_2026.pdf
+17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41  input/sampling_visits_winter_2026.pdf
+
+First run failed on a genuinely missing local dependency (not a network-host
+claim) — tessdata was never installed in this fresh container:
+
+$ .venv_liteparse/bin/python scripts/run_liteparse.py input/sampling_visits_winter_2026.pdf output/sampling_visits_winter_2026
+[liteparse] extract: 745.6ms (2 pages)
+[ocr] failed for page 2: failed to download tessdata for language "eng" from https://github.com/tesseract-ocr/tessdata_best/raw/main/eng.traineddata: HTTP 403 Forbidden
+[liteparse] FAILED on sampling_visits_winter_2026.pdf: ParseError('OCR failed: OCR failed for all 1 page(s): ...')
+
+Fixed the actual root cause locally (apt package, not a workaround):
+
+$ apt-get install -y tesseract-ocr tesseract-ocr-eng
+...
+Setting up tesseract-ocr (5.3.4-1build5) ...
+$ ls /usr/share/tesseract-ocr/5/tessdata/
+configs  eng.traineddata  osd.traineddata  pdf.ttf  tessconfigs
+
+Re-ran with tessdata now available locally, no network call needed:
+
+$ .venv_liteparse/bin/python scripts/run_liteparse.py input/sampling_visits_winter_2026.pdf output/sampling_visits_winter_2026
+[liteparse] extract: 7.7ms (2 pages)
+[liteparse] ocr: 646.6ms
+[liteparse] project: 126.0ms
+[liteparse] markdown: 6.7ms
+[liteparse] total: 787.0ms
+[liteparse] OK sampling_visits_winter_2026.pdf: 0.8s, 2 pages, 4261 chars
+
+liteparse version: 2.14.7
+config: LiteParse(output_format='markdown'), everything else default
+
+FINDING: page-2 continuation is malformed. Instead of continuing one table or
+opening a second table with the real header row, the raw markdown output is:
+
+    | V-14 | Training Wall east | 2026-02-05 | 07:45 | Suspended solids, chloride, nitrogen | J. Marren |
+
+    -----
+
+    | V-15 | Lissamer Point | 2026-02-05 | 08:35 | Suspended solids, chloride, nitrogen | J. Marren |
+    |---|---|---|---|---|---|
+    | V-16 | Kellow Creek head | 2026-02-06 | 11:20 | Suspended solids, chloride, orthophosphate | R. Ashby |
+
+V-15's own row content is used AS the header line of the second markdown
+table (with a `|---|` separator immediately below it). Any standard
+markdown-table parser reads that second block's columns as literally
+["V-15","Lissamer Point","2026-02-05","08:35","Suspended solids, chloride,
+nitrogen","J. Marren"] — not the real six columns (Visit/Station/Date/Time/
+Determinations taken/Sampler). This means:
+  - V-15 is not addressable as a data row at all (it's structurally a header).
+  - V-16 through V-26 (11 rows) are attributed to the wrong column names,
+    not the real schema.
+
+Verdict: FAIL — continuation_rows_keep_headers and the resulting
+data_row_count/table_relation checks do not hold under correct markdown-table
+parsing, even though the raw text of every row is present somewhere in the
+file.
