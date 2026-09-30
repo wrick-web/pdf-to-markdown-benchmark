@@ -1,0 +1,9 @@
+doc2mark version: 0.6.1
+input: input/sampling_visits_winter_2026.pdf
+config: UnifiedDocumentLoader(ocr_provider=None), load(extract_images=False, ocr_images=False), everything else default
+patches applied: no (stock doc2mark 0.6.1)
+started: 2026-09-30 15:45:20
+elapsed_seconds: 0.75
+content_char_count: 3979
+tables_detected: 0
+images_detected: 0

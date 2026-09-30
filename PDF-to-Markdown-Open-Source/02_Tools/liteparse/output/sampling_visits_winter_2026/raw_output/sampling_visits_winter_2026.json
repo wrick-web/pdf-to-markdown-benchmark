@@ -1,0 +1,8 @@
+{
+  "tool": "liteparse",
+  "liteparse_version": "2.14.7",
+  "input_file": "input/sampling_visits_winter_2026.pdf",
+  "elapsed_seconds": 0.8356497287750244,
+  "total_pages": 2,
+  "content_char_count": 4261
+}
