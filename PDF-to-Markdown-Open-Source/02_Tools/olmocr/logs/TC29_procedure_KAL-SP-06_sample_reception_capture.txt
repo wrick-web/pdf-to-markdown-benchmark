@@ -1,0 +1,41 @@
+$ olmocr workspace/TC29 --markdown --pdfs input/procedure_KAL-SP-06_sample_reception.pdf
+INFO:botocore.credentials:Found credentials in environment variables.
+2026-10-01 05:39:06,094 - olmocr.pipeline - INFO - If you run out of GPU memory during start-up or get 'KV cache is larger than available memory' errors, retry with lower values, e.g. --gpu_memory_utilization 0.80  --max_model_len 16384
+INFO:olmocr.check:pdftoppm is installed and working.
+2026-10-01 05:39:06,109 - olmocr.pipeline - INFO - Got --pdfs argument, going to add to the work queue
+2026-10-01 05:39:06,109 - olmocr.pipeline - INFO - Loading file at input/procedure_KAL-SP-06_sample_reception_43662.pdf as PDF document
+2026-10-01 05:39:06,109 - olmocr.pipeline - INFO - Found 1 regular pdf paths and 0 tarballs to add
+
+Sampling PDFs to calculate optimal length:   0%|          | 0/1 [00:00<?, ?it/s]
+Sampling PDFs to calculate optimal length: 100%|██████████| 1/1 [00:00<00:00, 575.59it/s]
+2026-10-01 05:39:06,112 - olmocr.pipeline - INFO - Calculated items_per_group: 166 based on average pages per PDF: 3.00
+/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/olmocr/.venv_olmocr/lib/python3.11/site-packages/torch/_subclasses/functional_tensor.py:368: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at /__w/pytorch/pytorch/torch/csrc/utils/tensor_numpy.cpp:84.)
+  cpu = _conversion_method_template(device=torch.device("cpu"))
+ERROR:olmocr.check:Torch was not able to find a GPU with at least 15 GB of RAM.
+Traceback (most recent call last):
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/olmocr/.venv_olmocr/bin/olmocr", line 6, in <module>
+    sys.exit(cli_main())
+             ^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/olmocr/.venv_olmocr/lib/python3.11/site-packages/olmocr/pipeline.py", line 1528, in cli_main
+    return asyncio.run(main())
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/olmocr/.venv_olmocr/lib/python3.11/site-packages/olmocr/pipeline.py", line 1425, in main
+    check_torch_gpu_available()
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/olmocr/.venv_olmocr/lib/python3.11/site-packages/olmocr/check.py", line 38, in check_torch_gpu_available
+    gpu_memory = torch.cuda.get_device_properties(0).total_memory
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/olmocr/.venv_olmocr/lib/python3.11/site-packages/torch/cuda/__init__.py", line 799, in get_device_properties
+    _lazy_init()  # will define _get_device_properties
+    ^^^^^^^^^^^^
+  File "/home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/olmocr/.venv_olmocr/lib/python3.11/site-packages/torch/cuda/__init__.py", line 591, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
