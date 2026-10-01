@@ -1,0 +1,41 @@
+$ ls input/monitoring_station_schedule_2026.pdf
+ls: cannot access 'input/monitoring_station_schedule_2026.pdf': No such file or directory
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 10 \
+    "https://t9014651757.p.clickup-attachments.com/t9014651757/771ea173-552c-4453-b2a4-00333ebce62c/monitoring_station_schedule_2026.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000
+
+$ curl -sS -o /dev/null -w "HTTP %{http_code}\n" --max-time 10 \
+    "https://d3epheqghktydj.cloudfront.net/research-artifacts/<fixture-hash>.pdf"
+curl: (56) CONNECT tunnel failed, response 403
+HTTP 000
+
+$ curl -sS "$HTTPS_PROXY/__agentproxy/status" | python3 -c "import json,sys; d=json.load(sys.stdin); print(json.dumps(d['recentRelayFailures'][-2:], indent=2))"
+[
+  {
+    "ts": "2026-10-01T05:17:14.213Z",
+    "kind": "connect_rejected",
+    "host": "t9014651757.p.clickup-attachments.com:443"
+  },
+  {
+    "ts": "2026-10-01T05:39:39.531Z",
+    "kind": "connect_rejected",
+    "host": "t9014651757.p.clickup-attachments.com:443"
+  }
+]
+
+Both known hosts for this fixture (ClickUp attachment CDN and the research
+registry's CloudFront CDN) are confirmed blocked from this sandbox by
+organization network policy -- no local copy of monitoring_station_schedule_2026.pdf
+exists anywhere in this repository either (confirmed: this exact fixture has
+never been successfully retrieved by any tool in this benchmark project).
+
+Independently, olmOCR itself cannot execute in this sandbox regardless of
+fixture access -- see the shared GPU pre-flight failure documented on
+TC27/TC28/TC29/TC30/TC31/TC115 and in
+environment_investigation/gpu_check_failure_20261001.log (same olmOCR
+install, same real RuntimeError: Found no NVIDIA driver on your system).
+
+This TC has two independent, genuine blockers; either alone would already
+prevent execution.
