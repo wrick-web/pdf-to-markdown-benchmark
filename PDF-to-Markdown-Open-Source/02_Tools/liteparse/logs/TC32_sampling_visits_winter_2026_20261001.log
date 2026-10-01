@@ -1,0 +1,40 @@
+TC32 (S32) — LiteParse × "Recognised as one table, not two — the second half keeping its headers"
+Same real run already executed for TC115 (identical S32 fixture, user-supplied
+sampling_visits_winter_2026.pdf, sha256 17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41) —
+re-graded here against TC32's own criterion, no new execution needed since
+both TCs share the identical fixture and output under this scenario.
+
+$ sha256sum input/sampling_visits_winter_2026.pdf
+17f7972834b1eb0e4bf5ce81b9d9f5e8b21fce710084efc9a01d92ef15469a41  input/sampling_visits_winter_2026.pdf
+
+$ .venv_liteparse/bin/python scripts/run_liteparse.py input/sampling_visits_winter_2026.pdf output/sampling_visits_winter_2026
+[liteparse] extract: 7.7ms (2 pages)
+[liteparse] ocr: 646.6ms
+[liteparse] project: 126.0ms
+[liteparse] markdown: 6.7ms
+[liteparse] total: 787.0ms
+[liteparse] OK sampling_visits_winter_2026.pdf: 0.8s, 2 pages, 4261 chars
+
+liteparse version: 2.14.7
+config: LiteParse(output_format='markdown'), everything else default
+
+TC32 asks specifically: is the table recognised as ONE table (not two), or —
+if split across the page break — does the second half keep its real headers?
+
+Raw output at the page break:
+
+    | V-14 | Training Wall east | 2026-02-05 | 07:45 | Suspended solids, chloride, nitrogen | J. Marren |
+
+    -----
+
+    | V-15 | Lissamer Point | 2026-02-05 | 08:35 | Suspended solids, chloride, nitrogen | J. Marren |
+    |---|---|---|---|---|---|
+    | V-16 | Kellow Creek head | 2026-02-06 | 11:20 | Suspended solids, chloride, orthophosphate | R. Ashby |
+
+This is NOT one table — it is explicitly split into two separate markdown
+tables (separated by a `-----` thematic break). And the second table does
+NOT keep the real headers (Visit/Station/Date/Time/Determinations
+taken/Sampler) — its header row is V-15's own data, not a repeated header.
+Both halves of TC32's acceptance criterion fail.
+
+Verdict: FAIL
