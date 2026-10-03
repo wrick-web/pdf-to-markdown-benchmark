@@ -24,7 +24,7 @@ Transect one runs from the seawall opposite the boatyard to the low water mark, 
 
 Kellow Sands
 
-Thrimby. Point.
+Thrimby Point
 
 Figure 1. Survey transects at Kellow Sands and Thrimby Point. Sampling stations are shown as filled circles and the 1998 saltmarsh edge as a broken line.
 
@@ -42,11 +42,7 @@ Mean sediment accretion by transect, winters 2023/24 to 2025/26
 
 (mm/yr)
 
-Accretion mm 2023/24
-
-mm 2024/25
-
-2025/26
+Accretion mm 2023/24 mm 2024/25 2025/26
 
 Transect 1 ‘Transect 2 ‘Transect 3 Transect 4
 

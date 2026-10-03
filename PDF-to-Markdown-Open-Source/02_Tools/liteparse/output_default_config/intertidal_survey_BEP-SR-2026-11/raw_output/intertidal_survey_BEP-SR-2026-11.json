@@ -1,9 +1,9 @@
 {
   "tool": "liteparse",
-  "liteparse_version": "2.14.4",
+  "liteparse_version": "2.14.7",
   "input_file": "input/intertidal_survey_BEP-SR-2026-11.pdf",
-  "elapsed_seconds": 1.186387062072754,
+  "elapsed_seconds": 1.193047285079956,
   "total_pages": 4,
-  "content_char_count": 5927,
-  "config": "default (tessdata_path local-env fix applied; extract_images not set)"
+  "content_char_count": 5923,
+  "config": "default (extract_images not set)"
 }

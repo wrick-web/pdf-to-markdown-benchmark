@@ -1,0 +1,7 @@
+$ find output_default_config/intertidal_survey_BEP-SR-2026-11 -type f | sort | xargs ls -la
+-rw-r--r-- 1 root root  275 Oct  3 10:10 output_default_config/intertidal_survey_BEP-SR-2026-11/logs/intertidal_survey_BEP-SR-2026-11.log
+-rw-r--r-- 1 root root 5929 Oct  3 10:10 output_default_config/intertidal_survey_BEP-SR-2026-11/markdown_output/intertidal_survey_BEP-SR-2026-11.md
+-rw-r--r-- 1 root root  258 Oct  3 10:10 output_default_config/intertidal_survey_BEP-SR-2026-11/raw_output/intertidal_survey_BEP-SR-2026-11.json
+
+$ ls -la output_default_config/intertidal_survey_BEP-SR-2026-11/extracted_images
+ls: cannot access 'output_default_config/intertidal_survey_BEP-SR-2026-11/extracted_images': No such file or directory
