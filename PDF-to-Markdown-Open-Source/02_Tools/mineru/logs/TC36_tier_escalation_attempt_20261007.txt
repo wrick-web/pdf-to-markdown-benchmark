@@ -1,0 +1,62 @@
+$ mineru server start
+Server started (PID 375).
+
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --output output/TC36_default_test.md --force
+Error: No basic, standard, or advanced engine available. You can start a local
+parse-server or explicitly pass --tier flash for text-only preview.
+
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --tier standard --output output/TC36_standard_test.md --force
+Error: Local parse-server is disabled. Use --tier flash or --remote.
+
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --tier basic --output output/TC36_basic_test.md --force
+Error: Local parse-server is disabled. Use --tier flash or --remote.
+
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --tier advanced --output output/TC36_advanced_test.md --force
+Error: Local parse-server is disabled. Use --tier flash or --remote.
+(--remote was not invoked here; tested separately below)
+
+$ mineru config show
+parse_server.local.managed_tier  = standard (default)
+parse_server.local.mode          = disabled (default)
+parse_server.remote.url          = https://mineru.net/api (default)
+
+$ mineru config set parse_server.local.mode managed
+Error: Local managed tier 'standard' requires model files that are not ready.
+MinerU-4_models_onnx missing: Layout/PP-DocLayoutV2/inference.onnx,
+Layout/PP-DocLayoutV2/inference.yml,
+OCR/paddleocr/ch_PP-OCRv6_tiny_det_infer.onnx,
+OCR/paddleocr/ch_PP-OCRv6_tiny_det_inference.yml,
+OCR/paddleocr/ch_PP-OCRv6_small_rec_infer.onnx,
+OCR/paddleocr/ch_PP-OCRv6_small_rec_inference.yml,
+OCR/paddleocr/seal_PP-OCRv4_det_infer.onnx,
+OCR/paddleocr/seal_PP-OCRv4_det_inference.yml,
+MFR/pp_formulanet_plus_m/PP-FormulaNet_plus-M.onnx,
+MFR/pp_formulanet_plus_m/PP-FormulaNet_plus-M_inference.yml,
+Table/slanet-plus.onnx, Table/unet.onnx, Table/PP-LCNet_x1_0_table_cls.onnx;
+MinerU2.5-Pro-2605-1.2B-GGUF missing: .mineru_complete. Run: mineru-kit models
+download --tier standard
+(setting was rejected -- parse_server.local.mode remains "disabled")
+
+$ mineru-kit models download --tier standard
+WARNING: Failed to access <huggingface.co source>, fallback to modelscope.
+Error: Failed to download MinerU-4_models_onnx: [E1020] Connection failed:
+HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with
+url: /api/v1/models/OpenDataLab/MinerU-4_models_onnx/repo/files?Revision=master&Recursive=True
+(Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel
+connection failed: 403 Forbidden')))
+
+Conclusion: two independent, genuine blockers prevent any tier above "flash"
+in this sandbox, both pre-existing and unrelated to this TC's fixture or
+verdict:
+  1. The local parse-server is disabled by default and cannot be enabled
+     without the standard/basic/advanced-tier model weights (layout, OCR,
+     formula, table ONNX models + a 1.2B GGUF model).
+  2. Downloading those weights requires either huggingface.co or
+     modelscope.cn -- both organization-egress-blocked from this sandbox
+     (same policy that blocks every other model download attempted in this
+     project: PaddleOCR-VL, MinerU's own earlier attempts, etc).
+  3. --remote would call mineru.net, independently blocked by the same
+     egress policy (confirmed earlier today: connect_rejected, 403).
+"flash" (documented by MinerU's own CLI as "text-only preview") is the only
+tier this installation can actually execute in this environment -- not a
+choice made for convenience.
