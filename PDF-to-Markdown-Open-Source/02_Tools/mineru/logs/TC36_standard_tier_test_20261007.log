@@ -1,0 +1,2 @@
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --tier standard --output output/TC36_standard.md --force
+Error: Local parse-server is disabled. Use --tier flash or --remote.

@@ -1,0 +1,2 @@
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --tier flash --output output/TC36.md
+Written to /home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/mineru/output/TC36.md

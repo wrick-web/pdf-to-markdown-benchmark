@@ -1,0 +1,39 @@
+$ md5sum input/service_report_KAL-ESR-4471.pdf
+9c9f7366c7e06bad1810a81ddd562418  input/service_report_KAL-ESR-4471.pdf
+(byte-identical to the copy independently verified in pymupdf4llm/doc2mark/markitdown/
+olmocr TC36 sessions; reused directly from the repo, not fetched over the blocked
+ClickUp attachment CDN -- that host is still 403/CONNECT-tunnel-blocked from this
+sandbox, reconfirmed 2026-10-07)
+
+$ source .venv_mineru/bin/activate
+$ mineru server start
+Server started (PID 556).
+
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --tier flash --output output/TC36.md
+Written to /home/user/pdf-to-markdown-benchmark/PDF-to-Markdown-Open-Source/02_Tools/mineru/output/TC36.md
+
+$ mineru parse input/service_report_KAL-ESR-4471.pdf --pages all --tier standard --output output/TC36_standard.md --force
+Error: Local parse-server is disabled. Use --tier flash or --remote.
+(confirms "flash" is the only tier this installation can run locally; "standard"/
+"advanced" require a parse-server this environment has disabled, and --remote would
+call mineru.net, not tested/used here)
+
+$ cat output/TC36.md
+<!-- page 1 of 3 -->
+Kirkhollow Analytical Laboratories Ltd
+Job KAL-ESR-4471
+## Equipment service report
+[... full digital page 1 text recovered correctly, see attached output/TC36.md ...]
+
+<!-- page 2 of 3 -->
+![Image block](doc:096951b/tier:flash/page:2/block:1)
+
+<!-- page 3 of 3 -->
+Kirkhollow Analytical Laboratories Ltd
+Job KAL-ESR-4471
+## Parts fitted
+[... full digital page 3 text recovered correctly, see attached output/TC36.md ...]
+
+Observation: page 2 (the scanned worksheet page) produced ONLY an opaque
+"Image block" placeholder reference -- zero of its text content was recovered.
+Pages 1 and 3 (digital) were transcribed in full and accurately.
