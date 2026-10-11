@@ -32,7 +32,7 @@ python3 build.py followups               # what needs a follow-up today
 | Factor | Points |
 |---|---|
 | Role category | Priority A (business/analyst/marketing/BD/content) 25 · Priority B (technical) 17 |
-| Pay | Confirmed paid 20 · undisclosed 10 · unpaid → score 0 (excluded) |
+| Pay (target band **₹8k–15k/month**) | Overlaps band (≤ ₹25k top) 20 · undisclosed/unparsed 14 · ₹15–30k 12 · below ₹8k 6 · ₹30k+ or up to ₹1L (highly competitive) 4 · unpaid → score 0 (excluded) |
 | December start | Likely 15 · Possible 10 · Unclear 6 · Unlikely 0 |
 | Hiring urgency | High 15 · Medium 9 · Low 4 |
 | Contact quality | Email on official site 15 · in a job post 13 · third-party 8 · careers page only 4 |

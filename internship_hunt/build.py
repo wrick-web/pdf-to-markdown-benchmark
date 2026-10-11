@@ -55,12 +55,47 @@ def norm_key(name):
     return re.sub(r"[^a-z0-9]", "", name.lower().replace("pvt", "").replace("ltd", ""))
 
 
+TARGET_STIPEND = (8000, 15000)  # Wrick's target band, INR/month (set 2026-10-11)
+
+
+def stipend_range(text):
+    """Parse '₹10,000–22,000/month', 'Rs 15K', 'Up to Rs 1,00,000' -> (low, high) INR, or None."""
+    t = text.lower().replace(",", "")
+    nums = []
+    for m in re.finditer(r"(\d+(?:\.\d+)?)\s*(k|l|lakh)?\b", t):
+        n = float(m.group(1)) * {"k": 1e3, "l": 1e5, "lakh": 1e5}.get(m.group(2) or "", 1)
+        if 1000 <= n <= 300000:
+            nums.append(n)
+    if not nums:
+        return None
+    low = 0 if "up to" in t or "upto" in t else min(nums)
+    return low, max(nums)
+
+
+def pay_points(paid, stipend):
+    """Favour the 8-15k band; competitive high-stipend roles and sub-8k roles score lower."""
+    if paid.startswith("Unpaid"):
+        return 0
+    rng = stipend_range(stipend) if paid.startswith("Confirmed") else None
+    if not rng:
+        return 14 if paid.startswith("Confirmed") or "Undisclosed" in paid else 0
+    low, high = rng
+    lo_t, hi_t = TARGET_STIPEND
+    if high < lo_t:
+        return 6           # below the floor
+    if low <= hi_t and high >= lo_t and high <= 25000:
+        return 20          # overlaps the target band
+    if low <= 25000 and high <= 30000:
+        return 12          # a bit above target: fine, more competitive
+    return 4               # 30k+ / up to 1L: highly competitive, deprioritised
+
+
 def score(row):
     """Transparent 0-100 priority score. See README for the rubric."""
     s = 0
     s += 25 if row.get("role_category", "").strip().upper() == "A" else 17
     paid = row.get("paid_status", "")
-    s += 20 if paid.startswith("Confirmed") else (10 if "Undisclosed" in paid else 0)
+    s += pay_points(paid, row.get("stipend", ""))
     dec = row.get("december_start", "").lower()
     speculative = row.get("vacancy_type", "").lower().startswith("spec")
     if speculative and dec.startswith("likely"):
