@@ -6,9 +6,10 @@ These are starting points. Every sent email must contain at least one **verified
 
 | Use freely | Use carefully | Never claim |
 |---|---|---|
-| B.Sc. Computer Science & Statistics, Christ University, graduating 2027 | Future Smart AI: the resume says "AI Researcher", the offer letter says "Partnership Development Intern" (May–Oct 2026, remote, part-time). Say "AI Researcher (intern)" and don't call it current once it has ended. | Python, SQL, Excel/Power BI, Tableau (not on the resume) |
+| B.Sc. Computer Science & Statistics, Christ University, graduating 2027 | Future Smart AI: the resume says "AI Researcher", the offer letter says "Partnership Development Intern" (May–Oct 2026, remote, part-time). Say "AI Researcher (intern)" and don't call it current once it has ended. | SQL, Python, Power BI, Tableau (not known / not on resume). **Skip roles where SQL is mandatory.** |
 | Evaluating AI tools/models and documenting use-case recommendations (Future Smart AI) | Backend & AI engineering intern at SportsHunt: don't invent metrics | Expertise, "expert", numbers or results that aren't on the resume |
 | Statistics coursework: descriptive statistics, probability, statistical modelling; R | CGPA 6.8: don't volunteer it in emails; it's on the resume | Full-time availability, unless you've confirmed it with college |
+| **Excel** (confirmed by Wrick, 2026-10-11; not yet on the resume PDF, so add it) | | |
 | Digital Trainer: teaches CS workshops to non-CS students | | |
 | CAPS Content Lead: articles, newsletters, PR, video scripts | | |
 | Project Aegis: an ML firewall using Isolation Forest anomaly detection | | |
