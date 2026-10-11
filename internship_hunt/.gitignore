@@ -1,0 +1,3 @@
+# Personal resume (has phone number) — keep out of git
+*.pdf
+__pycache__/
