@@ -5,6 +5,7 @@ Usage:
   python3 build.py merge research/*.json   # add/refresh companies from research files
   python3 build.py score                   # re-score companies.csv in place
   python3 build.py dashboard               # regenerate dashboard.html from both CSVs
+  python3 build.py sources                 # regenerate research_sources.md
   python3 build.py followups               # list follow-ups due today or earlier
 
 Standard library only.
@@ -47,6 +48,9 @@ STATUSES = [
 ]
 
 
+EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[a-z]{2,}$", re.I)
+
+
 def norm_key(name):
     return re.sub(r"[^a-z0-9]", "", name.lower().replace("pvt", "").replace("ltd", ""))
 
@@ -58,8 +62,13 @@ def score(row):
     paid = row.get("paid_status", "")
     s += 20 if paid.startswith("Confirmed") else (10 if "Undisclosed" in paid else 0)
     dec = row.get("december_start", "").lower()
+    speculative = row.get("vacancy_type", "").lower().startswith("spec")
+    if speculative and dec.startswith("likely"):
+        dec = "possible"  # nobody has confirmed a December start for an unadvertised role
     s += 15 if dec.startswith("likely") else 10 if dec.startswith("possible") else 0 if dec.startswith("unlikely") else 6
     urg = row.get("hiring_urgency", "").lower()
+    if speculative and urg.startswith("high"):
+        urg = "medium"  # funding news is not direct evidence of intern demand
     s += 15 if urg.startswith("high") else 9 if urg.startswith("medium") else 4
     es = row.get("email_status", "")
     if row.get("contact_email") and "official" in es:
@@ -100,6 +109,8 @@ def merge(paths):
         seg = Path(p).stem
         for item in json.loads(Path(p).read_text(encoding="utf-8")):
             item = {k: str(v).strip() if v is not None else "" for k, v in item.items()}
+            if not EMAIL_RE.match(item.get("contact_email", "")):
+                item["contact_email"] = ""  # "NOT FOUND" or junk: treat as no email
             if not item.get("company"):
                 continue
             if item.get("paid_status", "").lower().startswith("unpaid"):
@@ -108,6 +119,9 @@ def merge(paths):
             if key in index:
                 existing = index[key]
                 # Keep existing status; fill blanks; note the extra source.
+                if item.get("contact_email") and not existing["contact_email"]:
+                    for k in ("contact_name", "contact_title", "contact_email", "email_status", "email_source"):
+                        existing[k] = item.get(k, "")
                 for k in COMPANY_FIELDS:
                     if not existing.get(k) and item.get(k):
                         existing[k] = item[k]
@@ -237,12 +251,46 @@ input{{padding:8px;width:100%;max-width:360px;margin-bottom:10px;border:1px soli
     print(f"wrote {DASHBOARD.name}")
 
 
+def sources():
+    """Write research_sources.md: every company's evidence and source links, by priority."""
+    comps = read_csv(COMPANIES, COMPANY_FIELDS)
+    out = [
+        "# Research sources and notes",
+        "",
+        "Generated from `companies.csv`. Each entry lists the evidence and the URLs it came from.",
+        "**Verification caveat (2026-10-11):** this environment's network policy blocked direct page loads,",
+        "so facts were taken from web-search result text for these URLs, not from reading the pages.",
+        "Open each source and confirm the posting is live before applying or emailing.",
+        "",
+    ]
+    for c in comps:
+        out += [
+            f"## {c['id']} · {c['company']} — score {c['priority_score']}",
+            f"- **Role:** {c['best_fit_role']} ({c['vacancy_type']}) · {c['location']} · {c['work_mode']}",
+            f"- **Pay:** {c['paid_status']} {('— ' + c['stipend']) if c['stipend'] else ''} · **Duration:** {c['duration'] or 'n/a'}",
+            f"- **Hiring urgency:** {c['hiring_urgency']} — {c['urgency_reason']}",
+            f"- **Evidence:** {c['hiring_evidence']}",
+            f"- **December start:** {c['december_start']}",
+            f"- **Contact:** {c['contact_name'] or '—'} {('(' + c['contact_title'] + ')') if c['contact_title'] else ''} · "
+            f"{c['contact_email'] or 'NOT FOUND'} · {c['email_status']} {c['email_source']}",
+            f"- **Careers / LinkedIn:** {c['linkedin_or_careers_url'] or '—'}",
+            f"- **Sources (checked {c['date_checked']}):** " + " ".join(f"<{u}>" for u in dict.fromkeys(c["source_urls"].split())),
+        ]
+        if c["notes"]:
+            out.append(f"- **Notes:** {c['notes']}")
+        out.append("")
+    (HERE / "research_sources.md").write_text("\n".join(out), encoding="utf-8")
+    print("wrote research_sources.md")
+
+
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "dashboard"
     if cmd == "merge":
         merge(sys.argv[2:])
     elif cmd == "score":
         rescore()
+    elif cmd == "sources":
+        sources()
     elif cmd == "followups":
         followups()
     else:
