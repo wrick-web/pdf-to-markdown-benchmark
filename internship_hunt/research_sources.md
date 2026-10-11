@@ -5,16 +5,93 @@ Generated from `companies.csv`. Each entry lists the evidence and the URLs it ca
 so facts were taken from web-search result text for these URLs, not from reading the pages.
 Open each source and confirm the posting is live before applying or emailing.
 
+## C029 · BEMPU Health — score 89
+- **Role:** Digital Marketing Intern (Ads, Analytics, Web) (Advertised) · Bengaluru · In-office
+- **Pay:** Pay Undisclosed — Monthly stipend stated; amount not published · **Duration:** 6 months
+- **Hiring urgency:** High — ASAP start, and the high Built In ID suggests a recent posting. The founder currently runs the campaigns personally.
+- **Evidence:** Built In Bengaluru listing 11031756: 6-month full-time paid internship, start ASAP, mentored by the founder, with a real ad budget.
+- **December start:** Possible - wants ASAP; a December start may be acceptable if still open.
+- **Contact:** Ratul Narain (Founder & CEO) · hello@bempu.com · Publicly listed (official site) https://www.bempu.com/ (site contact + structured data)
+- **Careers / LinkedIn:** https://builtin.com/company/bempu-health/jobs
+- **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/digital-marketing-intern-ads-analytics-web/11031756> <https://builtin.com/company/bempu-health/jobs>
+- **Notes:** Not SaaS, but the best growth-analytics match in this segment. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. Careers page at bempu.com/careers lists a careers address but it was masked in search results; job postings moved to an external board (Built In listings). Founder per LinkedIn company page https://www.linkedin.com/company/bempu-health-pvt.-ltd. (personal profile URL not found).
+
+## C047 · Stylumia Intelligence Technology — score 89
+- **Role:** Content & Trend Insights Intern (Advertised) · Bengaluru · In-office or remote (per listing)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** High — Freshly reposted live listing (<30 days) in Bengaluru.
+- **Evidence:** Built In Bengaluru listing 'Content & Trend Insights Intern' reposted ~2 days before search (early Oct 2026); duties: weekly trend updates, seasonal/custom trend reports from data.
+- **December start:** Possible - live posting; confirm start-date flexibility
+- **Contact:** Ganesh Subramanian (Founder & CEO) · careers@stylumia.com · Publicly listed (official site) https://www.stylumia.ai/careers/ ('Write us at careers@stylumia.com')
+- **Careers / LinkedIn:** https://builtinbengaluru.in/job/content-trend-insights-intern/9747024
+- **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/content-trend-insights-intern/9747024> <https://en.wikipedia.org/wiki/Stylumia>
+- **Notes:** Best combined data+content fit in this segment. | Posting live (2026-10-11 check): Yes. Note email domain is stylumia.com though site is stylumia.ai (as shown on the official careers page; page may be a few years old). Other official addresses: sales@stylumia.com (contact page). Built In listing showed 'Reposted 2 days ago' at search time.
+
+## C055 · Ken Research — score 83
+- **Role:** Digital Marketing Intern (also pitch Research Intern) (Advertised) · Gurugram / Sohna (Haryana) · On-site
+- **Pay:** Confirmed Paid — Rs 10,000-15,000/month (Digital Marketing Intern, per Indeed) · **Duration:** n/a
+- **Hiring urgency:** Medium — Multiple open roles on Indeed incl. intern; exact dates unclear.
+- **Evidence:** Ken Research Indeed company page shows Digital Marketing Intern roles at Rs 10,000-15,000/month (posting dates unclear); LinkedIn shows Senior Research Analyst hiring in Gurugram; careers on Keka portal.
+- **December start:** Possible
+- **Contact:** Hiring team (HR / Careers) · HR@kenresearch.com · Publicly listed (official site) https://www.kenresearch.com/contact-us (listed under Careers)
+- **Careers / LinkedIn:** https://kenresearch.keka.com/careers
+- **Sources (checked 2026-10-11):** <https://in.indeed.com/cmp/Ken-Research> <https://kenresearch.keka.com/careers/jobdetails/24771>
+- **Notes:** Not Bengaluru; relocation needed. Stipend modest. | Posting live (2026-10-11 check): Unknown. Contact page footer says (c) 2024, so verify still current. Founders/Managing Partners listed on same page: Ankur Gupta, Namit Goel.
+
+## C025 · Cashfree Payments — score 83
+- **Role:** Product Marketing Intern (Secure ID), written as a Technical Content Creator role; also Product Marketing Intern (Cross Border) (Advertised) · Bengaluru (Bellandur, Eco-world) · On-site
+- **Pay:** Pay Undisclosed  · **Duration:** 6 months
+- **Hiring urgency:** Medium — Several marketing-intern listings are on the official ATS. Posting dates were not visible.
+- **Evidence:** Kula careers listings: Product Marketing Intern (Secure ID), 6-month internship (jobs 34449 and 34443), plus Cross Border PMM intern (13560).
+- **December start:** Possible - 6-month rolling internship; posting date unknown.
+- **Contact:** Hiring team (Careers team) · careers@cashfree.com · Publicly listed (official site) https://www.cashfree.com/careers/
+- **Careers / LinkedIn:** https://careers.kula.ai/cashfree
+- **Sources (checked 2026-10-11):** <https://careers.kula.ai/cashfree/34449/> <https://careers.kula.ai/cashfree/34443/> <https://careers.kula.ai/cashfree/13560>
+- **Notes:** Strongest technical-content fit. Job IDs 34443/34449 are among the higher Kula IDs, which suggests recent posting, but this is unconfirmed. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. Official careers page says to mail careers@cashfree.com if no suitable open role; otherwise apply via listings. care@cashfree.com is customer support only.
+
+## C027 · Uniqode (formerly Beaconstac) — score 83
+- **Role:** SEO Outreach Intern (Advertised) · Bengaluru · On-site (assumed; not stated)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Active SEO team build-out with several open SEO roles. Intern posting date unknown.
+- **Evidence:** Official careers page lists SEO Outreach Intern (Bengaluru, Internship). The company is also hiring Lead SEO (Apr 2026), Senior SEO Analyst and SDRs.
+- **December start:** Possible - date unknown.
+- **Contact:** — (general) · hello@uniqode.com · Publicly listed (official site) https://www.uniqode.com/blog/ (site-wide footer contact)
+- **Careers / LinkedIn:** https://careers.uniqode.com/jobs
+- **Sources (checked 2026-10-11):** <https://careers.uniqode.com/jobs/KEn4mGZC9bmU/seo-outreach-intern> <https://careers.uniqode.com/jobs> <https://jobs.accel.com/companies/uniqode-formerly-beaconstac-2-c96e5c0c-3225-410a-9009-d21a8d6fd412/jobs/76119393-lead-seo>
+- **Notes:** Also has SDR openings (full-time) focused on freemium signals and ABM, which could be a later path. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. No careers email; apply via careers.uniqode.com. SEO Outreach Intern posting still indexed on careers.uniqode.com, posting date not shown.
+
+## C028 · Goodera — score 83
+- **Role:** Marketing Intern (also Client Engagement Intern) (Advertised) · Bengaluru · On-site
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Several concurrent intern listings across functions. Dates unknown.
+- **Evidence:** Kula careers job 33107 (Marketing Intern, Internship, On-Site); Weekday mirror; Client Engagement Intern (Kula 34391); multiple other intern postings on TeamLease.
+- **December start:** Possible - date unknown.
+- **Contact:** Hiring team (Careers team) · careers@goodera.com · Publicly listed (official site) https://www.goodera.com/about/contact-us (under Careers heading)
+- **Careers / LinkedIn:** https://careers.kula.ai/goodera
+- **Sources (checked 2026-10-11):** <https://careers.kula.ai/goodera/33107> <https://jobs.weekday.works/marketing-intern-at-goodera-4387952253> <https://careers.kula.ai/goodera/34391> <https://in.indeed.com/cmp/Goodera/jobs>
+- **Notes:** Goodera's Event Management intern is listed at INR 15-20k/month on Indeed. That is a different role, but it suggests a paid intern culture. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. Press: inbox@goodera.com (media center).
+
 ## C043 · Tracxn Technologies Ltd — score 81
 - **Role:** Research / Market Research Analyst Intern (speculative; adjacent to Analyst - Market Research, Sector Research team) (Speculative) · Bengaluru (HSR Layout) · On-site
 - **Pay:** Pay Undisclosed  · **Duration:** n/a
 - **Hiring urgency:** Medium — Multiple entry-level research analyst openings posted Jun 2026 (~100 days old); no live intern listing found.
 - **Evidence:** Accel portfolio job board lists 'Analyst - Market Research' (0-2 yrs) and 'Analyst / Senior Analyst - Market Research' (0-3 yrs, freshers with strong research internships welcome), both dated 30 Jun 2026; no intern posting seen.
 - **December start:** Possible - analyst hiring is continuous; would need to pitch a Dec-May intern stint
-- **Contact:** —  · careers@tracxn.com · Publicly listed (job post) Tracxn Analyst posting on Tracxn's Recruiterbox ATS (tracxn.recruiterbox.com/jobs/fk0ijy): 'Send your application to careers@tracxn.com' (older posting)
+- **Contact:** Hiring team (careers) · careers@tracxn.com · Publicly listed (job post) https://joinsaarthi.com/jobs/tracxn/analyst-bengaluru/98ced6f6-7b23-49c9-9523-e822f290a2d7
 - **Careers / LinkedIn:** https://jobs.accel.com/companies/tracxn-2
 - **Sources (checked 2026-10-11):** <https://jobs.accel.com/companies/tracxn-2/jobs/84728502-analyst-market-research> <https://jobs.accel.com/companies/tracxn-2/jobs/84728481-analyst-senior-analyst-market-research> <https://tracxn.recruiterbox.com/jobs/fk0ijy>
-- **Notes:** Third-party aggregator (myinternships.in) shows Tracxn data/reporting intern listings with stipends, but that site's listings look templated and could not be verified - not relied on. WebFetch of tracxn.com blocked by egress policy; verify on official careers page.
+- **Notes:** Third-party aggregator (myinternships.in) shows Tracxn data/reporting intern listings with stipends, but that site's listings look templated and could not be verified - not relied on. WebFetch of tracxn.com blocked by egress policy; verify on official careers page. | Posting live (2026-10-11 check): Unknown. careers@tracxn.com is given as the application address in a Tracxn Analyst (HSR Layout) job post. The copy seen is on joinsaarthi.com; the input also cites tracxn.recruiterbox.com. The post is undated. Tracxn's careers site is careers.tracxn.com.
+
+## C069 · CyberWarFare Labs — score 81
+- **Role:** AI Security Intern (Offensive Security) — LLM red teaming, RAG testing, prompt-injection research (Advertised) · HSR Layout, Bengaluru · On-site
+- **Pay:** Confirmed Paid — Rs 15,000/month (10% TDS deducted) · **Duration:** 3 months; possible full-time after
+- **Hiring urgency:** Medium — Fresh JD uploaded Aug 2026; 'Joining: Immediately' stated.
+- **Evidence:** Careers page lists AI Security Intern; JD PDFs uploaded May 2026 (AI security) and Aug 2026 (Cybersecurity Lab Support Intern); Blue/Red team intern JDs.
+- **December start:** Possible — rolling/immediate joining
+- **Contact:** Manish Gupta (Co-founder & CEO) · careers@cyberwarfare.live · Publicly listed (official site) https://cyberwarfare.live/careers ('mail your resume to careers@cyberwarfare.live')
+- **Careers / LinkedIn:** https://cyberwarfare.live/career
+- **Sources (checked 2026-10-11):** <https://cyberwarfare.live/career> <https://cyberwarfare.live/wp-content/uploads/2026/05/AI-Security-Intern-Offensive-Security.pdf> <https://cyberwarfare.live/wp-content/uploads/2026/08/JD-for-Cybersecurity-Lab-Support-Intern-.pdf>
+- **Notes:** Lower stipend; edtech-oriented company — check it is not a training-fee programme (JD shows stipend paid). Third-party data place company in Cambridge, UK; job location HSR Layout Bengaluru. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Posting live (2026-10-11 check): Yes. Careers page (updated ~46 days before search) lists remote red-team and AI security internships. Also info@cyberwarfare.live (general) on https://cyberwarfare.live/contact/. Founder LinkedIn: https://uk.linkedin.com/in/0hack ; Technical Director Yash Bharadwaj https://www.linkedin.com/in/bharadwaj-yash/.
 
 ## C001 · AppsForBharat (Sri Mandir) — score 79
 - **Role:** Business Analytics Intern (Advertised) · HSR Layout, Bengaluru · On-site
@@ -22,10 +99,10 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** Medium — Live posting on the official careers board, plus several analyst roles (BA intern, Sr BA). Exact posting date not confirmed.
 - **Evidence:** Business Analytics Intern posting on the company's Kula careers board, with a stipend of ₹25,000–30,000 shown as employer-provided (also seen via Foundit / Glassdoor aggregation). A separate 'Business Analyst (BA) Intern' posting exists but targets IIT students.
 - **December start:** Possible: 6-month on-site role with no fixed start date published; ask about a Dec/Jan cohort
-- **Contact:** Jasmine (surname not shown) (Recruiting contact on Kula job page) · jasmine@appsforbharat.com · Publicly listed (job post) https://careers.kula.ai/appsforbharat/jobs/52476 (per search-index snippet of the Kula page)
+- **Contact:** Jasmine (surname not shown) (Recruiting contact on Kula job page) · jasmine@appsforbharat.com · Publicly listed (job post) — RE-CONFIRM on Kula page before sending https://careers.kula.ai/appsforbharat/jobs/52476 (per search-index snippet of the Kula page)
 - **Careers / LinkedIn:** https://careers.kula.ai/appsforbharat/52476
 - **Sources (checked 2026-10-11):** <https://careers.kula.ai/appsforbharat/52476> <https://careers.kula.ai/appsforbharat/3508?jobs=true> <https://www.foundit.in/job/business-analyst-appsforbharat-bengaluru-bangalore-61685480> <https://careers.kula.ai/appsforbharat/38716/> <https://careers.kula.ai/appsforbharat/50170/> <https://builtinbengaluru.in/job/business-development-intern/10709171> <https://builtinbengaluru.in/job/content-writer-intern/10685285> <https://careers.kula.ai/appsforbharat> <https://careers.kula.ai/appsforbharat/jobs/52476> <https://careers.kula.ai/appsforbharat/3508/apply?jobs=true>
-- **Notes:** SQL listed as mandatory. The BA (3508) variant says IIT students; apply to the Business Analytics Intern (52476) posting instead. I could not open the pages directly (egress blocked), so details come from search-indexed snippets.
+- **Notes:** SQL listed as mandatory. The BA (3508) variant says IIT students; apply to the Business Analytics Intern (52476) posting instead. I could not open the pages directly (egress blocked), so details come from search-indexed snippets. | Second search could not re-confirm jasmine@appsforbharat.com. Posting live (2026-10-11 check): Unknown. Input email jasmine@appsforbharat.com could NOT be verified: an exact-phrase search returned no page showing it, so it was dropped. Founder Prashant Sachan is named on YourStory, Inc42 and Peak XV, but his LinkedIn URL did not appear in the results. An email for him is shown on a Peak XV investor page; it was not recorded because he did not publish it himself. Several intern roles are live on careers.kula.ai/appsforbharat, including BA Intern /3508; the status of /52476 was not confirmed.
 
 ## C011 · Growth Wave Consultants — score 78
 - **Role:** Financial Analyst Intern (Advertised) · Bengaluru · Hybrid
@@ -36,7 +113,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/analytics-internship-in-bangalore/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/analytics-internship-in-bangalore/>
-- **Notes:** Finance-leaning; weaker fit than the BA/DA roles.
+- **Notes:** Finance-leaning; weaker fit than the BA/DA roles. | Posting live (2026-10-11 check): Unknown. No web presence was found apart from the Internshala listing. The only near match is 'The Growth Wave' in Amsterdam, which is not this company.
 
 ## C013 · Davo Healthcare Private Limited — score 78
 - **Role:** Market Research Intern (Advertised) · Bengaluru · 
@@ -47,7 +124,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/analytics-internship-in-bangalore/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/analytics-internship-in-bangalore/>
-- **Notes:** Lower stipend; small company.
+- **Notes:** Lower stipend; small company. | Posting live (2026-10-11 check): Unknown. No web presence was found. Only similarly named companies came up (Davis Healthcare in Haryana, Dava Health in Hyderabad).
 
 ## C014 · Zycus (Certinal division) — score 78
 - **Role:** Business Analyst Intern (Advertised) · Bengaluru · On-site
@@ -58,29 +135,18 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://offcampusjobs4u.com/zycus-recruitment-2026-business-analyst-intern-bengaluru
 - **Sources (checked 2026-10-11):** <https://offcampusjobs4u.com/zycus-recruitment-2026-business-analyst-intern-bengaluru> <https://freshershunt.in/freshershunt/>
-- **Notes:** Verify on Zycus' official careers page; aggregator-sourced.
+- **Notes:** Verify on Zycus' official careers page; aggregator-sourced. | Posting live (2026-10-11 check): Unknown. The official posting is Business Analyst Intern (ADM05949) on Zycus's SenseHQ careers portal. Applications are online only, and no email was found. Aggregators list the deadline as 'ASAP'.
 
-## C029 · BEMPU Health — score 78
-- **Role:** Digital Marketing Intern (Ads, Analytics, Web) (Advertised) · Bengaluru · In-office
-- **Pay:** Pay Undisclosed — Monthly stipend stated; amount not published · **Duration:** 6 months
-- **Hiring urgency:** High — ASAP start, and the high Built In ID suggests a recent posting. The founder currently runs the campaigns personally.
-- **Evidence:** Built In Bengaluru listing 11031756: 6-month full-time paid internship, start ASAP, mentored by the founder, with a real ad budget.
-- **December start:** Possible - wants ASAP; a December start may be acceptable if still open.
+## C008 · Sirma Business Consulting — score 78
+- **Role:** Business Analyst Intern (Advertised) · Brookfield, Bengaluru · On-site
+- **Pay:** Confirmed Paid — ₹15,000–20,000/month · **Duration:** 6 months
+- **Hiring urgency:** Medium — Multiple intern listings (BA, QA analyst); exact dates not confirmed.
+- **Evidence:** Search snippet (Oct 2026 aggregated results) lists Sirma Business Consulting BA Intern, 6 months onsite, ₹15,000–20,000/month; a QA analyst intern (6 months) listing also appears on QuintEdge.
+- **December start:** Possible: 6-month role, start not stated
 - **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://builtin.com/company/bempu-health/jobs
-- **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/digital-marketing-intern-ads-analytics-web/11031756> <https://builtin.com/company/bempu-health/jobs>
-- **Notes:** Not SaaS, but the best growth-analytics match in this segment. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
-
-## C047 · Stylumia Intelligence Technology — score 78
-- **Role:** Content & Trend Insights Intern (Advertised) · Bengaluru · In-office or remote (per listing)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** High — Freshly reposted live listing (<30 days) in Bengaluru.
-- **Evidence:** Built In Bengaluru listing 'Content & Trend Insights Intern' reposted ~2 days before search (early Oct 2026); duties: weekly trend updates, seasonal/custom trend reports from data.
-- **December start:** Possible - live posting; confirm start-date flexibility
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://builtinbengaluru.in/job/content-trend-insights-intern/9747024
-- **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/content-trend-insights-intern/9747024> <https://en.wikipedia.org/wiki/Stylumia>
-- **Notes:** Best combined data+content fit in this segment.
+- **Careers / LinkedIn:** https://jobs.quintedge.com/jobs/qa-analyst-intern-6-months-in-sirma-business-19rw44
+- **Sources (checked 2026-10-11):** <https://www.drjobpro.com/india/business-analyst-internship-jobs-in-bengaluru> <https://jobs.quintedge.com/jobs/qa-analyst-intern-6-months-in-sirma-business-19rw44>
+- **Notes:** Consulting SMB, not a product startup. Lower stipend. | Posting live (2026-10-11 check): Unknown. TechBehemoths lists a Bangalore head office (EPIP, Whitefield), with low data quality. Do not confuse it with Sirma Group in Bulgaria (careers.sirma.com). No website or email was found.
 
 ## C002 · FloBiz — score 76
 - **Role:** Growth Analyst Intern (Advertised) · Bengaluru · Hybrid
@@ -88,10 +154,10 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** High — Internshala marks the listing 'Actively hiring' on the Oct 2026 page.
 - **Evidence:** Internshala Bangalore analytics listing (Oct 2026 index) shows FloBiz 'Actively hiring', Growth Analyst, hybrid, ₹25,000–30,000/month, 3 months.
 - **December start:** Possible: 3-month role; if filled now it would end around Jan, so a Dec cohort or re-post is plausible but unconfirmed
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** Rahul Raj (Co-founder & CEO) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/analytics-internship-in-bangalore/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/analytics-internship-in-bangalore/>
-- **Notes:** Apply through Internshala. Posting date of this specific listing not seen.
+- **Notes:** Apply through Internshala. Posting date of this specific listing not seen. | Only a support/sales inbox found (support@flobiz.in); not used for outreach. Posting live (2026-10-11 check): Unknown. support@flobiz.in appears in a reply written by FloBiz on Capterra. It is a customer-support inbox, not a careers address. Co-founders are Rahul Raj (CEO), Aditya Naik and Rakesh Yadav (YourStory). No careers or HR email was found. Built In lists a Bengaluru marketing analytics role.
 
 ## C004 · Futurlytic Private Limited — score 76
 - **Role:** Data Analytics Intern (Advertised) · Bengaluru · 
@@ -102,7 +168,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/analytics-internship-in-bangalore/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/analytics-internship-in-bangalore/>
-- **Notes:** Company background not verified beyond the listing.
+- **Notes:** Company background not verified beyond the listing. | Posting live (2026-10-11 check): Yes. A Data Analyst Intern posting in Bangalore dated 2026-09-25 is on mployee.me. The company is a Bangalore data-analytics and social-listening firm started in 2017. No official website, founder or email was found.
 
 ## C023 · Cornixe — score 76
 - **Role:** Business Analytics Intern (WFH) (Advertised) · Remote (India) · Remote, part-time
@@ -113,18 +179,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/work-from-home-analytics-internships/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/work-from-home-analytics-internships/>
-- **Notes:** Company legitimacy not verified. Check the profile and make sure there is no training fee before applying.
-
-## C008 · Sirma Business Consulting — score 74
-- **Role:** Business Analyst Intern (Advertised) · Brookfield, Bengaluru · On-site
-- **Pay:** Confirmed Paid — ₹15,000–20,000/month · **Duration:** 6 months
-- **Hiring urgency:** Medium — Multiple intern listings (BA, QA analyst); exact dates not confirmed.
-- **Evidence:** Search snippet (Oct 2026 aggregated results) lists Sirma Business Consulting BA Intern, 6 months onsite, ₹15,000–20,000/month; a QA analyst intern (6 months) listing also appears on QuintEdge.
-- **December start:** Possible: 6-month role, start not stated
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://www.drjobpro.com/india/business-analyst-internship-jobs-in-bengaluru> <https://jobs.quintedge.com/jobs/qa-analyst-intern-6-months-in-sirma-business-19rw44>
-- **Notes:** Consulting SMB, not a product startup. Lower stipend.
+- **Notes:** Company legitimacy not verified. Check the profile and make sure there is no training fee before applying. | Posting live (2026-10-11 check): Unknown. Indeed shows 'Cornixe Private Limited' in Chennai promoting training programs and internships, so verify that this is a legitimate employer rather than a paid-training scheme. No website or email was found.
 
 ## C012 · SkilloVilla — score 74
 - **Role:** Operations Analyst Intern (Advertised) · Bengaluru · 
@@ -132,10 +187,10 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** Medium — On the Oct 2026 Internshala page; exact age not seen.
 - **Evidence:** Internshala Bangalore analytics results (Oct 2026 index): SkilloVilla operations analyst, ₹12,000–15,000/month.
 - **December start:** Unclear: duration and start not seen
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** Deepak Kharol (Co-founder) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/analytics-internship-in-bangalore/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/analytics-internship-in-bangalore/>
-- **Notes:** Lower stipend.
+- **Notes:** Lower stipend. | Only a support/sales inbox found (support@skillovilla.com); not used for outreach. Posting live (2026-10-11 check): Unknown. Email is the general/student support inbox, not careers; no careers email found. Co-founder & CEO Ronak Agrawal is listed on https://in.linkedin.com/company/skillovilla (personal URL not found). Contact page has hiring/admissions emails but they were obfuscated in search results.
 
 ## C037 · SmartEd Innovations — score 74
 - **Role:** Business Development (Sales) Intern (Advertised) · Bengaluru · 
@@ -143,10 +198,32 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** Medium — Published fixed plus incentive pay. Posting date not seen.
 - **Evidence:** Internshala detail page: BD (Sales) internship in Bangalore. Fixed INR 17-18k/month plus INR 8-10k incentive.
 - **December start:** Unclear - date unknown.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** Uppathi Sai Sreekar (Founder) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internship/detail/business-development-sales-internship-in-bangalore-at-smarted-innovations1772287702
 - **Sources (checked 2026-10-11):** <https://internshala.com/internship/detail/business-development-sales-internship-in-bangalore-at-smarted-innovations1772287702>
-- **Notes:** Incentive-heavy sales role; check that targets are reasonable. The URL timestamp suggests early 2026, so the listing may be stale. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
+- **Notes:** Incentive-heavy sales role; check that targets are reasonable. The URL timestamp suggests early 2026, so the listing may be stale. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. Legal entity: USNG Learnspace EdTech Pvt Ltd (Bengaluru, founded 2023; co-founder N Gokul per YourStory/Dealroom). Founder named on LinkedIn company page; personal profile URL not found. No official website/email surfaced.
+
+## C030 · ClearTax (Clear) — score 74
+- **Role:** Digital Marketing Intern (Advertised) · Bengaluru · 
+- **Pay:** Confirmed Paid — INR 24,000-25,000/month · **Duration:** 6 months
+- **Hiring urgency:** Medium — Appears on the Oct 2026 Internshala index with a PPO. Exact posting date not seen.
+- **Evidence:** Internshala Bangalore digital-marketing listings (Oct 2026 index) show a ClearTax 6-month internship at INR 24-25k/month, with a job offer of up to INR 6.5 LPA after it.
+- **December start:** Possible - 6-month role; date unknown.
+- **Contact:** Hiring team (careers) · careers@cleartax.in · Publicly listed (third-party) https://bebee.com/in/companies/clear
+- **Careers / LinkedIn:** https://internshala.com/internships/digital-marketing-internship-in-bangalore/
+- **Sources (checked 2026-10-11):** <https://internshala.com/internships/digital-marketing-internship-in-bangalore/>
+- **Notes:** Seen only in a search summary of an Internshala index page. Internshala itself was blocked for fetch, so verify the listing directly. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. careers@cleartax.in is quoted in the company blurb on bebee.com, a third-party site. The official contact page (https://cleartax.in/Meta/Contact/index.html) lists support@cleartax.in for general enquiries and links to the Careers page, so that address is confirmed on the official site as a general fallback.
+
+## C035 · Variabl — score 73
+- **Role:** Content & Social Media Intern (Advertised) · Bengaluru · 
+- **Pay:** Confirmed Paid — INR 10,000-15,000/month · **Duration:** 6 months
+- **Hiring urgency:** Low — Only aggregator evidence.
+- **Evidence:** An Oct 2026 Internshala index summary listed Variabl content and social media internship, Bangalore, INR 10-15k/month, 6 months.
+- **December start:** Possible - 6 months; date unknown.
+- **Contact:** Waeez Ahmed (Co-founder) · NOT FOUND · NOT FOUND 
+- **Careers / LinkedIn:** https://www.linkedin.com/in/waeezahmed/
+- **Sources (checked 2026-10-11):** <https://internshala.com/internships/digital-marketing-internship-in-bangalore/>
+- **Notes:** Low verification and low stipend. Industry is unclear from what was seen. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. Bengaluru fintech ('all-in-one financial solution for India'). Co-founder Pranay Gupta (CA): https://www.linkedin.com/in/capranaygupta/. Official website not found.
 
 ## C104 · Weekday (weekday.works) — score 72
 - **Role:** Founder's Office Intern (Advertised) · Bengaluru · On-site (per listing)
@@ -154,32 +231,10 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** Medium — Active Lever board with Aug 2026 intern posting; founder's office role date not seen.
 - **Evidence:** Official Lever board lists Founder's Office Intern (6 months, stipend range stated) and Founder's Office role; also an SDE intern posted Aug 2026.
 - **December start:** Possible - 6-month role, start not stated
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** Amit Singh (Co-founder & CEO) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://jobs.lever.co/weekdayworks
 - **Sources (checked 2026-10-11):** <https://jobs.lever.co/weekdayworks/ffec194d-9b92-42d5-8ac2-9e676ddcce25> <https://jobs.lever.co/weekdayworks>
-- **Notes:** Stipend amount not visible in search snippet - check posting. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
-
-## C055 · Ken Research — score 72
-- **Role:** Digital Marketing Intern (also pitch Research Intern) (Advertised) · Gurugram / Sohna (Haryana) · On-site
-- **Pay:** Confirmed Paid — Rs 10,000-15,000/month (Digital Marketing Intern, per Indeed) · **Duration:** n/a
-- **Hiring urgency:** Medium — Multiple open roles on Indeed incl. intern; exact dates unclear.
-- **Evidence:** Ken Research Indeed company page shows Digital Marketing Intern roles at Rs 10,000-15,000/month (posting dates unclear); LinkedIn shows Senior Research Analyst hiring in Gurugram; careers on Keka portal.
-- **December start:** Possible
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://kenresearch.keka.com/careers
-- **Sources (checked 2026-10-11):** <https://in.indeed.com/cmp/Ken-Research> <https://kenresearch.keka.com/careers/jobdetails/24771>
-- **Notes:** Not Bengaluru; relocation needed. Stipend modest.
-
-## C025 · Cashfree Payments — score 72
-- **Role:** Product Marketing Intern (Secure ID), written as a Technical Content Creator role; also Product Marketing Intern (Cross Border) (Advertised) · Bengaluru (Bellandur, Eco-world) · On-site
-- **Pay:** Pay Undisclosed  · **Duration:** 6 months
-- **Hiring urgency:** Medium — Several marketing-intern listings are on the official ATS. Posting dates were not visible.
-- **Evidence:** Kula careers listings: Product Marketing Intern (Secure ID), 6-month internship (jobs 34449 and 34443), plus Cross Border PMM intern (13560).
-- **December start:** Possible - 6-month rolling internship; posting date unknown.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://careers.kula.ai/cashfree
-- **Sources (checked 2026-10-11):** <https://careers.kula.ai/cashfree/34449/> <https://careers.kula.ai/cashfree/34443/> <https://careers.kula.ai/cashfree/13560>
-- **Notes:** Strongest technical-content fit. Job IDs 34443/34449 are among the higher Kula IDs, which suggests recent posting, but this is unconfirmed. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
+- **Notes:** Stipend amount not visible in search snippet - check posting. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Posting live (2026-10-11 check): Unknown. YC W21 company. Co-founders are Amit Singh (CEO), Anubhav Malik and Chetan Dalal (YC page). The Founder's Office Intern posting surfaced at jobs.lever.co/weekdayworks/015a0ba5-...; this is a different ID from the input URL. Founder LinkedIn URLs did not surface, and no email was found.
 
 ## C026 · Inflexion Analytics — score 72
 - **Role:** Sales & Marketing Intern / Digital Marketing Intern (Advertised) · Bengaluru · In-office
@@ -187,32 +242,10 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** Medium — Two parallel intern listings. Posting dates not visible.
 - **Evidence:** Two Cutshort listings (Digital Marketing Intern; Sales & Marketing Intern), 6 months, INR 0-20,000/month.
 - **December start:** Possible - rolling; date unknown.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** James Kightley (Director) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://cutshort.io/job/Marketing-Sales-Internship-Bengaluru-Bangalore-Inflexion-Analytics-ID6bHKUb
 - **Sources (checked 2026-10-11):** <https://cutshort.io/job/Digital-Marketing-Internship-Bengaluru-Bangalore-Inflexion-Analytics-ID6bHKUb> <https://cutshort.io/job/Marketing-Sales-Internship-Bengaluru-Bangalore-Inflexion-Analytics-ID6bHKUb>
-- **Notes:** The listed range starts at INR 0. Confirm a non-zero stipend before accepting; exclude if it turns out to be unpaid. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
-
-## C027 · Uniqode (formerly Beaconstac) — score 72
-- **Role:** SEO Outreach Intern (Advertised) · Bengaluru · On-site (assumed; not stated)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Active SEO team build-out with several open SEO roles. Intern posting date unknown.
-- **Evidence:** Official careers page lists SEO Outreach Intern (Bengaluru, Internship). The company is also hiring Lead SEO (Apr 2026), Senior SEO Analyst and SDRs.
-- **December start:** Possible - date unknown.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://careers.uniqode.com/jobs
-- **Sources (checked 2026-10-11):** <https://careers.uniqode.com/jobs/KEn4mGZC9bmU/seo-outreach-intern> <https://careers.uniqode.com/jobs> <https://jobs.accel.com/companies/uniqode-formerly-beaconstac-2-c96e5c0c-3225-410a-9009-d21a8d6fd412/jobs/76119393-lead-seo>
-- **Notes:** Also has SDR openings (full-time) focused on freemium signals and ABM, which could be a later path. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
-
-## C028 · Goodera — score 72
-- **Role:** Marketing Intern (also Client Engagement Intern) (Advertised) · Bengaluru · On-site
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Several concurrent intern listings across functions. Dates unknown.
-- **Evidence:** Kula careers job 33107 (Marketing Intern, Internship, On-Site); Weekday mirror; Client Engagement Intern (Kula 34391); multiple other intern postings on TeamLease.
-- **December start:** Possible - date unknown.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://careers.kula.ai/goodera
-- **Sources (checked 2026-10-11):** <https://careers.kula.ai/goodera/33107> <https://jobs.weekday.works/marketing-intern-at-goodera-4387952253> <https://careers.kula.ai/goodera/34391> <https://in.indeed.com/cmp/Goodera/jobs>
-- **Notes:** Goodera's Event Management intern is listed at INR 15-20k/month on Indeed. That is a different role, but it suggests a paid intern culture. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
+- **Notes:** The listed range starts at INR 0. Confirm a non-zero stipend before accepting; exclude if it turns out to be unpaid. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. HQ London (BI/analytics consultancy) with Bengaluru staff. Director profile: https://www.linkedin.com/in/james-kightley-82226b4b/ ; Director of Growth & Partnerships William Hellegas: https://www.linkedin.com/in/william-hellegas-89856b142/. A personal email appeared only on a third-party directory (mindmaps.femtech.health) - not used. Official domain not confirmed.
 
 ## C031 · CM.com — score 72
 - **Role:** Sales Internship (Sales Development Representative intern) (Advertised) · Bengaluru · On-site
@@ -223,7 +256,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://jobs.cm.com/o/sales-internship-bangalore
 - **Sources (checked 2026-10-11):** <https://jobs.cm.com/o/sales-internship-bangalore> <https://cmcom.recruitee.com/o/sales-internship-bangalore>
-- **Notes:** Posting date not visible; may be for the Sept 2026 cohort. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
+- **Notes:** Posting date not visible; may be for the Sept 2026 cohort. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. No public recruiter email; apply via jobs.cm.com (Recruitee). A corporate recruiter (Dennis Kerkhof) appears on CM.com general internship pages but not confirmed for Bangalore and no email shown.
 
 ## C048 · Deloitte South Asia (Growth Office - Research & Insights) — score 72
 - **Role:** Intern - Research & Insights (Growth Office) (Advertised) · Bengaluru listed (description also mentions Delhi) · On-site
@@ -234,7 +267,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://southasiacareers.deloitte.com/job/Bengaluru-Enabling-Areas-Growth-Office-Intern-Research-&-Insights-Across-Locations/59384644/
 - **Sources (checked 2026-10-11):** <https://southasiacareers.deloitte.com/job/Bengaluru-Enabling-Areas-Growth-Office-Intern-Research-&-Insights-Across-Locations/59384644/>
-- **Notes:** Eligibility says graduate/postgraduate - candidate graduates 2027, may not qualify; Bengaluru vs Delhi location conflict in listing.
+- **Notes:** Eligibility says graduate/postgraduate - candidate graduates 2027, may not qualify; Bengaluru vs Delhi location conflict in listing. | Posting live (2026-10-11 check): Unknown. Apply via portal only (Req ID 111084, Deloitte Shared Services India LLP). Posting still indexed on official portal; location listed Bengaluru but text also says Delhi.
 
 ## C101 · Fam (FamApp, formerly FamPay) — score 72
 - **Role:** Product Operations Intern (also Product Analyst Intern) (Advertised) · Bengaluru · On-site
@@ -357,15 +390,27 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://www.needl.ai/careers/forward-deployed-engineer-intern> <https://needl.ai/careers/ai-engineering-intern> <https://jobs.flexiple.com/p/30-engineering-jobs-handpicked-for-you-flexiple-jobs>
 - **Notes:** FDE intern pitched at IIT/premier-institute talent — stretch for B.Sc candidate; AI Engineering Intern is more open (fresh grads/1-2 yrs). Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
 
+## C062 · Gnani.ai — score 71
+- **Role:** Great Indian AI Internship Challenge (paid 6-month internship); alt: Operations Analyst / Marketing Analytics / Analytics Consultant Intern (Advertised) · Bengaluru · Not stated for challenge; aggregator intern listings say in-office Bengaluru
+- **Pay:** Confirmed Paid — Up to Rs 1,00,000/month (challenge); 12K–19K/month on aggregator ops/analytics listings · **Duration:** 6 months (challenge); 5 months (Ops Analyst listing)
+- **Hiring urgency:** High — Live programme with hard deadline 10 Nov 2026 and up to 100 paid slots.
+- **Evidence:** Challenge opened 30 Sep 2026, final submission deadline 10 Nov 2026 11:59 PM IST, internships start 1 Jan 2027, stipend up to Rs 1 lakh/month (press + programme site). Aggregator lists Operations Analyst Intern (19K/mo, 5 months, 3 openings), Marketing Analytics (16K), Financial Data Analyst (17K), Data Engineer (12K) interns.
+- **December start:** Possible — programme starts 1 Jan 2027 (one month after target); ops listings rolling intake
+- **Contact:** — (general) · hello@gnani.ai · Publicly listed (official site) https://www.gnani.ai/?p=17857
+- **Careers / LinkedIn:** https://gnani.ai/careers
+- **Sources (checked 2026-10-11):** <https://www.gnani.ai/internship> <https://fintechbiznews.com/fintech-technology/great-indian-ai-internship-challenge-by-gnani-ai> <https://www.sightsinplus.com/news/internship/gnani-ai-offers-100-paid-internships-stipend-upto-rs-1-lakh-month/> <https://myinternships.in/job/gnani-ai-operations-analyst-intern-bengaluru-c94209> <https://myinternships.in/job/gnani-ai-marketing-analytics-intern-bengaluru-2a16cc>
+- **Notes:** Challenge requires working app using >=1 Gnani model/API, demo video, write-up, public LinkedIn/X post; 5,000 API credits provided. Aggregator listings (myinternships.in) unconfirmed on official site. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Posting live (2026-10-11 check): Yes. The address appears in the gnani.ai site footer (written there as Hello@gnani.ai). The Great Indian AI Internship Challenge is open until 2026-11-10 23:59 IST, internships start 2027-01-01, and submissions go through the programme site rather than email. Prospeo's email pattern was ignored.
+
 ## C005 · Quintype Technologies — score 70
 - **Role:** Marketing Analyst Intern (Advertised) · Bengaluru · Hybrid
 - **Pay:** Confirmed Paid — ₹20,000–30,000/month · **Duration:** 6 months
 - **Hiring urgency:** Medium — Appears on the Oct 2026 Internshala page; exact age not seen.
 - **Evidence:** Internshala Bangalore analytics listing (Oct 2026 index): Quintype Technologies, Marketing Analyst, hybrid, ₹20,000–30,000/month, 6 months.
 - **December start:** Possible: 6-month role, start not stated
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** Chirdeep Shetty (CEO (per CB Insights)) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/analytics-internship-in-bangalore/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/analytics-internship-in-bangalore/>
+- **Notes:** Posting live (2026-10-11 check): Unknown. The Built In Bengaluru profile has a 'Write to us at' email, but it is obfuscated in the search results. AeroLeads hides its email behind a paywall and was not used. Older sources name Amit Rathore as founder/CEO.
 
 ## C007 · Impacto Digifin Technologies — score 70
 - **Role:** Business Analyst Intern (Advertised) · Brookefield, Bengaluru · On-site
@@ -373,10 +418,10 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** Medium — Listing on a Sep 2026 aggregator page; original posting not verified.
 - **Evidence:** Dr. Job aggregator page labelled Sep 2026 lists Impacto Digifin Business Analyst Intern, 6 months, ₹20,000/month.
 - **December start:** Possible: 6-month role, start not stated
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** Nageswara Rao Korlepara (CEO (per StartupRise directory)) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://www.drjobpro.com/india/business-analyst-internship-jobs-in-bengaluru
 - **Sources (checked 2026-10-11):** <https://www.drjobpro.com/india/business-analyst-internship-jobs-in-bengaluru>
-- **Notes:** Third-party source only; verify on the company site or LinkedIn.
+- **Notes:** Third-party source only; verify on the company site or LinkedIn. | Posting live (2026-10-11 check): Unknown. This is an AI and fintech banking-suite company. Directory listings give London as HQ, but the posting places it in Brookefield, Bengaluru. Do not confuse it with Digifin (digifin.in, Chennai). No email was found, and no LinkedIn URL surfaced.
 
 ## C018 · Blithe — score 70
 - **Role:** Founder's Office Intern (Advertised) · HSR Layout, Bengaluru · On-site
@@ -387,7 +432,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://in.indeed.com/q-blithe-jobs.html
 - **Sources (checked 2026-10-11):** <https://in.indeed.com/q-blithe-jobs.html>
-- **Notes:** Company details thin; verify before applying.
+- **Notes:** Company details thin; verify before applying. | Posting live (2026-10-11 check): Unknown. The Indeed posting is a Founder's Office Intern role in HSR Layout Sector 1 paying Rs 20k/month. No website, founder or email was found.
 
 ## C024 · Decision Foundry — score 70
 - **Role:** Digital Marketing Intern (Advertised) · Bengaluru · Hybrid (Workable); Built In says in-office
@@ -398,18 +443,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://apply.workable.com/decision-foundry/
 - **Sources (checked 2026-10-11):** <https://apply.workable.com/decision-foundry/jobs/view/71754DD88D.md> <https://builtinbengaluru.in/job/digital-marketing-intern/10233315> <https://startup.jobs/inside-sales-intern-bangalore-decision-foundry-7051398>
-- **Notes:** Listings conflict: Saarthi shows it as full-time with 0-3 years' experience. Confirm it is still an internship. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
-
-## C030 · ClearTax (Clear) — score 70
-- **Role:** Digital Marketing Intern (Advertised) · Bengaluru · 
-- **Pay:** Confirmed Paid — INR 24,000-25,000/month · **Duration:** 6 months
-- **Hiring urgency:** Medium — Appears on the Oct 2026 Internshala index with a PPO. Exact posting date not seen.
-- **Evidence:** Internshala Bangalore digital-marketing listings (Oct 2026 index) show a ClearTax 6-month internship at INR 24-25k/month, with a job offer of up to INR 6.5 LPA after it.
-- **December start:** Possible - 6-month role; date unknown.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://internshala.com/internships/digital-marketing-internship-in-bangalore/
-- **Sources (checked 2026-10-11):** <https://internshala.com/internships/digital-marketing-internship-in-bangalore/>
-- **Notes:** Seen only in a search summary of an Internshala index page. Internshala itself was blocked for fetch, so verify the listing directly. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
+- **Notes:** Listings conflict: Saarthi shows it as full-time with 0-3 years' experience. Confirm it is still an internship. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. HQ is listed as New York, with about 112 employees per Built In. No published email was found. Apply via Workable.
 
 ## C045 · WRI India (World Resources Institute India) — score 70
 - **Role:** Intern - Climate, Economics and Finance (2026) (Advertised) · Bengaluru / Mumbai / Delhi · On-site (one of listed offices)
@@ -420,7 +454,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND Postings direct applicants to wri.org/careers and say not to contact program staff directly
 - **Careers / LinkedIn:** https://www.wri.org/careers
 - **Sources (checked 2026-10-11):** <https://www.wri.org/careers/jobs/intern-climate-economics-and-finance-2026-jr100352> <https://joinsaarthi.com/jobs/wri-india/intern-clean-growth-transition-green-skills-and-jobs-new-delhi/902ecd42-cbc2-413b-aa4a-db1c453503f1>
-- **Notes:** WRI states recruitment never involves payment. Check posting is still open before applying.
+- **Notes:** WRI states recruitment never involves payment. Check posting is still open before applying. | Posting live (2026-10-11 check): Unknown. All applications must go through the online portal at wri.org/careers. The posting explicitly asks applicants not to contact program staff directly, so do NOT cold-email. | DO NOT EMAIL: posting asks applicants not to contact staff; apply via wri.org/careers only.
 
 ## C061 · Edureka (Brain4ce Education) — score 70
 - **Role:** Internship - Research Analyst (Advertised) · Bengaluru · On-site
@@ -431,18 +465,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://in.indeed.com/cmp/Edureka/jobs
 - **Sources (checked 2026-10-11):** <https://in.indeed.com/cmp/Edureka/jobs>
-- **Notes:** Not a research firm, but role matches; verify still live.
-
-## C069 · CyberWarFare Labs — score 70
-- **Role:** AI Security Intern (Offensive Security) — LLM red teaming, RAG testing, prompt-injection research (Advertised) · HSR Layout, Bengaluru · On-site
-- **Pay:** Confirmed Paid — Rs 15,000/month (10% TDS deducted) · **Duration:** 3 months; possible full-time after
-- **Hiring urgency:** Medium — Fresh JD uploaded Aug 2026; 'Joining: Immediately' stated.
-- **Evidence:** Careers page lists AI Security Intern; JD PDFs uploaded May 2026 (AI security) and Aug 2026 (Cybersecurity Lab Support Intern); Blue/Red team intern JDs.
-- **December start:** Possible — rolling/immediate joining
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://cyberwarfare.live/career
-- **Sources (checked 2026-10-11):** <https://cyberwarfare.live/career> <https://cyberwarfare.live/wp-content/uploads/2026/05/AI-Security-Intern-Offensive-Security.pdf> <https://cyberwarfare.live/wp-content/uploads/2026/08/JD-for-Cybersecurity-Lab-Support-Intern-.pdf>
-- **Notes:** Lower stipend; edtech-oriented company — check it is not a training-fee programme (JD shows stipend paid). Third-party data place company in Cambridge, UK; job location HSR Layout Bengaluru. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
+- **Notes:** Not a research firm, but role matches; verify still live. | Only a support/sales inbox found (sales@edureka.co); not used for outreach. Posting live (2026-10-11 check): Unknown. No careers or HR email was found. The official contact page lists only department inboxes: sales@, corp@, partnerships@, marketing@ (media), learner.support@ and grievance@edureka.co. sales@ is recorded as the general fallback and is a weak fit for intern outreach. A Research Analyst internship is on Indeed (from Rs 20k/month).
 
 ## C033 · Macgence — score 70
 - **Role:** Technical Content Writer - Intern (Advertised) · Remote, India · Remote
@@ -466,16 +489,16 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://www.revrag.ai/careers/forward-deployed-engineer-intern> <https://www.revrag.ai/careers/ai-engineer-intern> <https://www.revrag.ai/careers/software-developer-intern-backend>
 - **Notes:** Founder name from third-party Apollo profile only. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
 
-## C035 · Variabl — score 69
-- **Role:** Content & Social Media Intern (Advertised) · Bengaluru · 
-- **Pay:** Confirmed Paid — INR 10,000-15,000/month · **Duration:** 6 months
-- **Hiring urgency:** Low — Only aggregator evidence.
-- **Evidence:** An Oct 2026 Internshala index summary listed Variabl content and social media internship, Bangalore, INR 10-15k/month, 6 months.
-- **December start:** Possible - 6 months; date unknown.
+## C034 · Basenine — score 70
+- **Role:** AI Growth Engineer Intern (Advertised) · Bengaluru · Hybrid
+- **Pay:** Confirmed Paid — INR 20,000-25,000/month · **Duration:** 2 months
+- **Hiring urgency:** Medium — Appears on the Oct 2026 index. A follow-up search could not find the company page.
+- **Evidence:** An Oct 2026 Internshala index summary listed Basenine AI Growth Engineer internship, Bangalore, hybrid, INR 20-25k/month, 2 months.
+- **December start:** Possible - 2-month role; could be extended.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
+- **Careers / LinkedIn:** https://www.linkedin.com/in/basil-alosious/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/digital-marketing-internship-in-bangalore/>
-- **Notes:** Low verification and low stipend. Industry is unclear from what was seen. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
+- **Notes:** Low verification: seen only in an aggregated search summary, and a targeted search found no company site. Short duration is below the 3-month preference. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. Company not confirmed. Possible match: 'Basenine - B2B Tech Website Revamp Studio' (Bengaluru), founder Basil Alosious per his LinkedIn profile; another profile listing Basenine: https://www.linkedin.com/in/achu-prasad/. No official website or email found. Verify on the Internshala listing before outreach.
 
 ## C107 · Inertialabs Technologies — score 69
 - **Role:** Product Management Intern (Advertised) · HSR Layout, Bengaluru · On-site
@@ -486,7 +509,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://www.airtribe.live/jobs/product-manager/product-management-intern-at-inertialabs-technologies-KBP2DACAYJTX
 - **Sources (checked 2026-10-11):** <https://www.airtribe.live/jobs/product-manager/product-management-intern-at-inertialabs-technologies-KBP2DACAYJTX>
-- **Notes:** Probably stale. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+- **Notes:** Probably stale. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Posting live (2026-10-11 check): Unknown. Early-stage consumer AI startup in HSR Layout (per Airtribe post: 3-month PM internship, up to Rs 20k/month, work with founding team). Not the US company Inertial Labs (VIAVI). No website, founder or email found.
 
 ## C010 · SkyPoint Cloud — score 68
 - **Role:** Data Analyst Intern (PST shift) (Advertised) · Bengaluru · 
@@ -737,17 +760,6 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://joinsaarthi.com/jobs/sattva-consulting/sattva-internship-form-bengaluru/ba81e83e-d6b6-4178-ba5d-6ba543df32db> <https://www.placement-officer.com/2025/04/sattva-internship-openings-2025-apply.html>
 - **Notes:** No follow-ups requested by company.
 
-## C034 · Basenine — score 66
-- **Role:** AI Growth Engineer Intern (Advertised) · Bengaluru · Hybrid
-- **Pay:** Confirmed Paid — INR 20,000-25,000/month · **Duration:** 2 months
-- **Hiring urgency:** Medium — Appears on the Oct 2026 index. A follow-up search could not find the company page.
-- **Evidence:** An Oct 2026 Internshala index summary listed Basenine AI Growth Engineer internship, Bangalore, hybrid, INR 20-25k/month, 2 months.
-- **December start:** Possible - 2-month role; could be extended.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://internshala.com/internships/digital-marketing-internship-in-bangalore/>
-- **Notes:** Low verification: seen only in an aggregated search summary, and a targeted search found no company site. Short duration is below the 3-month preference. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
-
 ## C044 · Inc42 Media (Datalabs) — score 66
 - **Role:** Data Operations Intern (Datalabs) (Advertised) · New Delhi (per posting) · Unclear (posting lists New Delhi)
 - **Pay:** Pay Undisclosed  · **Duration:** n/a
@@ -769,6 +781,28 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** —
 - **Sources (checked 2026-10-11):** <https://dealroom.co/news/160778-moneytruva-raises-seed-round-led-by-sunil-singhania-to-structure-indias/> <https://app.fundz.net/fundings/moneytruva-funding-round-seed-2a7df7> <https://yourstory.com/2026/10/startup-news-and-updates-daily-roundup-october-8-2026>
 - **Notes:** Mumbai-based - lower priority unless remote.
+
+## C067 · SuperKalam (YC W23) — score 65
+- **Role:** AI/ML Research Internship (AI applied engineer – voice first) (Advertised) · Remote India / Bengaluru preferred · Remote or Bengaluru
+- **Pay:** Confirmed Paid — Rs 25,000–40,000/month (another version says ~28–40K) · **Duration:** 3–6+ months
+- **Hiring urgency:** Medium — Multiple internship listings live on YC; posting date not visible.
+- **Evidence:** YC / Work at a Startup listings for AI/ML research internship; also Growth Marketing Internship to PPO (Bangalore).
+- **December start:** Possible — rolling, no start date
+- **Contact:** Aseem Gupta (Co-founder & CTO) · hello@superkalam.com · Publicly listed (official site) https://superkalam.com/terms-and-conditions and https://superkalam.com/help-and-support (hello@ for general queries)
+- **Careers / LinkedIn:** https://www.ycombinator.com/companies/superkalam/jobs
+- **Sources (checked 2026-10-11):** <https://www.workatastartup.com/jobs/64551> <https://www.ycombinator.com/companies/superkalam/jobs/DKwCjWa-ai-ml-research-internship> <https://www.ycombinator.com/companies/superkalam/jobs/2ue7xrO-growth-marketing-internship-to-ppo-bangalore>
+- **Notes:** Email in listing was obfuscated; not recorded. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Posting live (2026-10-11 check): Unknown. Founder email not self-published; hello@ is the official general inbox. Aseem Gupta's LinkedIn headline currently shows 'Homi' but his posts recruit for SuperKalam incl. the AI/ML research internship. CEO: Vimal Singh Rathore. Legal entity: Snapstack Technologies Pvt Ltd.
+
+## C070 · TrueFoundry — score 65
+- **Role:** AI Infrastructure & Data Intern (Advertised) · Bengaluru · In-office
+- **Pay:** Confirmed Paid — ~Rs 31,000/month (aggregator) · **Duration:** 3 months; possible PPO
+- **Hiring urgency:** Medium — Rolling listing with PPO; single opening.
+- **Evidence:** Aggregator listing (1 opening, rolling); official careers page exists; older backend/frontend intern listings on Wellfound.
+- **December start:** Possible — rolling start
+- **Contact:** Hiring team (careers) · careers@truefoundry.com · Publicly listed (official site) https://www.truefoundry.com/careers (truefoundry.com site results; careers inquiries to careers@truefoundry.com)
+- **Careers / LinkedIn:** https://www.truefoundry.com/careers
+- **Sources (checked 2026-10-11):** <https://myinternships.in/job/truefoundry-is-hiring-ai-infrastructure-and-data-intern-bengaluru-39a502> <https://www.truefoundry.com/careers> <https://freshershunt.in/?p=55758>
+- **Notes:** Stipend only from aggregator — confirm on official page. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Posting live (2026-10-11 check): Unknown. Search summary attributed careers@ to truefoundry.com pages (careers page among results); exact page not 100% pinned, but it was from the official domain. Other official: support@truefoundry.com. The specific 'AI Infrastructure & Data Intern' post was not found on job boards in search.
 
 ## C072 · Lyzr AI — score 64
 - **Role:** Speculative: AI Builder / solutions intern; advertised People Ops Intern (non-technical) (Speculative) · Bengaluru (India office); HQ Jersey City · Mix of onsite/hybrid
@@ -1010,7 +1044,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://internshala.com/internships/analytics-internship-in-bangalore/
 - **Sources (checked 2026-10-11):** <https://internshala.com/internships/analytics-internship-in-bangalore/>
-- **Notes:** Work mode not shown in the snippet.
+- **Notes:** Work mode not shown in the snippet. | Posting live (2026-10-11 check): Unknown. The legal entity is Clapptron Technologies Pvt Ltd, with an office in HSR Layout. The help docs route support through the in-app 'Request Support' button. No published email was surfaced, and the founders were not confirmed.
 
 ## C006 · binary.so — score 62
 - **Role:** Growth / Founder's Office Intern (analytics-heavy) (Advertised) · Bengaluru · On-site
@@ -1021,7 +1055,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://binary.so/uAjKWmQ
 - **Sources (checked 2026-10-11):** <https://binary.so/uAjKWmQ>
-- **Notes:** Posting likely tied to a Sep 2026 cohort; ask whether there is a Dec/Jan intake.
+- **Notes:** Posting likely tied to a Sep 2026 cohort; ask whether there is a Dec/Jan intake. | Posting live (2026-10-11 check): Unknown. Searches returned nothing about binary.so: no founder, email or company information.
 
 ## C093 · Zomint — score 62
 - **Role:** Content / Growth marketing intern (regional-language content distribution) (Speculative) · India (HQ city not verified) · Onsite/Hybrid (unconfirmed)
@@ -1055,17 +1089,6 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://www.ceew.in/careers
 - **Sources (checked 2026-10-11):** <https://www.ceew.in/node/4719> <https://rejobs.org/en/renewable-energy-jobs/134615-research-intern-tech-and-ai-council-on-energy-environment-and-water>
 - **Notes:** Delhi on-site; one listing mentions compensation but no figure.
-
-## C062 · Gnani.ai — score 60
-- **Role:** Great Indian AI Internship Challenge (paid 6-month internship); alt: Operations Analyst / Marketing Analytics / Analytics Consultant Intern (Advertised) · Bengaluru · Not stated for challenge; aggregator intern listings say in-office Bengaluru
-- **Pay:** Confirmed Paid — Up to Rs 1,00,000/month (challenge); 12K–19K/month on aggregator ops/analytics listings · **Duration:** 6 months (challenge); 5 months (Ops Analyst listing)
-- **Hiring urgency:** High — Live programme with hard deadline 10 Nov 2026 and up to 100 paid slots.
-- **Evidence:** Challenge opened 30 Sep 2026, final submission deadline 10 Nov 2026 11:59 PM IST, internships start 1 Jan 2027, stipend up to Rs 1 lakh/month (press + programme site). Aggregator lists Operations Analyst Intern (19K/mo, 5 months, 3 openings), Marketing Analytics (16K), Financial Data Analyst (17K), Data Engineer (12K) interns.
-- **December start:** Possible — programme starts 1 Jan 2027 (one month after target); ops listings rolling intake
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://gnani.ai/careers
-- **Sources (checked 2026-10-11):** <https://www.gnani.ai/internship> <https://fintechbiznews.com/fintech-technology/great-indian-ai-internship-challenge-by-gnani-ai> <https://www.sightsinplus.com/news/internship/gnani-ai-offers-100-paid-internships-stipend-upto-rs-1-lakh-month/> <https://myinternships.in/job/gnani-ai-operations-analyst-intern-bengaluru-c94209> <https://myinternships.in/job/gnani-ai-marketing-analytics-intern-bengaluru-2a16cc>
-- **Notes:** Challenge requires working app using >=1 Gnani model/API, demo video, write-up, public LinkedIn/X post; 5,000 API credits provided. Aggregator listings (myinternships.in) unconfirmed on official site. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
 
 ## C063 · Sarvam AI — score 60
 - **Role:** Operations Intern (On-Device AI) (Advertised) · Bengaluru · On-site
@@ -1120,7 +1143,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://webkul.com/careers/
 - **Sources (checked 2026-10-11):** <https://yohire.in/job/webkul-business-5-openings-india-internship-2026>
-- **Notes:** Noida (lower location priority). Careers URL not verified. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+- **Notes:** Noida (lower location priority). Careers URL not verified. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Posting live (2026-10-11 check): Unknown. webkul.com/contacts and webkul.com/jobs both show a Careers email but it was obfuscated ([email protected]) in search results - open the page directly to read it. Official job post for Business Analyst Internship exists on webkul.com (Noida, 6 months, written test + technical + HR rounds); individual jobs use an online form.
 
 ## C056 · Mordor Intelligence — score 57
 - **Role:** Research Associate / Primary Research intern (speculative) (Speculative) · Hyderabad · On-site
@@ -1186,29 +1209,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://hyperverge.co/careers
 - **Sources (checked 2026-10-11):** <https://jobs.spacecapital.com/companies/hyperverge/jobs/87045614-machine-learning-research-intern-llms-computer-vision>
-- **Notes:** Technically demanding; CGPA 6.8 may be filtered. Stipend figure from job board, not confirmed on HyperVerge's own page. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
-
-## C067 · SuperKalam (YC W23) — score 54
-- **Role:** AI/ML Research Internship (AI applied engineer – voice first) (Advertised) · Remote India / Bengaluru preferred · Remote or Bengaluru
-- **Pay:** Confirmed Paid — Rs 25,000–40,000/month (another version says ~28–40K) · **Duration:** 3–6+ months
-- **Hiring urgency:** Medium — Multiple internship listings live on YC; posting date not visible.
-- **Evidence:** YC / Work at a Startup listings for AI/ML research internship; also Growth Marketing Internship to PPO (Bangalore).
-- **December start:** Possible — rolling, no start date
-- **Contact:** Aseem Gupta (Founder (per YC listing)) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://www.ycombinator.com/companies/superkalam/jobs
-- **Sources (checked 2026-10-11):** <https://www.workatastartup.com/jobs/64551> <https://www.ycombinator.com/companies/superkalam/jobs/DKwCjWa-ai-ml-research-internship> <https://www.ycombinator.com/companies/superkalam/jobs/2ue7xrO-growth-marketing-internship-to-ppo-bangalore>
-- **Notes:** Email in listing was obfuscated; not recorded. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
-
-## C070 · TrueFoundry — score 54
-- **Role:** AI Infrastructure & Data Intern (Advertised) · Bengaluru · In-office
-- **Pay:** Confirmed Paid — ~Rs 31,000/month (aggregator) · **Duration:** 3 months; possible PPO
-- **Hiring urgency:** Medium — Rolling listing with PPO; single opening.
-- **Evidence:** Aggregator listing (1 opening, rolling); official careers page exists; older backend/frontend intern listings on Wellfound.
-- **December start:** Possible — rolling start
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://www.truefoundry.com/careers
-- **Sources (checked 2026-10-11):** <https://myinternships.in/job/truefoundry-is-hiring-ai-infrastructure-and-data-intern-bengaluru-39a502> <https://www.truefoundry.com/careers> <https://freshershunt.in/?p=55758>
-- **Notes:** Stipend only from aggregator — confirm on official page. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
+- **Notes:** Technically demanding; CGPA 6.8 may be filtered. Stipend figure from job board, not confirmed on HyperVerge's own page. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Only a support/sales inbox found (contact@hyperverge.co); not used for outreach. Posting live (2026-10-11 check): Unknown. No careers/HR email found; contact@ is a customer-support contact, use with caution. Apply via careers page or the job board link.
 
 ## C074 · Seqrite (Quick Heal Technologies) — score 54
 - **Role:** Security Analyst Intern (alt: SOC Analyst Intern) (Advertised) · Bengaluru · In-office
@@ -1219,7 +1220,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://www.seqrite.com/careers
 - **Sources (checked 2026-10-11):** <https://myinternships.in/internships/6a754649b04c27c8fdeac04f> <https://myinternships.in/internships/6a754649b04c27c8fdeac051>
-- **Notes:** Not a startup. Only aggregator source; careers URL is a standard path not verified. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
+- **Notes:** Not a startup. Only aggregator source; careers URL is a standard path not verified. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Posting live (2026-10-11 check): Unknown. Quick Heal careers pages use an online Apply button; no careers email. Only support@seqrite.com (product support) found on docs.seqrite.com - not suitable for applications. CHRO named in 2019 press release (Reetu Raina) may be outdated.
 
 ## C076 · Peakflo (YC) — score 53
 - **Role:** Machine Learning (ML) Engineer Intern (Paid – India/Remote) (Advertised) · India / Remote · Remote
