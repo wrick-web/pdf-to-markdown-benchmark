@@ -27,6 +27,28 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/content-trend-insights-intern/9747024> <https://en.wikipedia.org/wiki/Stylumia>
 - **Notes:** Best combined data+content fit in this segment. | Posting live (2026-10-11 check): Yes. Note email domain is stylumia.com though site is stylumia.ai (as shown on the official careers page; page may be a few years old). Other official addresses: sales@stylumia.com (contact page). Built In listing showed 'Reposted 2 days ago' at search time.
 
+## C120 · FyerX — score 89
+- **Role:** Business Development Intern (Advertised) · Bengaluru (HSR Layout) · On-site (some roles remote)
+- **Pay:** Confirmed Paid — ₹10,000/month in hand + variable up to ₹15,000 · **Duration:** n/a
+- **Hiring urgency:** Medium — Several concurrent intern/junior listings across boards.
+- **Evidence:** LinkedIn job 'Business Development Intern' (₹10k in hand + variable up to ₹15k, possible FT conversion); TeamLease BD intern listing; current HR Intern / Junior HR Associate listings on Jobgether/Remotive/Weekday.
+- **December start:** Possible - agency hires interns continuously
+- **Contact:** —  · hello@fyerx.com · Publicly listed (official site) fyerx.com pages (e.g. https://fyerx.com/about-us/) list hello@fyerx.com as contact; site has a Careers section
+- **Careers / LinkedIn:** https://fyerx.com/about-us/
+- **Sources (checked 2026-10-11):** <https://in.linkedin.com/jobs/view/business-development-intern-at-fyerx-your-trusted-marketing-partner-3651930481> <https://www.teamlease.com/jobs/business-development-intern-jobs-in-bangalore-fyerx-785779> <https://jobgether.com/offer/6a8a5b401de6f4542a51fd68-hr-intern> <https://fyerx.com/about-us/>
+- **Notes:** BD intern LinkedIn listing is likely older (job id 365...); HR intern listings appear current. Variable-pay component - confirm fixed stipend.
+
+## C121 · Tenovia — score 85
+- **Role:** Digital Marketing Intern (Advertised) · Bengaluru · 
+- **Pay:** Confirmed Paid — ₹12,000-15,000/month · **Duration:** n/a
+- **Hiring urgency:** Medium — Recently listed on LinkedIn Jobs aggregator; exact date not confirmed.
+- **Evidence:** LinkedIn Jobs Bengaluru listing 'Tenovia - Digital Marketing Internship ₹12,000-₹15,000' shown as ~1 week old at crawl time (appeared in two separate LinkedIn result pages).
+- **December start:** Unclear
+- **Contact:** —  · info@tenovia.com · Publicly listed (official site) tenovia.com Contact Us page lists info@tenovia.com (general; some pages obfuscate it)
+- **Careers / LinkedIn:** https://tenovia.com/
+- **Sources (checked 2026-10-11):** <https://in.linkedin.com/jobs/digital-marketing-intern-jobs-bengaluru> <https://tenovia.com/>
+- **Notes:** General info@ address, not a dedicated careers inbox; site has a Careers link.
+
 ## C055 · Ken Research — score 83
 - **Role:** Digital Marketing Intern (also pitch Research Intern) (Advertised) · Gurugram / Sohna (Haryana) · On-site
 - **Pay:** Confirmed Paid — Rs 10,000-15,000/month (Digital Marketing Intern, per Indeed) · **Duration:** n/a
@@ -71,6 +93,127 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://careers.kula.ai/goodera/33107> <https://jobs.weekday.works/marketing-intern-at-goodera-4387952253> <https://careers.kula.ai/goodera/34391> <https://in.indeed.com/cmp/Goodera/jobs>
 - **Notes:** Goodera's Event Management intern is listed at INR 15-20k/month on Indeed. That is a different role, but it suggests a paid intern culture. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Posting live (2026-10-11 check): Unknown. Press: inbox@goodera.com (media center).
 
+## C101 · Fam (FamApp, formerly FamPay) — score 83
+- **Role:** Product Operations Intern (also Product Analyst Intern) (Advertised) · Bengaluru · On-site
+- **Pay:** Pay Undisclosed — Not published · **Duration:** Not stated
+- **Hiring urgency:** Medium — Several intern reqs live on Lever; Product Analyst post dated ~May 2026 (may be >90 days old).
+- **Evidence:** Official Lever board lists Product Operations Intern, Product Analyst Intern (indexed May 2026), Copy Intern, Data Engineering Intern, Product Design Intern.
+- **December start:** Possible - no start date stated; final-year students preferred
+- **Contact:** — (Careers/hiring inbox) · hiring@fampay.in · Publicly listed (official site) fampay.in/careers (official FamPay careers page)
+- **Careers / LinkedIn:** https://jobs.lever.co/fampay
+- **Sources (checked 2026-10-11):** <https://jobs.lever.co/fampay/e21b862f-cde6-4fb7-a08b-02c72f26ae99> <https://jobs.lever.co/fampay/ed0b7a4f-112a-4768-b4f9-d2e8368e5ad8> <https://jobs.lever.co/fampay>
+- **Notes:** Product Analyst Intern prefers 3+ months prior analyst internship. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. Found on older official fampay.in/careers page; company rebranded to famapp.in, whose careers page email was obscured in search. Verify still active. support@fampay.in is customer support, excluded.
+
+## C110 · Portcast — score 83
+- **Role:** Data Analyst Intern (Advertised) · Bangalore and other India cities (remote-friendly) · Remote / in-office
+- **Pay:** Pay Undisclosed — Not published · **Duration:** Not stated
+- **Hiring urgency:** Medium — Posting ~2 months old, open to multiple countries.
+- **Evidence:** Official Lever posting indexed Aug 2026; mirrored on Built In Bengaluru, Remotive, EF portfolio.
+- **December start:** Possible - remote role, start not stated
+- **Contact:** — (General enquiries) · contact@portcast.io · Publicly listed (official site) changelog.app.portcast.io (official Portcast changelog)
+- **Careers / LinkedIn:** https://jobs.lever.co/portcast
+- **Sources (checked 2026-10-11):** <https://jobs.lever.co/portcast/f18cc64e-c34a-416c-b213-62a39906260e/> <https://builtinbengaluru.in/job/data-analyst/10584051> <https://portfolio.joinef.com/companies/portcast/jobs/89259607-data-analyst-intern>
+- **Notes:** Location info conflicts across mirrors. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. No careers email found. contact@ listed on official changelog (for data enquiries); support@ and services@ also exist (not recorded). Prefer applying via Lever.
+
+## C112 · Human Archive — score 83
+- **Role:** Founder's Office Intern - Partnerships (Advertised) · Bangalore / remote · Hybrid / remote
+- **Pay:** Pay Undisclosed — Not published · **Duration:** Not stated
+- **Hiring urgency:** Medium — Live Ashby posting; date not visible.
+- **Evidence:** Official Ashby posting.
+- **December start:** Possible - start not stated
+- **Contact:** Raj Patel (co-founder) (Co-founder) · team@humanarchive.ai · Publicly listed (official site) humanarchive.ai footer/contact page
+- **Careers / LinkedIn:** https://jobs.ashbyhq.com/humanarchive
+- **Sources (checked 2026-10-11):** <https://jobs.ashbyhq.com/humanarchive/4c694746-a082-4ee9-9dcd-06a1b82f44ee>
+- **Notes:** Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. Homepage also publishes raj@humanarchive.ai ('email for a conversation') - company-published, founder Raj Patel. Founders: Rushil Agarwal (CEO), Raj Patel, Samay Maini, Shloke Patel. Apply via Ashby.
+
+## C079 · Desible.ai — score 83
+- **Role:** GTM / Business Analyst intern (BFSI market research, lead-gen) (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** High — Funding <1 week old with explicit GTM expansion mandate.
+- **Evidence:** Seed Plus ~Rs 32 cr announced ~7 Oct 2026; stated use: agentic AI, compliance infra, go-to-market expansion, product dev. Claims 40+ BFSI institutions using/evaluating.
+- **December start:** Likely - fresh round, GTM team being built over next quarter
+- **Contact:** Uttam Tiwari (Co-founder & CEO) · info@desible.ai · Publicly listed (official site) desible.ai/legal/privacy-policy
+- **Careers / LinkedIn:** https://www.linkedin.com/in/uttam-tiwari-2b4b4861/
+- **Sources (checked 2026-10-11):** <https://www.newsbytesapp.com/news/business/desibleai-raises-rs32cr-seed-plus-to-scale-bfsi-ai-tools/tldr> <https://www.startupresearcher.com/news/desible-ai-raises-inr32-crore-in-seed-plus-round> <https://yourstory.com/2026/10/startup-news-and-updates-daily-roundup-october-7-2026> <https://www.dealstreetasia.com/?p=497476>
+- **Notes:** Website/LinkedIn not verified (fetch blocked). Dollar amount varies by source ($3.3M-$4.35M); Rs 32 cr consistent. | Contact check 2: posting live Unknown. info@ appears in privacy policy (consent contact) - weak general address. Careers page desible.ai/careers lists open roles. Co-founder Omkar Raikar (LinkedIn not confirmed).
+
+## C080 · Ringg AI — score 83
+- **Role:** Enterprise sales ops / SDR / market research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** High — Recent large round with explicit enterprise sales expansion.
+- **Evidence:** Series A extension $10M (total ~$15-15.5M) Aug 2026; stated enterprise sales push India + overseas.
+- **December start:** Likely - scaling enterprise sales after Aug round
+- **Contact:** Siddharth Shankar Tripathi (Co-founder) · admin@ringg.ai · Publicly listed (official site) ringg.ai/contact (general address)
+- **Careers / LinkedIn:** https://in.linkedin.com/in/sidsst
+- **Sources (checked 2026-10-11):** <https://yourstory.com/2026/08/voice-ai-startup-ringg-ai-raises-10m-series-a-peak-xv-partners> <https://www.dealstreetasia.com/stories/india-digest-ringg-ai-nexedge-493301> <https://www.ringg.ai/newsroom> <https://startuptalky.com/news/daily-indian-funding-roundup-key-news-26-august-2026/>
+- **Notes:** Founder names not captured in sources seen; check ringg.ai/newsroom. | Contact check 2: posting live Unknown. Founders: Kali Vemuru, Siddharth Shankar Tripathi, Utkarsh Shukla. sales@/support@ excluded.
+
+## C081 · Superleap — score 83
+- **Role:** Growth / GTM research or Sales ops intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** High — Explicit hiring mention + GTM expansion.
+- **Evidence:** Round ~Rs 36 cr Aug 2026; use of funds explicitly includes hiring and GTM expansion; claims 10x growth in a year.
+- **December start:** Likely - hiring stated with Aug round
+- **Contact:** Subham Kumar Boundia (Co-founder & CEO) · contact@superleap.com · Publicly listed (official site) superleap.com/careers and /contact-us
+- **Careers / LinkedIn:** https://www.linkedin.com/in/subhamboundia/
+- **Sources (checked 2026-10-11):** <https://inc42.com/?p=567048> <https://dealroom.co/news/142843-superleap-raises-rs-36-crore-seed-to-take-on-legacy-crm-giants/> <https://startuptalky.com/news/daily-indian-funding-roundup-key-news-4-august-2026/> <https://thesaasnews.com/news/superleap-raises-36cr-pre-series-a>
+- **Notes:** Founded 2024 by ex-Unacademy execs. One report notes round figures not confirmed by company announcement. | Contact check 2: posting live Unknown. Careers page at superleap.com/careers lists contact@ in contact section. subham@ appears only as grievance officer address (not recorded).
+
+## C083 · Profound — score 83
+- **Role:** Growth / community / user-research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Fresh launch with aggressive user-acquisition goal, but stated spend is engineering-led.
+- **Evidence:** Seed Aug 2026; funds for engineering, product, AI and matching engine; 1M-user onboarding goal.
+- **December start:** Possible - growth hires likely as onboarding scales
+- **Contact:** Anuj Rathi (Co-founder & CEO) · help@profound.me · Publicly listed (official site) profound.me/terms-of-service (general contact)
+- **Careers / LinkedIn:** https://in.linkedin.com/in/anujrathi1
+- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/ex-delhivery-cleartrip-execs-launch-profound-to-bring-ai-powered-professional-support-for-individuals/> <https://india.entrepreneur.com/business-news/former-swiggy-and-zomato-leaders-launch-profound> <https://www.cxodigitalpulse.com/profound-raises-1-5-million-to-build-ai-representatives-for-professionals/>
+- **Notes:** Founder backgrounds described inconsistently across outlets. | Contact check 2: posting live Unknown. Not to be confused with tryprofound.com (US company). Co-founder Prashant Parashar.
+
+## C084 · Zenalyst — score 83
+- **Role:** Business/Research Analyst or Technical documentation intern (Speculative) · Bengaluru (also US presence) · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Recent raise, sizable team; no explicit hiring statement.
+- **Evidence:** Pre-seed Aug 2026; team >40.
+- **December start:** Possible
+- **Contact:** Nagendra Singh (Co-founder) · hello@zenalyst.ai · Publicly listed (official site) zenalyst.ai homepage and /resources
+- **Careers / LinkedIn:** https://www.linkedin.com/in/nagendra-singh-a596b049/
+- **Sources (checked 2026-10-11):** <https://news.ventureintelligence.com/private-equity/enterprise-ai-platform-zenalyst-raises-rs.3-cr> <https://ascendants.in/funding-feed/zenalyst-bags-rs-3-cr-pre-seed-funding/> <https://thesaasnews.com/news/zenalyst-raises-3cr-pre-seed>
+- **Notes:** Investor lists differ across outlets. | Contact check 2: posting live Unknown. Site has a Careers page link; no careers email. Co-founders Sanketh Krishnappa, Vijay Jha.
+
+## C085 · Prodoc AI — score 83
+- **Role:** Business Analyst / Ops intern (hospital integrations, customer research) (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Fresh round; ops-heavy rollout but no explicit hiring statement.
+- **Evidence:** Seed Sep 2026; 100+ hospitals, 50+ integrations.
+- **December start:** Possible
+- **Contact:** Asit Kumar Vidyarthi (Co-founder & CEO) · hello@prodoc.ai · Publicly listed (official site) prodoc.ai footer (contact@prodoc.ai also in About page structured data)
+- **Careers / LinkedIn:** https://www.linkedin.com/in/asit-kumar-vidyarthi-1951b2ba/
+- **Sources (checked 2026-10-11):** <https://yourstory.com/2026/09/startup-news-and-updates-daily-roundup-september-30-2026> <https://startuptalky.com/news/prodoc-ai-raises-seed-round-from-velumani-family-office/> <https://inforcapital.com/news/prodoc-ai-raises-seed-round-from-velumani-family-office/>
+- **Notes:** Amount undisclosed. | Contact check 2: posting live Unknown. prodoc.ai/careers has open roles and 'Talk to hiring team' option. Co-founder Raghuvamshi Thakur.
+
+## C087 · Rovia — score 83
+- **Role:** Growth / Content marketing or Research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Team growth stated; round ~4 months old.
+- **Evidence:** Pre-seed Jun 2026; stated team growth; AUM 100% MoM post-beta (company claim).
+- **December start:** Possible
+- **Contact:** Shivang Badaya (Co-founder & CEO) · hello@rovia.one · Publicly listed (official site) rovia.one footer/structured data
+- **Careers / LinkedIn:** https://www.linkedin.com/in/shivang-badaya-66772430/
+- **Sources (checked 2026-10-11):** <https://dealroom.co/news/130596-rovia-raises-1m-pre-seed-led-by-antler-india-to-unlock-1-5t-in-trapped-e/> <https://www.thesaasnews.com/news/rovia-raises-1m-pre-seed/> <https://businessnewsthisweek.com/business/antler-india-backs-rovia-in-dollar-1m-pre-seed-round-to-unlock-dollar-1-5-trillion-in-trapped-equity-compensation/>
+- **Notes:** Inc42 lists date 31 May 2026 - edge of window. | Contact check 2: posting live Unknown. Co-founder Arnav Grover (LinkedIn not confirmed). Company LinkedIn: https://in.linkedin.com/company/rovia-one
+
+## C118 · Innoventes Technologies — score 83
+- **Role:** QC / Credit Analyst Intern (Advertised) · Bengaluru · On-site
+- **Pay:** Confirmed Paid — ₹12,000/month · **Duration:** 3-month training period
+- **Hiring urgency:** Medium — Multiple open roles on Indeed; intern post date not confirmed.
+- **Evidence:** LinkedIn post by Innoventes recruiter: Bengaluru QC/Credit Analyst intern, ₹12,000/month, 3-month training period; 'share resumes at' email. Indeed company page shows ~16 open Bengaluru roles incl. Business Analyst (EdTech), Zoho Analyst.
+- **December start:** Unclear - post date not visible; ask about next intake
+- **Contact:** — (Recruiter (per LinkedIn profile)) · nisarga@innoventes.co · Publicly listed (job post) LinkedIn hiring post on https://www.linkedin.com/in/nisarga-sn/ ('share your resumes at nisarga@innoventes.co')
+- **Careers / LinkedIn:** https://in.indeed.com/cmp/Innoventes-Technologies
+- **Sources (checked 2026-10-11):** <https://www.linkedin.com/in/nisarga-sn/> <https://in.indeed.com/cmp/Innoventes-Technologies>
+- **Notes:** Post date unknown (could be stale). Credit analyst = adjacent to data/business analyst.
+
 ## C043 · Tracxn Technologies Ltd — score 81
 - **Role:** Research / Market Research Analyst Intern (speculative; adjacent to Analyst - Market Research, Sector Research team) (Speculative) · Bengaluru (HSR Layout) · On-site
 - **Pay:** Pay Undisclosed  · **Duration:** n/a
@@ -93,6 +236,83 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://cyberwarfare.live/career> <https://cyberwarfare.live/wp-content/uploads/2026/05/AI-Security-Intern-Offensive-Security.pdf> <https://cyberwarfare.live/wp-content/uploads/2026/08/JD-for-Cybersecurity-Lab-Support-Intern-.pdf>
 - **Notes:** Lower stipend; edtech-oriented company — check it is not a training-fee programme (JD shows stipend paid). Third-party data place company in Cambridge, UK; job location HSR Layout Bengaluru. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Posting live (2026-10-11 check): Yes. Careers page (updated ~46 days before search) lists remote red-team and AI security internships. Also info@cyberwarfare.live (general) on https://cyberwarfare.live/contact/. Founder LinkedIn: https://uk.linkedin.com/in/0hack ; Technical Director Yash Bharadwaj https://www.linkedin.com/in/bharadwaj-yash/.
 
+## C113 · HackerRank — score 81
+- **Role:** Technical Writer / Technical Content Intern (Jan-Jun program) (Speculative) · Bengaluru · On-site
+- **Pay:** Pay Undisclosed — Not published · **Duration:** 6 months (Jan-Jun)
+- **Hiring urgency:** Medium — Recurring Jan-Jun cohort; 2027 postings not yet confirmed officially.
+- **Evidence:** Built In / Khosla board listings for Jan-Jun 2026 Technical Writer & Technical Content Engineer Interns; aggregator mentions Jan-Jun 2027 SDE intern (unconfirmed).
+- **December start:** Likely for January 2027 if cohort repeats (prior cycles Jan-Jun, full-time in Bengaluru office)
+- **Contact:** — (Internship queries inbox) · internship-queries@hackerrank.com · Publicly listed (job post) HackerRank official Greenhouse intern postings (also mirrored on jobs.khoslaventures.com)
+- **Careers / LinkedIn:** https://job-boards.greenhouse.io/hackerrank
+- **Sources (checked 2026-10-11):** <https://builtin.com/job/technical-writer-intern/7566775> <https://builtin.com/job/technical-content-engineer-intern/7567315> <https://jobs.khoslaventures.com/companies/hackerrank/jobs/61408545-technical-content-engineer-intern> <https://coursejoiner.com/internships/hackerrank-sde-internship-program/>
+- **Notes:** 2026-cycle listings are past; 2027 not confirmed. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. Address appears in 2025/2026 Bengaluru intern postings; one mirror marked no longer accepting applications. Verify for current cycle.
+
+## C033 · Macgence — score 81
+- **Role:** Technical Content Writer - Intern (Advertised) · Remote, India · Remote
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Appears on the August 2026 index.
+- **Evidence:** Glassdoor India 'AI content writer work from home' results (Aug 2026 index) list Macgence Technical Content Writer - Intern.
+- **December start:** Possible - remote rolling.
+- **Contact:** — (General enquiries) · info@macgence.com · Publicly listed (official site) macgence.com/our-company/contact-us/
+- **Careers / LinkedIn:** https://www.glassdoor.co.in/Job/india-ai-content-writer-work-from-home-jobs-SRCH_IL.0,5_IN115_KO6,38.htm
+- **Sources (checked 2026-10-11):** <https://www.glassdoor.co.in/Job/india-ai-content-writer-work-from-home-jobs-SRCH_IL.0,5_IN115_KO6,38.htm>
+- **Notes:** Seen only in a search summary of a Glassdoor index page; verify the posting directly. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out. | Contact check 2: posting live Unknown. No dedicated careers email; official careers page exists at macgence.com/our-company/careers/.
+
+## C065 · RevRag AI — score 81
+- **Role:** Forward Deployed Engineer Intern (alt: AI Engineer Intern, Software Developer Intern – Backend) (Advertised) · Bengaluru · On-site
+- **Pay:** Pay Undisclosed — Not disclosed · **Duration:** 6 months, PPO based on performance
+- **Hiring urgency:** High — Multiple concurrent intern openings on official site.
+- **Evidence:** Official careers pages list FDE Intern, AI Engineer Intern, Backend and Frontend Software Developer Interns plus FDE/Senior FDE full-time.
+- **December start:** Possible — rolling hiring, no fixed start
+- **Contact:** Ashutosh Singh; Neeraj Gupta (Founders) · contact@revrag.ai · Publicly listed (official site) revrag.ai privacy policy / office page
+- **Careers / LinkedIn:** https://www.revrag.ai/careers
+- **Sources (checked 2026-10-11):** <https://www.revrag.ai/careers/forward-deployed-engineer-intern> <https://www.revrag.ai/careers/ai-engineer-intern> <https://www.revrag.ai/careers/software-developer-intern-backend>
+- **Notes:** Founder name from third-party Apollo profile only. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying. | Contact check 2: posting live Yes. Intern roles (FDE, AI Engineer, Backend, DevSecOps etc.) listed on revrag.ai/careers with application form. Founder LinkedIn URLs not confirmed.
+
+## C117 · JoulestoWatts Business Solutions (J2W) — score 81
+- **Role:** BDE Lead Generation & Marketing Intern (Advertised) · Bengaluru (Marathahalli) · On-site, 6 days/week
+- **Pay:** Pay Undisclosed — Stipend 'Provided' (amount not stated) · **Duration:** 6 months
+- **Hiring urgency:** Medium — Live post from ~Aug 2026 asking for direct email applications.
+- **Evidence:** LinkedIn post (search index showed it ~51 days old, i.e. ~Aug 2026) for a 6-month BDE Lead Generation & Marketing internship in Marathahalli; stipend 'Provided'; resumes by email.
+- **December start:** Possible - 6-month rolling intern hiring; post ~Aug 2026, confirm still open
+- **Contact:** —  · archil.saxena@joulestowatts.com · Publicly listed (job post) LinkedIn hiring post surfaced under https://www.linkedin.com/in/yogesh-gowda-6b0313243/ (post asks applicants to email resume with current CTC and notice period)
+- **Careers / LinkedIn:** https://www.linkedin.com/in/yogesh-gowda-6b0313243/
+- **Sources (checked 2026-10-11):** <https://www.linkedin.com/in/yogesh-gowda-6b0313243/>
+- **Notes:** Seen via search-result text only (LinkedIn not fetchable). Post asks for current CTC/notice period - mention 'student, available Dec 2026'. Stipend amount unknown; confirm it falls in 8-20k band.
+
+## C119 · Edify.Club (Kuzagan Services Pvt Ltd) — score 80
+- **Role:** Social Media & Content Writer Intern (Advertised) · Bengaluru (Sarjapur Road) · In office
+- **Pay:** Confirmed Paid — ₹10,000/month · **Duration:** 3 months
+- **Hiring urgency:** Low — Posting date not visible in index.
+- **Evidence:** Company blog post 'Social Media & Content Writer Intern – Edify.Club': Sarjapur Road, 3 months, ₹10,000/month; apply by email (subject 'Application for Social Media & Content Writer Intern') + Google Form.
+- **December start:** Unclear - date unknown
+- **Contact:** —  · contact@edify.club · Publicly listed (official site) https://edify.club/contact-us lists contact@edify.club (general). The posting's own application address is Cloudflare-obfuscated in the index and could not be read.
+- **Careers / LinkedIn:** https://edify.club/blog/?p=1042
+- **Sources (checked 2026-10-11):** <https://edify.club/blog/?p=1042> <https://edify.club/contact-us>
+- **Notes:** contact@ is a general address, not confirmed as the hiring inbox - prefer the address on the posting page.
+
+## C122 · Kofluence — score 80
+- **Role:** Business Analyst Intern (Advertised) · Bengaluru · On-site (hub)
+- **Pay:** Confirmed Paid — ₹10,000/month + meals · **Duration:** n/a
+- **Hiring urgency:** Low — Listing undated, possibly old.
+- **Evidence:** TeamLease listing 'Business Analyst Intern (Full time)' at Kofluence, monthly stipend 10K + meals at hub.
+- **December start:** Unclear - listing date unknown
+- **Contact:** —  · hi@kofluence.com · Publicly listed (official site) https://www.kofluence.com/contact-us/ (hi@kofluence.com listed 'for Brands'; support@kofluence.com for creators). Not a careers address.
+- **Careers / LinkedIn:** https://www.kofluence.com/contact-us/
+- **Sources (checked 2026-10-11):** <https://www.teamlease.com/jobs/business-analyst-jobs-in-bangalore-kofluence-284190> <https://www.kofluence.com/contact-us/>
+- **Notes:** WEAK: email is brand-enquiry address, posting may be stale. Use site Careers link if available.
+
+## C125 · Homes247.in — score 80
+- **Role:** Social Media Marketing Intern (Advertised) · Bengaluru · On-site
+- **Pay:** Confirmed Paid — ₹10,000-20,000/month · **Duration:** n/a
+- **Hiring urgency:** Low — Listing ~11 months old.
+- **Evidence:** MarketingMonk listing Social Media Marketing Intern at Homes247.in (posted Nov 2025), ₹10k-20k/month; careers page lists HR & Ops, Sales & Marketing departments.
+- **December start:** Unclear
+- **Contact:** —  · enquiry@homes247.in · Publicly listed (official site) homes247.in site lists enquiry@homes247.in (general enquiries)
+- **Careers / LinkedIn:** https://www.homes247.in/careers
+- **Sources (checked 2026-10-11):** <https://www.marketingmonk.so/jobboard/jobs/social-media-marketing-intern-at-homes247-in-xqdqqk> <https://www.homes247.in/careers>
+- **Notes:** STALE posting (Nov 2025); general enquiry email.
+
 ## C001 · AppsForBharat (Sri Mandir) — score 79
 - **Role:** Business Analytics Intern (Advertised) · HSR Layout, Bengaluru · On-site
 - **Pay:** Confirmed Paid — ₹25,000–30,000/month · **Duration:** 6 months
@@ -102,7 +322,29 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** Jasmine (surname not shown) (Recruiting contact on Kula job page) · jasmine@appsforbharat.com · Publicly listed (job post) — RE-CONFIRM on Kula page before sending https://careers.kula.ai/appsforbharat/jobs/52476 (per search-index snippet of the Kula page)
 - **Careers / LinkedIn:** https://careers.kula.ai/appsforbharat/52476
 - **Sources (checked 2026-10-11):** <https://careers.kula.ai/appsforbharat/52476> <https://careers.kula.ai/appsforbharat/3508?jobs=true> <https://www.foundit.in/job/business-analyst-appsforbharat-bengaluru-bangalore-61685480> <https://careers.kula.ai/appsforbharat/38716/> <https://careers.kula.ai/appsforbharat/50170/> <https://builtinbengaluru.in/job/business-development-intern/10709171> <https://builtinbengaluru.in/job/content-writer-intern/10685285> <https://careers.kula.ai/appsforbharat> <https://careers.kula.ai/appsforbharat/jobs/52476> <https://careers.kula.ai/appsforbharat/3508/apply?jobs=true>
-- **Notes:** SQL listed as mandatory. The BA (3508) variant says IIT students; apply to the Business Analytics Intern (52476) posting instead. I could not open the pages directly (egress blocked), so details come from search-indexed snippets. | Second search could not re-confirm jasmine@appsforbharat.com. Posting live (2026-10-11 check): Unknown. Input email jasmine@appsforbharat.com could NOT be verified: an exact-phrase search returned no page showing it, so it was dropped. Founder Prashant Sachan is named on YourStory, Inc42 and Peak XV, but his LinkedIn URL did not appear in the results. An email for him is shown on a Peak XV investor page; it was not recorded because he did not publish it himself. Several intern roles are live on careers.kula.ai/appsforbharat, including BA Intern /3508; the status of /52476 was not confirmed.
+- **Notes:** SQL listed as mandatory. The BA (3508) variant says IIT students; apply to the Business Analytics Intern (52476) posting instead. I could not open the pages directly (egress blocked), so details come from search-indexed snippets. | Second search could not re-confirm jasmine@appsforbharat.com. Posting live (2026-10-11 check): Unknown. Input email jasmine@appsforbharat.com could NOT be verified: an exact-phrase search returned no page showing it, so it was dropped. Founder Prashant Sachan is named on YourStory, Inc42 and Peak XV, but his LinkedIn URL did not appear in the results. An email for him is shown on a Peak XV investor page; it was not recorded because he did not publish it himself. Several intern roles are live on careers.kula.ai/appsforbharat, including BA Intern /3508; the status of /52476 was not confirmed. | SKIP: SQL required; Wrick knows Excel, not SQL.
+
+## C010 · SkyPoint Cloud — score 79
+- **Role:** Data Analyst Intern (PST shift) (Advertised) · Bengaluru · 
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Appears in Oct 2026 job-board results; exact posting age not confirmed.
+- **Evidence:** Indeed/Glassdoor-indexed listing: 'Data Analyst Intern (PST-Shift), SkyPoint Cloud, Bengaluru' (Oct 2026 search).
+- **December start:** Unclear: start date not seen
+- **Contact:** — (Careers & HR) · hr@skypoint.ai · Publicly listed (official site) skypoint.ai/contact (labelled 'Careers & HR enquiries') and skypoint.ai/customer-support
+- **Careers / LinkedIn:** https://in.indeed.com/q-data-analyst-intern-l-bengaluru,-karnataka-jobs.html
+- **Sources (checked 2026-10-11):** <https://in.indeed.com/q-data-analyst-intern-l-bengaluru,-karnataka-jobs.html>
+- **Notes:** PST shift means night hours in India. Confirm the candidate is willing. | Contact check 2: posting live Unknown. Bengaluru office: Global Technology Park, Bellandur. Openings on Lever. | HELD: PST (night) shift — awaiting Wrick confirmation.
+
+## C020 · Seekho — score 79
+- **Role:** Data Analyst (Founder's Office) — speculative intern pitch (Speculative) · Bengaluru · On-site
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Recent analytics hiring in the founder's office.
+- **Evidence:** Built In Bengaluru listing 'Data Analyst Founder Office', posted about 12 days before the search; asks for 1–2 years' experience (not an intern role). Also hiring a Program Manager, BI.
+- **December start:** Unclear: no intern role advertised
+- **Contact:** — (Careers (site lists support inbox)) · support@seekhoapp.com · Publicly listed (official site) seekho.in/team (Careers / Open Roles section)
+- **Careers / LinkedIn:** https://builtinbengaluru.in/job/data-analyst-founder-office/8071080
+- **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/data-analyst-founder-office/8071080>
+- **Notes:** Advertised role is full-time with 1–2 years' experience; approach speculatively. | Contact check 2: posting live Unknown. Caveat: this is a support@ address, but seekho.in team page lists it under Careers/Open Roles. Note seekho.ai (Seekify) is a different entity; ensure correct company (app by Keyaro Edutech).
 
 ## C011 · Growth Wave Consultants — score 78
 - **Role:** Financial Analyst Intern (Advertised) · Bengaluru · Hybrid
@@ -147,6 +389,39 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://jobs.quintedge.com/jobs/qa-analyst-intern-6-months-in-sirma-business-19rw44
 - **Sources (checked 2026-10-11):** <https://www.drjobpro.com/india/business-analyst-internship-jobs-in-bengaluru> <https://jobs.quintedge.com/jobs/qa-analyst-intern-6-months-in-sirma-business-19rw44>
 - **Notes:** Consulting SMB, not a product startup. Lower stipend. | Posting live (2026-10-11 check): Unknown. TechBehemoths lists a Bangalore head office (EPIP, Whitefield), with low data quality. Do not confuse it with Sirma Group in Bulgaria (careers.sirma.com). No website or email was found.
+
+## C126 · DrinkPrime — score 78
+- **Role:** Content Writing & Curation Intern / Key Account Management Intern (Advertised) · Bengaluru · On-site
+- **Pay:** Confirmed Paid — ₹10,000/month (content); ₹15,000/month (KAM) · **Duration:** 3 months (KAM)
+- **Hiring urgency:** Medium — Live roles on official ATS.
+- **Evidence:** Freshteam careers page lists Content Writing and Curation Intern (stipend 10k) and Key Account Management Intern, Commercial Ops (3 months, 15k/month).
+- **December start:** Possible
+- **Contact:** —  · NOT FOUND · NOT FOUND Only support@drinkprime.in (customer support) is published - not used. Apply via Freshteam.
+- **Careers / LinkedIn:** https://drinkprime.freshteam.com/jobs
+- **Sources (checked 2026-10-11):** <https://drinkprime.freshteam.com/jobs>
+- **Notes:** No application email - included because roles match band; filter out if email is mandatory.
+
+## C127 · Franchisify — score 78
+- **Role:** Business Analyst Intern (Advertised) · Bengaluru (Madiwala) · Work from office
+- **Pay:** Confirmed Paid — ₹10,000-15,000/month · **Duration:** 3-6 months
+- **Hiring urgency:** Medium — Multiple open roles on Indeed.
+- **Evidence:** Indeed listing Business Analyst Internship, Madiwala, ₹10,000-15,000/month; LinkedIn post: 3-6 months, paid, WFO; Indeed shows 3 open jobs.
+- **December start:** Possible - 3-6 month rolling
+- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Careers / LinkedIn:** https://in.indeed.com/cmp/Franchisify
+- **Sources (checked 2026-10-11):** <https://in.indeed.com/Internship-Jobs-in-Bangalore> <https://in.indeed.com/cmp/Franchisify>
+- **Notes:** No email found; included as strong-fit near miss.
+
+## C128 · Globussoft Technologies — score 78
+- **Role:** Business Development / Inside Sales Intern (Advertised) · Bengaluru (Koramangala) · On-site
+- **Pay:** Confirmed Paid — Up to ₹15,000/month · **Duration:** n/a
+- **Hiring urgency:** Medium — Multiple intern listings on Indeed.
+- **Evidence:** Indeed company page lists Business Development Executive internship and Inside Sales Internship (Koramangala), up to ₹15,000/month; globussoft.com/post-your-resume invites CVs by email.
+- **December start:** Possible
+- **Contact:** —  · NOT FOUND · NOT FOUND globussoft.com careers/contact pages publish an HR email but it is obfuscated in the search index - open https://globussoft.com/post-your-resume/ to read it.
+- **Careers / LinkedIn:** https://globussoft.com/post-your-resume/
+- **Sources (checked 2026-10-11):** <https://in.indeed.com/cmp/Globussoft-Technologies> <https://globussoft.com/post-your-resume/>
+- **Notes:** Email exists on site but could not be read here.
 
 ## C002 · FloBiz — score 76
 - **Role:** Growth Analyst Intern (Advertised) · Bengaluru · Hybrid
@@ -269,17 +544,6 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://southasiacareers.deloitte.com/job/Bengaluru-Enabling-Areas-Growth-Office-Intern-Research-&-Insights-Across-Locations/59384644/>
 - **Notes:** Eligibility says graduate/postgraduate - candidate graduates 2027, may not qualify; Bengaluru vs Delhi location conflict in listing. | Posting live (2026-10-11 check): Unknown. Apply via portal only (Req ID 111084, Deloitte Shared Services India LLP). Posting still indexed on official portal; location listed Bengaluru but text also says Delhi.
 
-## C101 · Fam (FamApp, formerly FamPay) — score 72
-- **Role:** Product Operations Intern (also Product Analyst Intern) (Advertised) · Bengaluru · On-site
-- **Pay:** Pay Undisclosed — Not published · **Duration:** Not stated
-- **Hiring urgency:** Medium — Several intern reqs live on Lever; Product Analyst post dated ~May 2026 (may be >90 days old).
-- **Evidence:** Official Lever board lists Product Operations Intern, Product Analyst Intern (indexed May 2026), Copy Intern, Data Engineering Intern, Product Design Intern.
-- **December start:** Possible - no start date stated; final-year students preferred
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://jobs.lever.co/fampay
-- **Sources (checked 2026-10-11):** <https://jobs.lever.co/fampay/e21b862f-cde6-4fb7-a08b-02c72f26ae99> <https://jobs.lever.co/fampay/ed0b7a4f-112a-4768-b4f9-d2e8368e5ad8> <https://jobs.lever.co/fampay>
-- **Notes:** Product Analyst Intern prefers 3+ months prior analyst internship. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
-
 ## C102 · Paytm (One97 Communications) — score 72
 - **Role:** Product Management Intern - Lending (Advertised) · Bengaluru / Noida · On-site
 - **Pay:** Pay Undisclosed — Not published officially (aggregators give conflicting figures) · **Duration:** Not stated officially (Weekday aggregator says 6 months for Telco)
@@ -289,7 +553,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://jobs.lever.co/paytm
 - **Sources (checked 2026-10-11):** <https://jobs.lever.co/paytm/7310b497-4b98-4fbe-ba2e-e21d68205eeb> <https://jobs.lever.co/paytm/b4b2a84d-8958-4b64-87ff-d122bd28ede4> <https://www.jobinsider.in/jobs/paytm-product-management-internship-btech-2/>
-- **Notes:** Aggregator stipend figures (INR 5k/month vs 2-4 LPA) are inconsistent - ignore. Engineering backgrounds preferred per aggregator. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+- **Notes:** Aggregator stipend figures (INR 5k/month vs 2-4 LPA) are inconsistent - ignore. Engineering backgrounds preferred per aggregator. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. No careers email on paytm.com. Old paytm.com contact page (~11 yrs) lists info@one97.com as HQ email: stale, not recorded. Third-party blog HR names/emails ignored. Apply via Lever.
 
 ## C103 · Rapido — score 72
 - **Role:** Product Intern - Captain Team (Advertised) · Bengaluru · On-site
@@ -300,7 +564,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://jobs.accel.com/companies/rapido/jobs
 - **Sources (checked 2026-10-11):** <https://freshershunt.in/rapido-product-internship-2026/> <https://offcampusjobs4u.com/rapido-product-internship-2026/> <https://jobs.accel.com/companies/rapido/jobs/82814560-content-writer-intern>
-- **Notes:** Only aggregator sources found for the product role; form asks CGPA and GitHub. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+- **Notes:** Only aggregator sources found for the product role; form asks CGPA and GitHub. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. rapido.bike only lists customer/captain/grievance inboxes (shoutout@, captaincare@, nodalofficer@): not hiring contacts. Apply via careers page/job boards.
 
 ## C105 · Instawork — score 72
 - **Role:** Founder's Office Intern (also Operations Intern) (Advertised) · Bangalore (travel required) · On-site
@@ -311,7 +575,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://job-boards.greenhouse.io/instawork
 - **Sources (checked 2026-10-11):** <https://job-boards.greenhouse.io/instawork/jobs/4651558006> <https://job-boards.greenhouse.io/instawork> <https://builtinbengaluru.in/job/operations-intern/7713304>
-- **Notes:** Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+- **Notes:** Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. Only partners@ (support) and privacy@ found on instawork.com; no careers email. Apply via Greenhouse.
 
 ## C108 · Great Kapital — score 72
 - **Role:** Product Intern (Advertised) · Bengaluru · On-site
@@ -319,21 +583,10 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Hiring urgency:** Medium — If 2026, posting is ~5 weeks old.
 - **Evidence:** Airtribe listing posted '04 Sep' (year not shown) requiring 6-month availability.
 - **December start:** Possible - 6-month availability required; start not stated
-- **Contact:** —  · NOT FOUND · NOT FOUND 
+- **Contact:** Akshay Shah (Founder & CEO) · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://www.airtribe.live/jobs/companies/great-kapital-UD4CE1099TIP
 - **Sources (checked 2026-10-11):** <https://www.airtribe.live/jobs/product-manager/product-intern-at-great-kapital-HQIEIL956C1J> <https://www.airtribe.live/jobs/companies/great-kapital-UD4CE1099TIP>
-- **Notes:** Posting year unverified. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
-
-## C110 · Portcast — score 72
-- **Role:** Data Analyst Intern (Advertised) · Bangalore and other India cities (remote-friendly) · Remote / in-office
-- **Pay:** Pay Undisclosed — Not published · **Duration:** Not stated
-- **Hiring urgency:** Medium — Posting ~2 months old, open to multiple countries.
-- **Evidence:** Official Lever posting indexed Aug 2026; mirrored on Built In Bengaluru, Remotive, EF portfolio.
-- **December start:** Possible - remote role, start not stated
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://jobs.lever.co/portcast
-- **Sources (checked 2026-10-11):** <https://jobs.lever.co/portcast/f18cc64e-c34a-416c-b213-62a39906260e/> <https://builtinbengaluru.in/job/data-analyst/10584051> <https://portfolio.joinef.com/companies/portcast/jobs/89259607-data-analyst-intern>
-- **Notes:** Location info conflicts across mirrors. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+- **Notes:** Posting year unverified. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. Official site lists only sales@/support@greatkapital.com (excluded per rules); careers page asks to drop CV via site. Company LinkedIn: https://in.linkedin.com/company/greatkapital
 
 ## C111 · Sprinto — score 72
 - **Role:** Product Led Growth Intern (Advertised) · Bengaluru · On-site
@@ -344,29 +597,62 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://jobs.lever.co/Sprinto
 - **Sources (checked 2026-10-11):** <https://jobs.lever.co/Sprinto/f0231e31-c695-4c76-8941-a5405da582dd>
-- **Notes:** Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+- **Notes:** Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Contact check 2: posting live Unknown. sprinto.com/contact-us mentions 'join the team' but address not visible in search results; no careers email confirmed.
 
-## C112 · Human Archive — score 72
-- **Role:** Founder's Office Intern - Partnerships (Advertised) · Bangalore / remote · Hybrid / remote
-- **Pay:** Pay Undisclosed — Not published · **Duration:** Not stated
-- **Hiring urgency:** Medium — Live Ashby posting; date not visible.
-- **Evidence:** Official Ashby posting.
-- **December start:** Possible - start not stated
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://jobs.ashbyhq.com/humanarchive
-- **Sources (checked 2026-10-11):** <https://jobs.ashbyhq.com/humanarchive/4c694746-a082-4ee9-9dcd-06a1b82f44ee>
-- **Notes:** Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+## C082 · Kily — score 72
+- **Role:** Data/Business Analyst intern (marketplace analytics) or GTM intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** High — Recent round + GTM expansion; data-heavy product.
+- **Evidence:** Rs 30 cr seed early Aug 2026; stated GTM expansion.
+- **December start:** Likely - post-raise GTM build
+- **Contact:** Sankalp Mehrotra; Anurag Singh; Sharad Chitlangia (Co-founders (ex-Flipkart, Affle)) · NOT FOUND · NOT FOUND 
+- **Careers / LinkedIn:** https://www.linkedin.com/in/sankalpmehrotra/
+- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/agentic-ai-startup-kily-raises-₹30-cr-to-accelerate-platform-deployment/> <https://www.exchange4media.com/announcements-news/agentic-ai-startup-kily-raises-rs-30-cr-in-funding-led-by-sorin-investments-156967.html> <https://india.entrepreneur.com/business-news/ai-startup-kily-bags-inr-30-cr-led-by-sorin-investments>
+- **Notes:** Dollar value reported $3.1-3.42M. | Contact check 2: posting live Unknown. kily.ai has 'Send us an email' link but address not visible in search. Co-founders Anurag Narain Singh, Sharad Chitlangia.
 
-## C113 · HackerRank — score 72
-- **Role:** Technical Writer / Technical Content Intern (Jan-Jun program) (Speculative) · Bengaluru · On-site
-- **Pay:** Pay Undisclosed — Not published · **Duration:** 6 months (Jan-Jun)
-- **Hiring urgency:** Medium — Recurring Jan-Jun cohort; 2027 postings not yet confirmed officially.
-- **Evidence:** Built In / Khosla board listings for Jan-Jun 2026 Technical Writer & Technical Content Engineer Interns; aggregator mentions Jan-Jun 2027 SDE intern (unconfirmed).
-- **December start:** Likely for January 2027 if cohort repeats (prior cycles Jan-Jun, full-time in Bengaluru office)
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://job-boards.greenhouse.io/hackerrank
-- **Sources (checked 2026-10-11):** <https://builtin.com/job/technical-writer-intern/7566775> <https://builtin.com/job/technical-content-engineer-intern/7567315> <https://jobs.khoslaventures.com/companies/hackerrank/jobs/61408545-technical-content-engineer-intern> <https://coursejoiner.com/internships/hackerrank-sde-internship-program/>
-- **Notes:** 2026-cycle listings are past; 2027 not confirmed. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying.
+## C086 · Spense — score 72
+- **Role:** Business/Market Research or Partnerships intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Explicit team expansion, round ~3 months old.
+- **Evidence:** Seed Jul 2026; stated team expansion (engineering + GTM).
+- **December start:** Possible - GTM expansion ongoing
+- **Contact:** Pawan Kumar; Srinivas Krishnamurthy (Co-founders) · NOT FOUND · NOT FOUND 
+- **Careers / LinkedIn:** https://in.linkedin.com/in/pawankumara
+- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/spense-raises-2-8-mn-from-arkam-ventures-to-build-secured-lending-infra/> <https://startuptalky.com/news/spense-raises-2-8-million-seed-round-funding/> <https://pulse2.com/spense-raises-2-8-million-seed-round-to-build-agentic-credit-infrastructure/>
+- **Notes:** Contact check 2: posting live Unknown. Only support@spense.money found (excluded). Company LinkedIn: https://in.linkedin.com/company/spensetech. Co-founder Srinivas Krishnamurthy.
+
+## C088 · ProLearn — score 72
+- **Role:** Growth / Marketing / Content or User-research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Pre-launch company preparing go-to-market.
+- **Evidence:** Pre-seed Jun 2026; GTM scaling ahead of public launch.
+- **December start:** Possible - launch timing may fit
+- **Contact:** Ravneet Singh (Founder (ex-Vedantu tech leader)) · NOT FOUND · NOT FOUND 
+- **Careers / LinkedIn:** https://in.linkedin.com/in/ravneetsk
+- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/edtech-startup-prolearn-bags-%E2%82%B930-cr-to-tailor-ai-learning-for-students/> <https://india.entrepreneur.com/business-news/prolearn-raises-inr-30-cr-pre-seed-round-led-by-beenext> <https://dealroom.co/news/130878-prolearn-raises-30-crore-pre-seed-to-build-an-ai-tutor-for-indias-k-12-a/>
+- **Notes:** Contact check 2: posting live Unknown. Official website not found (pre-launch). LinkedIn headline 'Founder & CEO, ProLearn'; a second profile linkedin.com/in/ravneet-singh-48aa2658 also shows ProLearn - verify which is correct.
+
+## C089 · UniqYou — score 72
+- **Role:** Growth / Marketing analytics intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
+- **Pay:** Pay Undisclosed  · **Duration:** n/a
+- **Hiring urgency:** Medium — Fresh round; D2C growth roles typical, but no explicit hiring statement.
+- **Evidence:** Seed Sep 2026.
+- **December start:** Possible
+- **Contact:** Sneha Priya Reddy; Nishanth Jois (Co-founders) · NOT FOUND · NOT FOUND 
+- **Careers / LinkedIn:** https://in.linkedin.com/in/sneha-priya-reddy
+- **Sources (checked 2026-10-11):** <https://ascendants.in/funding-feed/uniqyou-raises-rs-15-8-cr-seed-round-at-rs-64-cr-valuation/> <https://www.cxodigitalpulse.com/?p=62034> <https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-september-2026/>
+- **Notes:** Marketing spend split only in unverified source. | Contact check 2: posting live Unknown. Official website not found. LinkedIn headline shows 'Building in Stealth (D2C + AI)' (ex-Wakefit) - likely match but verify. Co-founder Nishanth Jois (CEO per one report; LinkedIn not confirmed).
+
+## C123 · Maino.ai — score 72
+- **Role:** Content Intern / Junior Marketing Analyst (Speculative) · Bengaluru (HSR Layout) · In office
+- **Pay:** Pay Undisclosed — Not stated · **Duration:** 3 months (past post)
+- **Hiring urgency:** Low — Content-intern post is stale; marketing analyst role is full-time.
+- **Evidence:** LinkedIn post (~460 days old) seeking 3-month Content Intern, HSR Layout, apply to talent@maino.ai; separate current BuiltIn Bengaluru listing for Junior Marketing Analyst (in-office, growth team).
+- **December start:** Unclear
+- **Contact:** —  · talent@maino.ai · Publicly listed (job post) LinkedIn post on https://www.linkedin.com/in/shubhangi-bhatnagar-5ba465215/ ('send your resume to talent@maino.ai')
+- **Careers / LinkedIn:** https://builtinbengaluru.in/job/maino-ai-junior-analyst/9644566
+- **Sources (checked 2026-10-11):** <https://www.linkedin.com/in/shubhangi-bhatnagar-5ba465215/> <https://builtinbengaluru.in/job/maino-ai-junior-analyst/9644566>
+- **Notes:** Stale post (>1 yr); stipend unknown.
 
 ## C046 · CSTEP (Center for Study of Science, Technology and Policy) — score 71
 - **Role:** Research / data intern (posted: Intern - Air Quality, ground surveys & data collection) (Advertised) · Bengaluru (Nagashettyhalli, RMV II Stage) · On-site / field
@@ -467,28 +753,6 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://in.indeed.com/cmp/Edureka/jobs>
 - **Notes:** Not a research firm, but role matches; verify still live. | Only a support/sales inbox found (sales@edureka.co); not used for outreach. Posting live (2026-10-11 check): Unknown. No careers or HR email was found. The official contact page lists only department inboxes: sales@, corp@, partnerships@, marketing@ (media), learner.support@ and grievance@edureka.co. sales@ is recorded as the general fallback and is a weak fit for intern outreach. A Research Analyst internship is on Indeed (from Rs 20k/month).
 
-## C033 · Macgence — score 70
-- **Role:** Technical Content Writer - Intern (Advertised) · Remote, India · Remote
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Appears on the August 2026 index.
-- **Evidence:** Glassdoor India 'AI content writer work from home' results (Aug 2026 index) list Macgence Technical Content Writer - Intern.
-- **December start:** Possible - remote rolling.
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://www.glassdoor.co.in/Job/india-ai-content-writer-work-from-home-jobs-SRCH_IL.0,5_IN115_KO6,38.htm
-- **Sources (checked 2026-10-11):** <https://www.glassdoor.co.in/Job/india-ai-content-writer-work-from-home-jobs-SRCH_IL.0,5_IN115_KO6,38.htm>
-- **Notes:** Seen only in a search summary of a Glassdoor index page; verify the posting directly. Could not verify a published careers/HR email: the egress proxy blocked WebFetch for all career sites and the session's search budget ran out.
-
-## C065 · RevRag AI — score 70
-- **Role:** Forward Deployed Engineer Intern (alt: AI Engineer Intern, Software Developer Intern – Backend) (Advertised) · Bengaluru · On-site
-- **Pay:** Pay Undisclosed — Not disclosed · **Duration:** 6 months, PPO based on performance
-- **Hiring urgency:** High — Multiple concurrent intern openings on official site.
-- **Evidence:** Official careers pages list FDE Intern, AI Engineer Intern, Backend and Frontend Software Developer Interns plus FDE/Senior FDE full-time.
-- **December start:** Possible — rolling hiring, no fixed start
-- **Contact:** Ashutosh Singh (Founder (per Apollo profile)) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://www.revrag.ai/careers
-- **Sources (checked 2026-10-11):** <https://www.revrag.ai/careers/forward-deployed-engineer-intern> <https://www.revrag.ai/careers/ai-engineer-intern> <https://www.revrag.ai/careers/software-developer-intern-backend>
-- **Notes:** Founder name from third-party Apollo profile only. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
-
 ## C034 · Basenine — score 70
 - **Role:** AI Growth Engineer Intern (Advertised) · Bengaluru · Hybrid
 - **Pay:** Confirmed Paid — INR 20,000-25,000/month · **Duration:** 2 months
@@ -511,17 +775,6 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://www.airtribe.live/jobs/product-manager/product-management-intern-at-inertialabs-technologies-KBP2DACAYJTX>
 - **Notes:** Probably stale. Verified via search-engine index snippets only (WebFetch/direct page access blocked in this environment); confirm live status on the official page before applying. | Posting live (2026-10-11 check): Unknown. Early-stage consumer AI startup in HSR Layout (per Airtribe post: 3-month PM internship, up to Rs 20k/month, work with founding team). Not the US company Inertial Labs (VIAVI). No website, founder or email found.
 
-## C010 · SkyPoint Cloud — score 68
-- **Role:** Data Analyst Intern (PST shift) (Advertised) · Bengaluru · 
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Appears in Oct 2026 job-board results; exact posting age not confirmed.
-- **Evidence:** Indeed/Glassdoor-indexed listing: 'Data Analyst Intern (PST-Shift), SkyPoint Cloud, Bengaluru' (Oct 2026 search).
-- **December start:** Unclear: start date not seen
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://in.indeed.com/q-data-analyst-intern-l-bengaluru,-karnataka-jobs.html
-- **Sources (checked 2026-10-11):** <https://in.indeed.com/q-data-analyst-intern-l-bengaluru,-karnataka-jobs.html>
-- **Notes:** PST shift means night hours in India. Confirm the candidate is willing.
-
 ## C017 · Crack The Campus — score 68
 - **Role:** Business Strategy & Operations Intern (Advertised) · Bengaluru · On-site
 - **Pay:** Pay Undisclosed  · **Duration:** n/a
@@ -531,18 +784,7 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Contact:** —  · NOT FOUND · NOT FOUND 
 - **Careers / LinkedIn:** https://jobs.weekday.works/business-strategy-operations-intern-at-crack-the-campus-wkdyv1hwpe
 - **Sources (checked 2026-10-11):** <https://jobs.weekday.works/business-strategy-operations-intern-at-crack-the-campus-wkdyv1hwpe>
-- **Notes:** Confirm the stipend before applying (exclude if unpaid).
-
-## C020 · Seekho — score 68
-- **Role:** Data Analyst (Founder's Office) — speculative intern pitch (Speculative) · Bengaluru · On-site
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Recent analytics hiring in the founder's office.
-- **Evidence:** Built In Bengaluru listing 'Data Analyst Founder Office', posted about 12 days before the search; asks for 1–2 years' experience (not an intern role). Also hiring a Program Manager, BI.
-- **December start:** Unclear: no intern role advertised
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** https://builtinbengaluru.in/job/data-analyst-founder-office/8071080
-- **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/data-analyst-founder-office/8071080>
-- **Notes:** Advertised role is full-time with 1–2 years' experience; approach speculatively.
+- **Notes:** Confirm the stipend before applying (exclude if unpaid). | Contact check 2: posting live Unknown. Could not identify company website or founders; only the Weekday listing found.
 
 ## C053 · NCAER (National Council of Applied Economic Research) — score 68
 - **Role:** Research Intern (speculative; statistics/survey data) (Speculative) · New Delhi · On-site
@@ -554,125 +796,6 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://ncaer.org
 - **Sources (checked 2026-10-11):** <https://ncaer.org/?p=31588> <https://kalingauniversity.prosple.com/graduate-employers/national-council-of-applied-economic-research-ncaer/jobs-internships/summer-interns>
 - **Notes:** Delhi only; email is the HR address used for that FT posting - use for an enquiry, not a mass application.
-
-## C079 · Desible.ai — score 68
-- **Role:** GTM / Business Analyst intern (BFSI market research, lead-gen) (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** High — Funding <1 week old with explicit GTM expansion mandate.
-- **Evidence:** Seed Plus ~Rs 32 cr announced ~7 Oct 2026; stated use: agentic AI, compliance infra, go-to-market expansion, product dev. Claims 40+ BFSI institutions using/evaluating.
-- **December start:** Likely - fresh round, GTM team being built over next quarter
-- **Contact:** Uttam Tiwari; Omkar Raikar (Co-founders) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://www.newsbytesapp.com/news/business/desibleai-raises-rs32cr-seed-plus-to-scale-bfsi-ai-tools/tldr> <https://www.startupresearcher.com/news/desible-ai-raises-inr32-crore-in-seed-plus-round> <https://yourstory.com/2026/10/startup-news-and-updates-daily-roundup-october-7-2026> <https://www.dealstreetasia.com/?p=497476>
-- **Notes:** Website/LinkedIn not verified (fetch blocked). Dollar amount varies by source ($3.3M-$4.35M); Rs 32 cr consistent.
-
-## C080 · Ringg AI — score 68
-- **Role:** Enterprise sales ops / SDR / market research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** High — Recent large round with explicit enterprise sales expansion.
-- **Evidence:** Series A extension $10M (total ~$15-15.5M) Aug 2026; stated enterprise sales push India + overseas.
-- **December start:** Likely - scaling enterprise sales after Aug round
-- **Contact:** —  · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://yourstory.com/2026/08/voice-ai-startup-ringg-ai-raises-10m-series-a-peak-xv-partners> <https://www.dealstreetasia.com/stories/india-digest-ringg-ai-nexedge-493301> <https://www.ringg.ai/newsroom> <https://startuptalky.com/news/daily-indian-funding-roundup-key-news-26-august-2026/>
-- **Notes:** Founder names not captured in sources seen; check ringg.ai/newsroom.
-
-## C081 · Superleap — score 68
-- **Role:** Growth / GTM research or Sales ops intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** High — Explicit hiring mention + GTM expansion.
-- **Evidence:** Round ~Rs 36 cr Aug 2026; use of funds explicitly includes hiring and GTM expansion; claims 10x growth in a year.
-- **December start:** Likely - hiring stated with Aug round
-- **Contact:** Subham Kumar Boundia (Co-founder & CEO (co-founders Alok Maurya, Saurabh Maheshwari)) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://inc42.com/?p=567048> <https://dealroom.co/news/142843-superleap-raises-rs-36-crore-seed-to-take-on-legacy-crm-giants/> <https://startuptalky.com/news/daily-indian-funding-roundup-key-news-4-august-2026/> <https://thesaasnews.com/news/superleap-raises-36cr-pre-series-a>
-- **Notes:** Founded 2024 by ex-Unacademy execs. One report notes round figures not confirmed by company announcement.
-
-## C082 · Kily — score 68
-- **Role:** Data/Business Analyst intern (marketplace analytics) or GTM intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** High — Recent round + GTM expansion; data-heavy product.
-- **Evidence:** Rs 30 cr seed early Aug 2026; stated GTM expansion.
-- **December start:** Likely - post-raise GTM build
-- **Contact:** Sankalp Mehrotra; Anurag Singh; Sharad Chitlangia (Co-founders (ex-Flipkart, Affle)) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/agentic-ai-startup-kily-raises-₹30-cr-to-accelerate-platform-deployment/> <https://www.exchange4media.com/announcements-news/agentic-ai-startup-kily-raises-rs-30-cr-in-funding-led-by-sorin-investments-156967.html> <https://india.entrepreneur.com/business-news/ai-startup-kily-bags-inr-30-cr-led-by-sorin-investments>
-- **Notes:** Dollar value reported $3.1-3.42M.
-
-## C083 · Profound — score 68
-- **Role:** Growth / community / user-research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Fresh launch with aggressive user-acquisition goal, but stated spend is engineering-led.
-- **Evidence:** Seed Aug 2026; funds for engineering, product, AI and matching engine; 1M-user onboarding goal.
-- **December start:** Possible - growth hires likely as onboarding scales
-- **Contact:** Anuj Rathi; Prashant Parashar (CEO; CTO) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/ex-delhivery-cleartrip-execs-launch-profound-to-bring-ai-powered-professional-support-for-individuals/> <https://india.entrepreneur.com/business-news/former-swiggy-and-zomato-leaders-launch-profound> <https://www.cxodigitalpulse.com/profound-raises-1-5-million-to-build-ai-representatives-for-professionals/>
-- **Notes:** Founder backgrounds described inconsistently across outlets.
-
-## C084 · Zenalyst — score 68
-- **Role:** Business/Research Analyst or Technical documentation intern (Speculative) · Bengaluru (also US presence) · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Recent raise, sizable team; no explicit hiring statement.
-- **Evidence:** Pre-seed Aug 2026; team >40.
-- **December start:** Possible
-- **Contact:** Nagendra Singh; Sanketh Krishnappa; Vijay Jha (Co-founders) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://news.ventureintelligence.com/private-equity/enterprise-ai-platform-zenalyst-raises-rs.3-cr> <https://ascendants.in/funding-feed/zenalyst-bags-rs-3-cr-pre-seed-funding/> <https://thesaasnews.com/news/zenalyst-raises-3cr-pre-seed>
-- **Notes:** Investor lists differ across outlets.
-
-## C085 · Prodoc AI — score 68
-- **Role:** Business Analyst / Ops intern (hospital integrations, customer research) (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Fresh round; ops-heavy rollout but no explicit hiring statement.
-- **Evidence:** Seed Sep 2026; 100+ hospitals, 50+ integrations.
-- **December start:** Possible
-- **Contact:** Asit Kumar Vidyarthi; Raghuvamshi Thakur (CEO; COO) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://yourstory.com/2026/09/startup-news-and-updates-daily-roundup-september-30-2026> <https://startuptalky.com/news/prodoc-ai-raises-seed-round-from-velumani-family-office/> <https://inforcapital.com/news/prodoc-ai-raises-seed-round-from-velumani-family-office/>
-- **Notes:** Amount undisclosed.
-
-## C086 · Spense — score 68
-- **Role:** Business/Market Research or Partnerships intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Explicit team expansion, round ~3 months old.
-- **Evidence:** Seed Jul 2026; stated team expansion (engineering + GTM).
-- **December start:** Possible - GTM expansion ongoing
-- **Contact:** Pawan Kumar; Srinivas Krishnamurthy (Co-founders) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/spense-raises-2-8-mn-from-arkam-ventures-to-build-secured-lending-infra/> <https://startuptalky.com/news/spense-raises-2-8-million-seed-round-funding/> <https://pulse2.com/spense-raises-2-8-million-seed-round-to-build-agentic-credit-infrastructure/>
-
-## C087 · Rovia — score 68
-- **Role:** Growth / Content marketing or Research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Team growth stated; round ~4 months old.
-- **Evidence:** Pre-seed Jun 2026; stated team growth; AUM 100% MoM post-beta (company claim).
-- **December start:** Possible
-- **Contact:** Shivang Badaya; Arnav Grover (CEO; CPO) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://dealroom.co/news/130596-rovia-raises-1m-pre-seed-led-by-antler-india-to-unlock-1-5t-in-trapped-e/> <https://www.thesaasnews.com/news/rovia-raises-1m-pre-seed/> <https://businessnewsthisweek.com/business/antler-india-backs-rovia-in-dollar-1m-pre-seed-round-to-unlock-dollar-1-5-trillion-in-trapped-equity-compensation/>
-- **Notes:** Inc42 lists date 31 May 2026 - edge of window.
-
-## C088 · ProLearn — score 68
-- **Role:** Growth / Marketing / Content or User-research intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Pre-launch company preparing go-to-market.
-- **Evidence:** Pre-seed Jun 2026; GTM scaling ahead of public launch.
-- **December start:** Possible - launch timing may fit
-- **Contact:** Ravneet Singh (Founder (ex-Vedantu tech leader)) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://inc42.com/buzz/edtech-startup-prolearn-bags-%E2%82%B930-cr-to-tailor-ai-learning-for-students/> <https://india.entrepreneur.com/business-news/prolearn-raises-inr-30-cr-pre-seed-round-led-by-beenext> <https://dealroom.co/news/130878-prolearn-raises-30-crore-pre-seed-to-build-an-ai-tutor-for-indias-k-12-a/>
-
-## C089 · UniqYou — score 68
-- **Role:** Growth / Marketing analytics intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
-- **Pay:** Pay Undisclosed  · **Duration:** n/a
-- **Hiring urgency:** Medium — Fresh round; D2C growth roles typical, but no explicit hiring statement.
-- **Evidence:** Seed Sep 2026.
-- **December start:** Possible
-- **Contact:** Sneha Priya Reddy; Nishanth Jois (Co-founders) · NOT FOUND · NOT FOUND 
-- **Careers / LinkedIn:** —
-- **Sources (checked 2026-10-11):** <https://ascendants.in/funding-feed/uniqyou-raises-rs-15-8-cr-seed-round-at-rs-64-cr-valuation/> <https://www.cxodigitalpulse.com/?p=62034> <https://startuptalky.com/news/daily-indian-funding-roundup-key-news-14-september-2026/>
-- **Notes:** Marketing spend split only in unverified source.
 
 ## C090 · Alive App — score 68
 - **Role:** Growth / Partnerships / Community intern (Speculative) · Bengaluru · Onsite/Hybrid (unconfirmed)
@@ -781,6 +904,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** —
 - **Sources (checked 2026-10-11):** <https://dealroom.co/news/160778-moneytruva-raises-seed-round-led-by-sunil-singhania-to-structure-indias/> <https://app.fundz.net/fundings/moneytruva-funding-round-seed-2a7df7> <https://yourstory.com/2026/10/startup-news-and-updates-daily-roundup-october-8-2026>
 - **Notes:** Mumbai-based - lower priority unless remote.
+
+## C124 · Tyfone — score 66
+- **Role:** Speculative internship (marketing/analyst) (Speculative) · Bengaluru (India office) · 
+- **Pay:** Pay Undisclosed — Not stated · **Duration:** n/a
+- **Hiring urgency:** Low — No live non-tech intern posting found.
+- **Evidence:** tyfone.com/careers: 'send your resume to careers@tyfone.com and we might just create a new opening for you'; Current Openings in India category; 2026 Software Engineer posting.
+- **December start:** Unclear
+- **Contact:** —  · careers@tyfone.com · Publicly listed (official site) https://tyfone.com/careers/ (email careers@tyfone.com with job title as subject)
+- **Careers / LinkedIn:** https://tyfone.com/careers/
+- **Sources (checked 2026-10-11):** <https://tyfone.com/careers/> <https://tyfone.com/category/careers/internship/>
+- **Notes:** Speculative only; stipend unknown.
 
 ## C067 · SuperKalam (YC W23) — score 65
 - **Role:** AI/ML Research Internship (AI applied engineer – voice first) (Advertised) · Remote India / Bengaluru preferred · Remote or Bengaluru
