@@ -5,6 +5,17 @@ Generated from `companies.csv`. Each entry lists the evidence and the URLs it ca
 so facts were taken from web-search result text for these URLs, not from reading the pages.
 Open each source and confirm the posting is live before applying or emailing.
 
+## C150 · ROIBoosters — score 91
+- **Role:** Business Development Executive (BDE) Intern (Advertised) · Remote (India) · Remote
+- **Pay:** Confirmed Paid — INR 15,000/month · **Duration:** Not stated
+- **Hiring urgency:** High — Posting ~early Oct 2026, ongoing intake.
+- **Evidence:** Torre.ai listing 'BDE Intern at ROIBoosters' shared ~10 days before 2026-10-13 (ongoing internship, INR 15k/month, remote); also on Indeed India remote lead-gen intern listings.
+- **December start:** Possible - ongoing/rolling intern intake
+- **Contact:** Pratibha Grover (Hiring contact named in posting) · pratibha.grover@roiboosters.com · Publicly listed (job post) https://torre.ai/post/ldEopE6W-roiboosters-business-development-executive-bde-intern (posting says email resume to this address)
+- **Careers / LinkedIn:** https://torre.ai/post/ldEopE6W-roiboosters-business-development-executive-bde-intern
+- **Sources (checked 2026-10-13):** <https://torre.ai/post/ldEopE6W-roiboosters-business-development-executive-bde-intern> <https://in.indeed.com/q-lead-generation-internship-l-remote-jobs.html>
+- **Notes:** Indeed snippet says listing asks for ~1 yr lead-gen experience; stipend shown as 'up to' 15k. Posted ~2026-10-03.
+
 ## C029 · BEMPU Health — score 89
 - **Role:** Digital Marketing Intern (Ads, Analytics, Web) (Advertised) · Bengaluru · In-office
 - **Pay:** Pay Undisclosed — Monthly stipend stated; amount not published · **Duration:** 6 months
@@ -38,6 +49,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://in.linkedin.com/jobs/view/business-development-intern-at-fyerx-your-trusted-marketing-partner-3651930481> <https://www.teamlease.com/jobs/business-development-intern-jobs-in-bangalore-fyerx-785779> <https://jobgether.com/offer/6a8a5b401de6f4542a51fd68-hr-intern> <https://fyerx.com/about-us/>
 - **Notes:** BD intern LinkedIn listing is likely older (job id 365...); HR intern listings appear current. Variable-pay component - confirm fixed stipend.
 
+## C151 · Workfall — score 89
+- **Role:** Digital Marketing Intern (Advertised) · Bengaluru · On-site (Bangalore preferred), F2F interview
+- **Pay:** Confirmed Paid — INR 10,000/month · **Duration:** 2 months
+- **Hiring urgency:** High — Post ~mid-Sep 2026.
+- **Evidence:** LinkedIn post by Workfall employee (Suchitra Oinam): paid 2-month Digital Marketing internship, 10k/month, Bangalore preference; post ~28 days old as of 2026-10-13.
+- **December start:** Unclear - 2-month stint; may fill before Dec
+- **Contact:** Sukanya Dasari (Named in 'Apply at' line) · sukanya.dasari@workfall.com · Publicly listed (job post) https://www.linkedin.com/in/suchitra-oinam-41a194338/ ('Apply at: sukanya.dasari@workfall.com')
+- **Careers / LinkedIn:** https://www.linkedin.com/in/suchitra-oinam-41a194338/
+- **Sources (checked 2026-10-13):** <https://www.linkedin.com/in/suchitra-oinam-41a194338/>
+- **Notes:** CAUTION: the 'Apply at' address appeared near a separate Workfall dev-intern post; verify it applies to the marketing role (or reply on the post).
+
 ## C133 · Tradeshala — score 87
 - **Role:** Finance / Capital Market Analyst Intern (Advertised) · Bengaluru · Remote/Hybrid (listings conflict)
 - **Pay:** Confirmed Paid — Up to Rs 20,000/month · **Duration:** 2 months (Foundit listing)
@@ -48,6 +70,39 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://jobs.quintedge.com/jobs/trading-and-investment-analyst-intern-tradeshala-5oob1m
 - **Sources (checked 2026-10-11):** <https://jobs.quintedge.com/jobs/trading-and-investment-analyst-intern-tradeshala-5oob1m> <https://www.foundit.in/job/finance-intern-tradeshala-bengaluru-bangalore-58161607> <https://app.semesteria.com/jobs/finance-intern-bengaluru-tradeshala-79ab394f-b340-4a91-92ba-e08061acd75b> <https://sggscc.ac.in/datainternshipfair/jd2023/Tradeshala_JD.pdf>
 - **Notes:** CAUTION: firm also sells trading education - confirm there is no training fee and that stipend is fixed (not performance/trading-based) before accepting. Email is from 2023 company JD (stale). | SKIP: sells trading education; training-fee risk.
+
+## C152 · Promilo (Sawara Solutions Pvt Ltd) — score 87
+- **Role:** Digital Marketing Intern (Advertised) · Bengaluru (Kammanahalli/Hennur) · Work from office
+- **Pay:** Confirmed Paid — INR 8,000-10,000/month (PlacementIndia); Indeed snippet ~5-6k · **Duration:** Up to 1 year (min 6 months) per PlacementIndia
+- **Hiring urgency:** Medium — Listing live Sep 2026; repeated intern postings.
+- **Evidence:** Indeed 'Promilo jobs' page dated 8 Sep 2026 lists Digital Marketing Intern (Hennur); PlacementIndia job 1330656 lists 8K-10K stipend.
+- **December start:** Possible - rolling intern hiring
+- **Contact:** —  · hrone@promilo.com · Publicly listed (job post) Indeed Promilo listing (in.indeed.com/q-promilo-jobs.html): email resume to hrone@promilo.com with subject 'Digital Marketing Intern'
+- **Careers / LinkedIn:** https://in.linkedin.com/jobs/view/sales-intern-at-promilo-boost-b2b-b2c-leads-with-promilo-marketing-solutions-3679285263
+- **Sources (checked 2026-10-13):** <https://in.indeed.com/q-promilo-jobs.html> <https://www.placementindia.com/job-detail/digital-marketing-internship-in-promilo-at-kammanahalli-bangalore-1330656.htm>
+- **Notes:** Stipend figures vary by listing (5-6k to 10k); long commitment (6-12 months) required. Confirm stipend >=8k before accepting.
+
+## C154 · TYA Group (TYA Business Solutions / TYASuite) — score 87
+- **Role:** Digital Marketing Intern (Advertised) · Koramangala, Bengaluru · In-office, full-time
+- **Pay:** Pay Undisclosed — Paid (amount not stated); PPO 4.0-4.2 LPA · **Duration:** 6 months (one listing says 3 months + PPO)
+- **Hiring urgency:** High — Live on Oct 2026 Glassdoor listing page; PPO offered.
+- **Evidence:** Glassdoor 'intern marketing Jobs in Bengaluru, October 2026' page shows TYA digital marketing internship; Indeed Bengaluru listings also show TYA Business Solutions/TYASuite paid DM internships.
+- **December start:** Possible - but listing says not for current college students (full-time in-office only)
+- **Contact:** —  · hr@tyagroup.co.in · Publicly listed (job post) Glassdoor/Indeed listing text: 'Please send your resume and schedule your interview by emailing us at hr@tyagroup.co.in'
+- **Careers / LinkedIn:** https://www.tyasuite.com
+- **Sources (checked 2026-10-13):** <https://www.glassdoor.com/Job/bengaluru-intern-marketing-jobs-SRCH_IL.0,9_IC2940587_KO10,26.htm> <https://in.indeed.com/q-paid-internship-on-digital-marketing-l-bengaluru,-karnataka-jobs.html> <https://in.indeed.com/q-social-media-marketing-internship-l-bengaluru,-karnataka-jobs.html>
+- **Notes:** EXCLUSION RISK: listing states position is not for college students; candidate graduates 2027.
+
+## C157 · Crafted Studios — score 87
+- **Role:** Business Development Intern (Advertised) · JP Nagar, Bengaluru · Work from office
+- **Pay:** Confirmed Paid — INR 12,000/month · **Duration:** 3 months
+- **Hiring urgency:** Medium — Recent weekday listing ID; exact date not visible.
+- **Evidence:** Weekday listing: Business Development Intern, 3 months, Rs12,000/month, possible full-time role at Rs21,000/month.
+- **December start:** Possible
+- **Contact:** —  · operations@crafted.co.in · Publicly listed (job post) https://jobs.weekday.works/business-development-intern-at-crafted-studios-4403075215 (apply to operations@crafted.co.in with short note on interest in BD)
+- **Careers / LinkedIn:** https://jobs.weekday.works/business-development-intern-at-crafted-studios-4403075215
+- **Sources (checked 2026-10-13):** <https://jobs.weekday.works/business-development-intern-at-crafted-studios-4403075215>
+- **Notes:** Posting date not visible; verify still open.
 
 ## C121 · Tenovia — score 85
 - **Role:** Digital Marketing Intern (Advertised) · Bengaluru · 
@@ -225,6 +280,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://www.linkedin.com/in/nisarga-sn/> <https://in.indeed.com/cmp/Innoventes-Technologies>
 - **Notes:** Post date unknown (could be stale). Credit analyst = adjacent to data/business analyst.
 
+## C156 · Techkshetra Info Solutions Pvt Ltd — score 83
+- **Role:** Business Development Executive (Fresher/Intern) (Advertised) · Banashankari 3rd Stage, Bengaluru · Office-based
+- **Pay:** Confirmed Paid — INR 15,000/month + incentives · **Duration:** Not stated (path to full-time)
+- **Hiring urgency:** Medium — Live Indeed listing; posting date not visible.
+- **Evidence:** Indeed 'Internship in Bangalore with stipend' listing: BDE fresher/intern, Rs15,000/month + incentives, immediate joiners preferred.
+- **December start:** Unclear - immediate joiners preferred
+- **Contact:** —  · hr@techkshetrainfo.com · Publicly listed (job post) Indeed listing text (in.indeed.com/q-internship-in-bangalore-with-stipend-jobs.html): apply to hr@techkshetrainfo.com
+- **Careers / LinkedIn:** —
+- **Sources (checked 2026-10-13):** <https://in.indeed.com/q-internship-in-bangalore-with-stipend-jobs.html> <https://m.indiamart.com/techkshetrainfosolutionspvtltd/web-development-services.html>
+- **Notes:** Small firm; listing also offers 'certificate & experience letter' - confirm stipend is fixed, not commission-only. Posting date unknown.
+
 ## C043 · Tracxn Technologies Ltd — score 81
 - **Role:** Research / Market Research Analyst Intern (speculative; adjacent to Analyst - Market Research, Sector Research team) (Speculative) · Bengaluru (HSR Layout) · On-site
 - **Pay:** Pay Undisclosed  · **Duration:** n/a
@@ -302,6 +368,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://simplify.jobs/p/82dd3975-713d-4a04-a755-2238e261ffd0> <https://resumegeni.com/jobs/libra-founder-s-office-intern-b017c29038d2> <https://jobs.weekday.works/marketing-intern-at-libra-ai-4400394641> <https://jobs.weekday.works/software-engineer-at-libra-ai-wkdyyec00p>
 - **Notes:** careers@ address was published on a different (engineering) Libra posting, not the intern posting itself; snippet indicated applying via ATS plus email. Intern listings dated Apr-Jul 2026 - verify still open. Website also referenced as letslibra.com on one listing.
 
+## C153 · Mercom India — score 81
+- **Role:** Research Intern - Renewable Energy (Advertised) · Bengaluru (listing also mentions Tumakur) · On-site
+- **Pay:** Pay Undisclosed — Not stated · **Duration:** Not stated
+- **Hiring urgency:** Medium — Posted ~Aug 2026; multiple research-intern listings.
+- **Evidence:** terra.do climate job board listing 'Research Intern - Renewable Energy' (Mercom India), ~2 months old (~Aug 2026); final-year students/recent grads preferred.
+- **December start:** Possible - rolling research intern intake
+- **Contact:** —  · hr@mercomindia.com · Publicly listed (job post) https://www.terra.do/climate-jobs/job-board/research-intern-renewable-energy-8408675/ ('Interested Candidates Please send your resume to: hr@mercomindia.com')
+- **Careers / LinkedIn:** https://www.mercomindia.com
+- **Sources (checked 2026-10-13):** <https://www.terra.do/climate-jobs/job-board/research-intern-renewable-energy-8408675/> <https://www.terra.do/climate-jobs/job-board/research-intern-renewable-energy-8408432/>
+- **Notes:** Location ambiguity (one listing says Tumakur). Stipend not published - confirm paid.
+
 ## C119 · Edify.Club (Kuzagan Services Pvt Ltd) — score 80
 - **Role:** Social Media & Content Writer Intern (Advertised) · Bengaluru (Sarjapur Road) · In office
 - **Pay:** Confirmed Paid — ₹10,000/month · **Duration:** 3 months
@@ -378,6 +455,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://builtinbengaluru.in/job/data-analyst-founder-office/8071080
 - **Sources (checked 2026-10-11):** <https://builtinbengaluru.in/job/data-analyst-founder-office/8071080>
 - **Notes:** Advertised role is full-time with 1–2 years' experience; approach speculatively. | Contact check 2: posting live Unknown. Caveat: this is a support@ address, but seekho.in team page lists it under Careers/Open Roles. Note seekho.ai (Seekify) is a different entity; ensure correct company (app by Keyaro Edutech).
+
+## C158 · Epoch Lifestyle — score 79
+- **Role:** Graphic Design & Social Media Intern (Advertised) · Bengaluru · On-site
+- **Pay:** Confirmed Paid — INR 15,000/month · **Duration:** 3 months
+- **Hiring urgency:** Medium — Recent weekday listing; date not visible.
+- **Evidence:** Weekday listing: Graphic Design & Social Media Intern, Rs15,000/month, 3 months, on-site Bangalore.
+- **December start:** Possible
+- **Contact:** —  · phuhal@epochlifestylebrands.com · Publicly listed (job post) https://jobs.weekday.works/graphic-design-social-media-intern-at-epoch-lifestyle-4395954784 (share portfolio + resume to this mail ID or WhatsApp)
+- **Careers / LinkedIn:** —
+- **Sources (checked 2026-10-13):** <https://jobs.weekday.works/graphic-design-social-media-intern-at-epoch-lifestyle-4395954784>
+- **Notes:** Role needs Canva/Photoshop/Premiere - design-heavy; weaker fit unless candidate has a portfolio.
 
 ## C011 · Growth Wave Consultants — score 78
 - **Role:** Financial Analyst Intern (Advertised) · Bengaluru · Hybrid
@@ -511,6 +599,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://talent.gloroots.com/form/apply/e1981d07-9960-4aad-924b-085f71693260> <https://www.gloroots.com/career/founder-s-office-marketing-intern-prodglglo009> <https://jobs.weekday.works/wkdymji4ky>
 - **Notes:** Apply via Gloroots form; no email seen. Posting date not seen.
 
+## C162 · DigiMark Agency — score 78
+- **Role:** Digital Marketing Intern (Speculative) · Bengaluru · Not stated
+- **Pay:** Pay Undisclosed — Not stated · **Duration:** Not stated
+- **Hiring urgency:** Low — Careers page undated (rolling).
+- **Evidence:** Careers page lists an internship opening in Bangalore with 'Apply Now' and 'Join Our Team' HR email.
+- **December start:** Possible - rolling
+- **Contact:** —  · hr@digimarkagency.com · Publicly listed (official site) https://www.digimarkagency.com/career.html (Join Our Team: hr@digimarkagency.com)
+- **Careers / LinkedIn:** https://www.digimarkagency.com/career.html
+- **Sources (checked 2026-10-13):** <https://www.digimarkagency.com/career.html>
+- **Notes:** Undated; confirm stipend (exclude if unpaid).
+
 ## C002 · FloBiz — score 76
 - **Role:** Growth Analyst Intern (Advertised) · Bengaluru · Hybrid
 - **Pay:** Confirmed Paid — ₹25,000–30,000/month · **Duration:** 3 months
@@ -554,6 +653,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://cutshort.io/job/Management-Intern-Bengaluru-Bangalore-Logikality-89KRNqSs
 - **Sources (checked 2026-10-11):** <https://cutshort.io/job/Management-Intern-Bengaluru-Bangalore-Logikality-89KRNqSs>
 - **Notes:** Listing prefers MBA students/recent MBAs - stretch for B.Sc.
+
+## C155 · CloudFirst Technology Pvt Ltd — score 75
+- **Role:** HR Intern (recruitment) (Advertised) · Bengaluru · On-site
+- **Pay:** Confirmed Paid — INR 15,000-20,000/month · **Duration:** 3 months
+- **Hiring urgency:** Medium — Indeed CloudFirst job page dated May 2026; date of HR intern listing unconfirmed.
+- **Evidence:** Indeed listings: paid HR internship Rs15,000-20,000/month, 3 months, immediate joiners preferred.
+- **December start:** Unclear - prefers immediate joiners
+- **Contact:** Deepika Verma (Named in posting) · deepika.verma@cloudfirst.tech · Publicly listed (job post) Indeed listing: 'Interested candidates can share their CV at deepika.verma@cloudfirst.tech'; alternate listing gives hr-south@cloudfirst.tech
+- **Careers / LinkedIn:** https://in.indeed.com/cmp/Cloudfirst-Technology-Private-Limited
+- **Sources (checked 2026-10-13):** <https://in.indeed.com/q-hr-intern-l-bengaluru,-karnataka-jobs.html> <https://in.indeed.com/cmp/Cloudfirst-Technology-Private-Limited> <https://in.indeed.com/q-cloudfirst-technology-jobs.html>
+- **Notes:** Prefers MBA/PGDM-HR candidates; posting possibly ~May 2026 (may be stale). Alternate email hr-south@cloudfirst.tech.
 
 ## C012 · SkilloVilla — score 74
 - **Role:** Operations Analyst Intern (Advertised) · Bengaluru · 
@@ -807,6 +917,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://reo.dev
 - **Sources (checked 2026-10-11):** <https://thefirstpass.substack.com/p/the-first-pass-46-nothing-to-post>
 - **Notes:** No email seen in snippet.
+
+## C161 · Teleradiology Solutions (Telerad) — score 72
+- **Role:** Marketing Intern (Business Development team) (Advertised) · Whitefield, Bengaluru · On-site/hybrid (listing inconsistent)
+- **Pay:** Pay Undisclosed — Not stated · **Duration:** 3 months
+- **Hiring urgency:** Low — Posting dated Feb 2026 - stale.
+- **Evidence:** Weekday listing 'Marketing Intern at Teleradiology Solutions' (3 months, Whitefield); MarketingMonk listing dated 10 Feb 2026.
+- **December start:** Unclear
+- **Contact:** Nanda K (Named in posting) · nanda.k@telradsol.com · Publicly listed (job post) https://jobs.weekday.works/marketing-intern-at-teleradiology-solutions-4384539393 ('Interested can apply to nanda.k@telradsol.com')
+- **Careers / LinkedIn:** https://telradsol.com/?p=883
+- **Sources (checked 2026-10-13):** <https://jobs.weekday.works/marketing-intern-at-teleradiology-solutions-4384539393> <https://www.marketingmonk.so/jobboard/jobs/marketing-intern-at-telradsol-zpm7t7>
+- **Notes:** Stale (Feb 2026); stipend not published.
 
 ## C046 · CSTEP (Center for Study of Science, Technology and Policy) — score 71
 - **Role:** Research / data intern (posted: Intern - Air Quality, ground surveys & data collection) (Advertised) · Bengaluru (Nagashettyhalli, RMV II Stage) · On-site / field
@@ -1125,6 +1246,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Sources (checked 2026-10-11):** <https://app.semesteria.com/jobs/market-research-intern-bengaluru-knometrix-8ef9534f-932a-447f-8f89-f2610d90ef65>
 - **Notes:** Aggregator listing; verify on company channels.
 
+## C159 · Brick & Bolt — score 66
+- **Role:** Talent Acquisition Intern / Social Media Marketing Intern / Category Ops Intern (Advertised) · Bengaluru · On-site
+- **Pay:** Confirmed Paid — INR 20,000/month (past posts) · **Duration:** 2-3 months
+- **Hiring urgency:** Low — Email-bearing posts are ~Jan 2026 (stale); current SMM intern seen only on third-party page.
+- **Evidence:** LinkedIn posts: TA intern Bangalore 20k/month, 2-3 months (careers@bricknbolt.com); Category Ops intern 20k (~259 days old); third-party page shows Social Media Marketing Intern 'actively hiring'.
+- **December start:** Possible - frequent intern cohorts
+- **Contact:** —  · careers@bricknbolt.com · Publicly listed (job post) Brick & Bolt LinkedIn hiring posts (TA intern / Category Ops intern) asking to send profiles to careers@bricknbolt.com
+- **Careers / LinkedIn:** https://in.linkedin.com/company/bricknbolt
+- **Sources (checked 2026-10-13):** <https://www.linkedin.com/in/bhavisha-b-v-11b669204/> <https://in.linkedin.com/company/bricknbolt> <https://in.linkedin.com/jobs/brick&bolt-jobs>
+- **Notes:** Stipend at top of band (20k). Posts with email are stale; treat as rolling.
+
 ## C067 · SuperKalam (YC W23) — score 65
 - **Role:** AI/ML Research Internship (AI applied engineer – voice first) (Advertised) · Remote India / Bengaluru preferred · Remote or Bengaluru
 - **Pay:** Confirmed Paid — Rs 25,000–40,000/month (another version says ~28–40K) · **Duration:** 3–6+ months
@@ -1157,6 +1289,17 @@ Open each source and confirm the posting is live before applying or emailing.
 - **Careers / LinkedIn:** https://careers.lyzr.ai
 - **Sources (checked 2026-10-11):** <https://careers.lyzr.ai/jobs/560036-people-ops-intern> <https://careers.lyzr.ai/jobs/543940-product-evangelist> <https://joinsaarthi.com/jobs/lyzr/ai-builders-bengaluru/7cbf99db-d234-4729-9db1-c4928e6e9e48> <https://www.fastaijobs.com/companies/lyzr>
 - **Notes:** AI Builders listing undated (may be stale); funding figure from aggregator. Verified via WebSearch result snippets only (WebFetch could not resolve hosts in this environment); confirm on live page before applying.
+
+## C160 · Antino — score 64
+- **Role:** Talent Acquisition Intern (Advertised) · Gurgaon & Bangalore (onsite) · On-site
+- **Pay:** Pay Undisclosed — Not stated · **Duration:** Not stated
+- **Hiring urgency:** Low — Post ~early Jul 2026.
+- **Evidence:** LinkedIn post (Pooja Trivedi, Antino) ~104 days old: TA internship for freshers, Gurgaon & Bangalore onsite; resumes to careers@antino.com.
+- **December start:** Unclear
+- **Contact:** —  · careers@antino.com · Publicly listed (job post) https://www.linkedin.com/in/pooja-trivedi-2b8184213/ (post: send resumes to careers@antino.com)
+- **Careers / LinkedIn:** https://www.antino.com
+- **Sources (checked 2026-10-13):** <https://www.linkedin.com/in/pooja-trivedi-2b8184213/>
+- **Notes:** Confirm stipend; HQ Gurgaon.
 
 ## C036 · SarvM.AI — score 63
 - **Role:** Content Writing Intern (Advertised) · Remote, India · Remote
